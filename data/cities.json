@@ -1,0 +1,48 @@
+{
+  "brand": "Miami Septic Pros",
+  "nap": "55 SW 9th ST APT 3806, Miami, FL 33130",
+  "cities": [
+    {
+      "slug": "miami",
+      "name": "Miami",
+      "county": "Miami-Dade",
+      "stateCode": "fl"
+    },
+    {
+      "slug": "coral-gables",
+      "name": "Coral Gables",
+      "county": "Miami-Dade",
+      "stateCode": "fl"
+    },
+    {
+      "slug": "kendall",
+      "name": "Kendall",
+      "county": "Miami-Dade",
+      "stateCode": "fl"
+    },
+    {
+      "slug": "doral",
+      "name": "Doral",
+      "county": "Miami-Dade",
+      "stateCode": "fl"
+    },
+    {
+      "slug": "hialeah",
+      "name": "Hialeah",
+      "county": "Miami-Dade",
+      "stateCode": "fl"
+    },
+    {
+      "slug": "aventura",
+      "name": "Aventura",
+      "county": "Miami-Dade",
+      "stateCode": "fl"
+    },
+    {
+      "slug": "homestead",
+      "name": "Homestead",
+      "county": "Miami-Dade",
+      "stateCode": "fl"
+    }
+  ]
+}

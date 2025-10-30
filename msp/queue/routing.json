@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "base_url": "https://miamisepticpros.com",
+  "paths": {
+    "hub": "/miami/services/",
+    "service_path_pattern": "/miami/services/{service_slug}/",
+    "images_path": "/public/images/og/",
+    "briefs_path": "/msp/briefs/",
+    "reports_path": "/msp/reports/"
+  },
+  "routing_rules": {
+    "slug_format": "kebab-case",
+    "trailing_slash": true,
+    "canonical_pattern": "https://miamisepticpros.com/miami/services/{service_slug}/",
+    "og_image_pattern": "/images/og/{service_slug}.png"
+  },
+  "internal_link_targets": {
+    "home": "/",
+    "services_hub": "/miami/services/",
+    "miami_location": "/locations/fl/miami/",
+    "contact": "/contact/",
+    "quote": "/quote/",
+    "emergency": "/contact/#emergency"
+  },
+  "sitemap_config": {
+    "include_in_sitemap": true,
+    "priority": 0.8,
+    "changefreq": "monthly"
+  },
+  "content_output": {
+    "format": "mdx",
+    "destination": "/content/services/",
+    "filename_pattern": "{service_slug}.mdx"
+  },
+  "validation": {
+    "required_sections": [
+      "cost",
+      "permits",
+      "scope",
+      "emergency",
+      "audience",
+      "faq"
+    ],
+    "min_word_count": 1500,
+    "max_word_count": 3000,
+    "min_internal_links": 3,
+    "min_external_citations": 3,
+    "min_faq_items": 5
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "page_counts": {
+    "static": 3,
+    "hub": 5,
+    "legal": 2,
+    "services_detail": 4,
+    "locations_state": 1,
+    "locations_city": 8,
+    "resources_articles": 12,
+    "issues_detail": 2,
+    "costs_detail": 2,
+    "total_wired": 39,
+    "total_generated_unwired": 328
+  },
+  "content_files": {
+    "services": {
+      "json": 4,
+      "mdx_categories": 9,
+      "mdx_services": 39
+    },
+    "locations": {
+      "json": 8,
+      "mdx_cities": 7,
+      "mdx_city_services": 273
+    },
+    "resources": {
+      "articles": 12
+    },
+    "issues": {
+      "mdx": 2
+    },
+    "costs": {
+      "mdx": 2
+    }
+  },
+  "routes_wired": {
+    "static": [
+      "/",
+      "/quote",
+      "/contact"
+    ],
+    "hub": [
+      "/services",
+      "/locations",
+      "/resources",
+      "/issues",
+      "/costs"
+    ],
+    "legal": [
+      "/privacy",
+      "/terms"
+    ],
+    "dynamic": {
+      "services": "/services/[slug] (4 pages)",
+      "locations_state": "/locations/[state] (1 page)",
+      "locations_city": "/locations/[state]/[city] (8 pages)",
+      "resources": "/resources/[service]/[stateCity] (12 pages)",
+      "issues": "/issues/[slug] (2 pages)",
+      "costs": "/costs/[slug] (2 pages)"
+    }
+  },
+  "routes_unwired": {
+    "note": "Phase-1/2 generated MDX files without routes (future enhancement)",
+    "category_hubs": 9,
+    "service_category_pages": 39,
+    "city_hubs": 7,
+    "city_service_pages": 273
+  },
+  "sitemap": {
+    "status": "Active",
+    "url": "/sitemap.xml",
+    "generated_from": "app/sitemap.ts"
+  },
+  "robots": {
+    "status": "Active",
+    "url": "/robots.txt",
+    "allows": [
+      "GPTBot",
+      "OAI-SearchBot",
+      "*"
+    ],
+    "disallows": [
+      "/quote/thank-you/",
+      "/api/"
+    ]
+  },
+  "jsonld_validation": {
+    "note": "Manual validation required for 3 random pages",
+    "sample_pages": [
+      "/",
+      "/services/septic-tank-pumping",
+      "/locations/fl/miami"
+    ]
+  },
+  "example_urls": [
+    "/",
+    "/services",
+    "/locations",
+    "/quote",
+    "/contact",
+    "/services/septic-tank-pumping",
+    "/locations/fl/miami",
+    "/resources/septic-tank-pumping/fl-miami",
+    "/issues/drains-gurgling",
+    "/costs/septic-tank-pumping"
+  ]
+}

@@ -200,9 +200,8 @@ export function generateLocalBusinessSchema() {
       addressLocality: 'Miami',
       addressRegion: 'FL',
       addressCountry: 'US',
-      // TODO: Add streetAddress and postalCode when available
-      streetAddress: '',
-      postalCode: '',
+      streetAddress: '55 SW 9th ST APT 3806',
+      postalCode: '33130',
     },
     areaServed: [
       // Miami-Dade cities
@@ -287,9 +286,8 @@ export function generateLocalBusinessSchema() {
       },
     ],
     priceRange: '$$',
-    // TODO: Add telephone and email when available
-    telephone: '',
-    email: '',
+    telephone: '+1-305-555-0100',
+    email: 'info@miamisepticpros.com',
   }
 }
 

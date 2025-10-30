@@ -40,7 +40,14 @@ export const quoteFormSchema = z.object({
   }),
   hCaptchaToken: z.string().optional(), // Temporarily optional for testing
   honeypot: z.string().max(0, 'Invalid form submission').optional(), // Should be empty if filled, reject
+
+  // UTM tracking (optional)
+  utm_source: z.string().optional(),
+  utm_medium: z.string().optional(),
+  utm_campaign: z.string().optional(),
+  utm_term: z.string().optional(),
+  utm_content: z.string().optional(),
+  referrer: z.string().optional(),
 })
 
 export type QuoteFormData = z.infer<typeof quoteFormSchema>
-

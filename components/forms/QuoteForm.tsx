@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { quoteFormSchema, type QuoteFormData } from '@/lib/validation/quoteFormSchema'
@@ -65,6 +65,7 @@ interface QuoteFormProps {
 export default function QuoteForm({ services }: QuoteFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
+  const [submitSuccess, setSubmitSuccess] = useState(false)
 
   const {
     register,
@@ -82,9 +83,35 @@ export default function QuoteForm({ services }: QuoteFormProps) {
     },
   })
 
+  // Capture UTM params and referrer on mount
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search)
+      const utm_source = params.get('utm_source')
+      const utm_medium = params.get('utm_medium')
+      const utm_campaign = params.get('utm_campaign')
+      const utm_term = params.get('utm_term')
+      const utm_content = params.get('utm_content')
+
+      if (utm_source) setValue('utm_source', utm_source)
+      if (utm_medium) setValue('utm_medium', utm_medium)
+      if (utm_campaign) setValue('utm_campaign', utm_campaign)
+      if (utm_term) setValue('utm_term', utm_term)
+      if (utm_content) setValue('utm_content', utm_content)
+      
+      // Store referrer (document.referrer or sessionStorage fallback)
+      const referrer = document.referrer || sessionStorage.getItem('referrer') || 'direct'
+      setValue('referrer', referrer)
+      
+      // Store current page as referrer for next page
+      sessionStorage.setItem('referrer', window.location.href)
+    }
+  }, [setValue])
+
   const onSubmit = async (data: QuoteFormData) => {
     setIsSubmitting(true)
     setSubmitError(null)
+    setSubmitSuccess(false)
 
     try {
       const response = await fetch('/api/quote', {
@@ -95,13 +122,20 @@ export default function QuoteForm({ services }: QuoteFormProps) {
         body: JSON.stringify(data),
       })
 
+      const result = await response.json()
+
       if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.error || 'Failed to submit quote request')
+        throw new Error(result.error || 'Failed to submit quote request')
       }
 
-      // Success - redirect to thank you page
-      window.location.href = '/quote/thank-you'
+      // Success - show inline confirmation, then redirect after 2 seconds
+      setSubmitSuccess(true)
+      reset()
+
+      // Redirect to thank you page after 2 seconds
+      setTimeout(() => {
+        window.location.href = '/quote/thank-you'
+      }, 2000)
     } catch (error) {
       setSubmitError(error instanceof Error ? error.message : 'An error occurred. Please try again.')
       setIsSubmitting(false)
@@ -134,6 +168,14 @@ export default function QuoteForm({ services }: QuoteFormProps) {
       {submitError && (
         <div className="p-4 bg-red-50 border border-red-200 rounded-md">
           <p className="text-sm text-red-800">{submitError}</p>
+        </div>
+      )}
+
+      {submitSuccess && (
+        <div className="p-4 bg-green-50 border border-green-200 rounded-md">
+          <p className="text-sm text-green-800 font-semibold">
+            ✓ Quote request submitted successfully! Redirecting to confirmation page...
+          </p>
         </div>
       )}
 
@@ -369,6 +411,14 @@ export default function QuoteForm({ services }: QuoteFormProps) {
         {...register('hCaptchaToken')}
         value="placeholder-token-for-testing"
       />
+
+      {/* Hidden UTM tracking fields */}
+      <input type="hidden" {...register('utm_source')} />
+      <input type="hidden" {...register('utm_medium')} />
+      <input type="hidden" {...register('utm_campaign')} />
+      <input type="hidden" {...register('utm_term')} />
+      <input type="hidden" {...register('utm_content')} />
+      <input type="hidden" {...register('referrer')} />
 
       {/* Privacy Consent */}
       <div>

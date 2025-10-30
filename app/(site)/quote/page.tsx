@@ -24,7 +24,9 @@ export default function QuotePage() {
           Get a clear, upfront estimate from our licensed technicians.
         </p>
         
-        <QuoteForm services={services.map(s => ({ slug: s.slug, title: s.title }))} />
+        <div id="quote-form">
+          <QuoteForm services={services.map(s => ({ slug: s.slug, title: s.title }))} />
+        </div>
       </div>
     </div>
   )

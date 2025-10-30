@@ -26,6 +26,18 @@ export default function ThankYouPage() {
         </p>
       </div>
 
+      <div className="space-y-4 mb-8">
+        <a
+          href="tel:+13055550100"
+          className="inline-block bg-primary-navy text-white font-sans-ui font-semibold px-8 py-4 rounded-sm hover:opacity-90 transition-opacity shadow-md"
+        >
+          Call +1 (305) 555-0100 Now
+        </a>
+        <div className="text-small text-muted-text">
+          Available 24/7 for emergencies
+        </div>
+      </div>
+
       <div className="space-y-4">
         <Link
           href="/"

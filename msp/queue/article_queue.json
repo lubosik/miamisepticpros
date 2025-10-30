@@ -1,0 +1,116 @@
+{
+  "queue_version": "1.0",
+  "total_articles": 12,
+  "status": "ready",
+  "articles": [
+    {
+      "id": 1,
+      "slug": "septic-tank-pumping",
+      "service_name": "Septic Tank Pumping",
+      "priority": "high",
+      "status": "pending",
+      "primary_kw": "septic tank pumping miami",
+      "estimated_intent": "high-commercial"
+    },
+    {
+      "id": 2,
+      "slug": "septic-tank-cleaning",
+      "service_name": "Septic Tank Cleaning",
+      "priority": "high",
+      "status": "pending",
+      "primary_kw": "septic tank cleaning miami",
+      "estimated_intent": "high-commercial"
+    },
+    {
+      "id": 3,
+      "slug": "septic-tank-inspection",
+      "service_name": "Septic Tank Inspection",
+      "priority": "high",
+      "status": "pending",
+      "primary_kw": "septic inspection miami",
+      "estimated_intent": "high-commercial"
+    },
+    {
+      "id": 4,
+      "slug": "emergency-septic-services",
+      "service_name": "Emergency Septic Services",
+      "priority": "critical",
+      "status": "pending",
+      "primary_kw": "emergency septic service miami",
+      "estimated_intent": "urgent-commercial"
+    },
+    {
+      "id": 5,
+      "slug": "septic-tank-unclogging",
+      "service_name": "Septic Tank Unclogging",
+      "priority": "high",
+      "status": "pending",
+      "primary_kw": "septic tank clog miami",
+      "estimated_intent": "urgent-commercial"
+    },
+    {
+      "id": 6,
+      "slug": "septic-system-maintenance-plans",
+      "service_name": "Septic System Maintenance Plans",
+      "priority": "medium",
+      "status": "pending",
+      "primary_kw": "septic maintenance miami",
+      "estimated_intent": "medium-commercial"
+    },
+    {
+      "id": 7,
+      "slug": "septic-tank-riser-installation",
+      "service_name": "Septic Tank Riser Installation",
+      "priority": "medium",
+      "status": "pending",
+      "primary_kw": "septic riser installation miami",
+      "estimated_intent": "medium-commercial"
+    },
+    {
+      "id": 8,
+      "slug": "septic-baffle-replacement",
+      "service_name": "Septic Baffle Replacement",
+      "priority": "medium",
+      "status": "pending",
+      "primary_kw": "septic baffle repair miami",
+      "estimated_intent": "medium-commercial"
+    },
+    {
+      "id": 9,
+      "slug": "septic-filter-cleaning-replacement",
+      "service_name": "Septic Filter Cleaning & Replacement",
+      "priority": "medium",
+      "status": "pending",
+      "primary_kw": "septic filter replacement miami",
+      "estimated_intent": "medium-commercial"
+    },
+    {
+      "id": 10,
+      "slug": "septic-alarm-repair-replacement",
+      "service_name": "Septic Alarm Repair & Replacement",
+      "priority": "medium",
+      "status": "pending",
+      "primary_kw": "septic alarm repair miami",
+      "estimated_intent": "medium-commercial"
+    },
+    {
+      "id": 11,
+      "slug": "drain-field-repair",
+      "service_name": "Drain Field Repair",
+      "priority": "high",
+      "status": "pending",
+      "primary_kw": "drain field repair miami",
+      "estimated_intent": "high-commercial"
+    },
+    {
+      "id": 12,
+      "slug": "septic-odor-troubleshooting",
+      "service_name": "Septic Odor Troubleshooting",
+      "priority": "medium",
+      "status": "pending",
+      "primary_kw": "septic smell miami",
+      "estimated_intent": "informational-commercial"
+    }
+  ],
+  "instructions": "Process articles sequentially. Mark status as 'in_progress' when starting, 'complete' when finished. Do not skip ahead. Wait for CONTINUE signal between articles."
+}

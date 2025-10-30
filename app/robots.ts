@@ -10,6 +10,8 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/quote/thank-you/', '/api/'],
       },
+      { userAgent: 'GPTBot', allow: '/' },
+      { userAgent: 'OAI-SearchBot', allow: '/' },
     ],
     sitemap: `${siteUrl}/sitemap.xml`,
   }

@@ -1,0 +1,201 @@
+{
+  "brand": "Miami Septic Pros",
+  "nap": "55 SW 9th ST APT 3806, Miami, FL 33130",
+  "services": [
+    {
+      "slug": "septic-tank-pumping",
+      "name": "Septic Tank Pumping",
+      "category": "pumping"
+    },
+    {
+      "slug": "routine-septic-maintenance",
+      "name": "Routine Septic Maintenance",
+      "category": "maintenance"
+    },
+    {
+      "slug": "septic-system-cleaning",
+      "name": "Septic System Cleaning",
+      "category": "maintenance"
+    },
+    {
+      "slug": "septic-tank-inspection",
+      "name": "Septic Tank Inspection",
+      "category": "inspections"
+    },
+    {
+      "slug": "emergency-septic-pumping",
+      "name": "Emergency Septic Pumping",
+      "category": "pumping"
+    },
+    {
+      "slug": "portable-toilet-rental",
+      "name": "Portable Toilet Rental",
+      "category": "portable-toilets"
+    },
+    {
+      "slug": "grease-trap-pumping-cleaning",
+      "name": "Grease Trap Pumping & Cleaning",
+      "category": "pumping"
+    },
+    {
+      "slug": "septic-tank-installation",
+      "name": "Septic Tank Installation",
+      "category": "installations"
+    },
+    {
+      "slug": "drain-field-repair",
+      "name": "Drain Field Repair",
+      "category": "repairs"
+    },
+    {
+      "slug": "septic-tank-repair",
+      "name": "Septic Tank Repair",
+      "category": "repairs"
+    },
+    {
+      "slug": "drain-field-replacement",
+      "name": "Drain Field Replacement",
+      "category": "repairs"
+    },
+    {
+      "slug": "septic-system-replacement",
+      "name": "Septic System Replacement",
+      "category": "repairs"
+    },
+    {
+      "slug": "baffle-replacement",
+      "name": "Baffle Replacement",
+      "category": "repairs"
+    },
+    {
+      "slug": "effluent-filter-cleaning",
+      "name": "Effluent Filter Cleaning",
+      "category": "repairs"
+    },
+    {
+      "slug": "risers-installation",
+      "name": "Risers Installation",
+      "category": "installations"
+    },
+    {
+      "slug": "lift-station-repair-service",
+      "name": "Lift Station Repair & Service",
+      "category": "repairs"
+    },
+    {
+      "slug": "lift-station-pumping",
+      "name": "Lift Station Pumping",
+      "category": "pumping"
+    },
+    {
+      "slug": "aerobic-treatment-unit-atu-service",
+      "name": "Aerobic Treatment Unit (ATU) Service",
+      "category": "septic-services"
+    },
+    {
+      "slug": "septic-system-upgrade",
+      "name": "Septic System Upgrade",
+      "category": "installations"
+    },
+    {
+      "slug": "septic-system-relocation",
+      "name": "Septic System Relocation",
+      "category": "installations"
+    },
+    {
+      "slug": "tank-deodorization",
+      "name": "Tank Deodorization",
+      "category": "maintenance"
+    },
+    {
+      "slug": "pre-purchase-septic-inspection",
+      "name": "Pre-Purchase Septic Inspection",
+      "category": "inspections"
+    },
+    {
+      "slug": "real-estate-septic-inspection",
+      "name": "Real Estate Septic Inspection",
+      "category": "inspections"
+    },
+    {
+      "slug": "video-camera-pipe-inspection",
+      "name": "Video Camera Pipe Inspection",
+      "category": "inspections"
+    },
+    {
+      "slug": "drain-field-assessment",
+      "name": "Drain Field Assessment",
+      "category": "drainfield"
+    },
+    {
+      "slug": "soil-percolation-testing",
+      "name": "Soil Percolation Testing",
+      "category": "drainfield"
+    },
+    {
+      "slug": "septic-dye-testing",
+      "name": "Septic Dye Testing",
+      "category": "septic-services"
+    },
+    {
+      "slug": "septic-permit-assistance",
+      "name": "Septic Permit Assistance",
+      "category": "septic-services"
+    },
+    {
+      "slug": "health-department-compliance",
+      "name": "Health Department Compliance",
+      "category": "septic-services"
+    },
+    {
+      "slug": "maintenance-plan-setup",
+      "name": "Maintenance Plan Setup",
+      "category": "maintenance"
+    },
+    {
+      "slug": "septic-system-certification",
+      "name": "Septic System Certification",
+      "category": "septic-services"
+    },
+    {
+      "slug": "drain-cleaning-residential",
+      "name": "Drain Cleaning (Residential)",
+      "category": "maintenance"
+    },
+    {
+      "slug": "drain-cleaning-commercial",
+      "name": "Drain Cleaning (Commercial)",
+      "category": "maintenance"
+    },
+    {
+      "slug": "clogged-drain-repair",
+      "name": "Clogged Drain Repair",
+      "category": "repairs"
+    },
+    {
+      "slug": "septic-safe-product-recommendations",
+      "name": "Septic-Safe Product Recommendations",
+      "category": "septic-services"
+    },
+    {
+      "slug": "commercial-septic-service",
+      "name": "Commercial Septic Service",
+      "category": "commercial"
+    },
+    {
+      "slug": "residential-septic-service",
+      "name": "Residential Septic Service",
+      "category": "septic-services"
+    },
+    {
+      "slug": "industrial-wastewater-treatment-support",
+      "name": "Industrial Wastewater Treatment Support",
+      "category": "commercial"
+    },
+    {
+      "slug": "septic-system-winterization",
+      "name": "Septic System Winterization",
+      "category": "septic-services"
+    }
+  ]
+}
