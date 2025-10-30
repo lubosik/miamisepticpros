@@ -1,0 +1,12 @@
+service,stateCode,state,city,priority
+septic-tank-pumping,FL,Florida,Miami,1
+septic-tank-pumping,FL,Florida,Tampa,1
+septic-tank-pumping,FL,Florida,Orlando,1
+septic-tank-cleaning,FL,Florida,Miami,2
+septic-tank-cleaning,FL,Florida,Tampa,2
+septic-inspection,FL,Florida,Miami,1
+septic-inspection,FL,Florida,Jacksonville,2
+emergency-pumping,FL,Florida,Miami,1
+drainfield-repair,FL,Florida,Tampa,2
+septic-tank-repair,FL,Florida,Orlando,2
+

@@ -1,0 +1,42 @@
+{
+  "slug": "septic-inspection",
+  "title": "Septic Inspection",
+  "icon": "🔍",
+  "shortDescription": "Comprehensive health check to identify issues before they become costly.",
+  "fullDescription": "## What Is Septic Inspection?\n\nA septic inspection is a thorough evaluation of your septic system's condition, including the tank, drainfield, and connecting pipes. Inspections help identify problems early, before they become expensive emergencies.\n\n## Why You Need Inspections\n\n- **Prevent costly repairs:** Catch issues early when they're easier to fix\n- **Real estate transactions:** Required for most home sales\n- **Peace of mind:** Know your system is functioning properly\n- **Compliance:** Meet local health department requirements\n\n## Inspection Process\n\n1. Tank access and visual inspection\n2. Measure sludge and scum levels\n3. Check baffles and outlet pipes\n4. Examine drainfield for signs of failure\n5. Document findings and recommendations",
+  "metaDescription": "Professional septic inspection services. Learn what's included, when to inspect, costs, and how to find qualified inspectors near you.",
+  "faqs": [
+    {
+      "question": "How often should I have my septic system inspected?",
+      "answer": "General maintenance inspections every 1–3 years are recommended. More frequent inspections (annually) may be needed for older systems or if you notice problems."
+    },
+    {
+      "question": "How much does a septic inspection cost?",
+      "answer": "Average cost ranges from $200–$500, depending on system complexity, location, and whether it includes camera inspection or testing."
+    },
+    {
+      "question": "Do I need an inspection before selling my home?",
+      "answer": "Most states require septic inspections during real estate transactions. Buyers often request inspections as a condition of sale."
+    },
+    {
+      "question": "What happens if the inspection finds problems?",
+      "answer": "The inspector will document issues and recommend repairs. Minor problems can often be addressed immediately, while major issues may require system replacement."
+    }
+  ],
+  "relatedServices": [
+    "real-estate-septic-inspection",
+    "septic-tank-pumping",
+    "septic-tank-repair",
+    "camera-inspection"
+  ],
+  "averageCost": {
+    "min": 200,
+    "max": 500,
+    "unit": "per service"
+  },
+  "schema": {
+    "serviceType": "Septic Inspection",
+    "category": "Maintenance"
+  }
+}
+

@@ -1,0 +1,42 @@
+{
+  "slug": "emergency-pumping",
+  "title": "Emergency Pumping",
+  "icon": "🚨",
+  "shortDescription": "24/7 emergency septic pumping when backups threaten your home.",
+  "fullDescription": "## What Is Emergency Septic Pumping?\n\nEmergency septic pumping provides urgent removal of waste when your septic system fails, causing backups, odors, or flooding. Available 24/7, emergency services prevent damage to your home and property.\n\n## When You Need Emergency Service\n\n- **Sewage backups:** Waste backing up into toilets, sinks, or drains\n- **Foul odors:** Strong sewage smells inside or outside your home\n- **Pooling water:** Water or sewage pooling around the septic tank\n- **Slow drains:** Multiple drains draining slowly or not at all\n- **Gurgling sounds:** Unusual sounds from drains or toilets\n\n## Emergency Response Process\n\n1. Call for immediate service (24/7 availability)\n2. Rapid dispatch of emergency team\n3. Immediate pumping to relieve pressure\n4. Assessment of system condition\n5. Recommendations for permanent fixes",
+  "metaDescription": "24/7 emergency septic pumping services. Immediate response for backups, flooding, and urgent septic system failures. Fast, professional help when you need it most.",
+  "faqs": [
+    {
+      "question": "What counts as a septic emergency?",
+      "answer": "Sewage backing up into your home, foul odors inside, pooling water around the tank, or complete system failure are all emergencies requiring immediate attention."
+    },
+    {
+      "question": "How quickly can emergency service arrive?",
+      "answer": "Most emergency septic services can arrive within 2–4 hours, depending on location and time of day. Life-threatening situations receive priority response."
+    },
+    {
+      "question": "How much more does emergency pumping cost?",
+      "answer": "Emergency pumping typically costs 50–100% more than scheduled service, with after-hours and weekend calls commanding premium rates. Expect $500–$1,200 for emergency service."
+    },
+    {
+      "question": "Will emergency pumping fix the underlying problem?",
+      "answer": "Emergency pumping relieves immediate pressure but may not solve the root cause. Follow-up inspection and repairs are usually needed to prevent future emergencies."
+    }
+  ],
+  "relatedServices": [
+    "septic-tank-pumping",
+    "septic-tank-repair",
+    "drainfield-repair",
+    "septic-inspection"
+  ],
+  "averageCost": {
+    "min": 500,
+    "max": 1200,
+    "unit": "per service"
+  },
+  "schema": {
+    "serviceType": "Emergency Septic Pumping",
+    "category": "Emergency"
+  }
+}
+

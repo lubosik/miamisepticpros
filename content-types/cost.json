@@ -1,0 +1,356 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Cost Guide Schema",
+  "description": "Front matter schema for cost guide pages (/costs/{slug}.mdx)",
+  "type": "object",
+  "required": [
+    "title",
+    "slug",
+    "service",
+    "nationalAverage",
+    "priceRange",
+    "metaDescription",
+    "publishedDate"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Cost guide title (50-70 characters)",
+      "minLength": 30,
+      "maxLength": 100,
+      "examples": [
+        "Septic Tank Pumping Cost Guide (2025)",
+        "Drainfield Replacement Cost: What to Expect",
+        "Septic System Installation Cost Breakdown"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug (usually matches service slug)",
+      "pattern": "^[a-z0-9-]+$",
+      "examples": [
+        "septic-tank-pumping",
+        "drainfield-replacement",
+        "septic-installation"
+      ]
+    },
+    "service": {
+      "type": "string",
+      "description": "Related service slug (must match one of 16 canonical services)",
+      "enum": [
+        "septic-tank-pumping",
+        "septic-tank-cleaning",
+        "septic-inspection",
+        "real-estate-septic-inspection",
+        "septic-tank-repair",
+        "emergency-pumping",
+        "drainfield-repair",
+        "drainfield-replacement",
+        "septic-installation",
+        "riser-installation",
+        "baffle-replacement",
+        "septic-tank-locating",
+        "camera-inspection",
+        "lift-station-service",
+        "grease-trap-pumping",
+        "septic-system-maintenance"
+      ]
+    },
+    "nationalAverage": {
+      "type": "object",
+      "description": "National average cost (USD)",
+      "required": ["min", "max"],
+      "properties": {
+        "min": {
+          "type": "number",
+          "description": "Minimum cost (USD)"
+        },
+        "max": {
+          "type": "number",
+          "description": "Maximum cost (USD)"
+        },
+        "typical": {
+          "type": "number",
+          "description": "Most common/typical cost (USD)"
+        }
+      },
+      "examples": [
+        {
+          "min": 300,
+          "max": 600,
+          "typical": 425
+        }
+      ]
+    },
+    "priceRange": {
+      "type": "array",
+      "description": "Price breakdown by factor (e.g., tank size, service complexity)",
+      "items": {
+        "type": "object",
+        "required": ["factor", "cost"],
+        "properties": {
+          "factor": {
+            "type": "string",
+            "description": "Factor name (e.g., '750–1,000 gallons', 'Standard service', 'Emergency call')",
+            "examples": ["750–1,000 gallons", "1,000–1,500 gallons"]
+          },
+          "cost": {
+            "type": "string",
+            "description": "Cost range (formatted string)",
+            "examples": ["$300–$400", "$400–$600"]
+          },
+          "notes": {
+            "type": "string",
+            "description": "Optional notes or context"
+          }
+        }
+      },
+      "minItems": 3,
+      "maxItems": 12,
+      "examples": [
+        [
+          {
+            "factor": "750–1,000 gallons",
+            "cost": "$300–$400",
+            "notes": "Most common residential size"
+          },
+          {
+            "factor": "1,000–1,500 gallons",
+            "cost": "$400–$600",
+            "notes": "Larger households"
+          },
+          {
+            "factor": "1,500+ gallons",
+            "cost": "$600–$800",
+            "notes": "Commercial or large residential"
+          }
+        ]
+      ]
+    },
+    "costFactors": {
+      "type": "array",
+      "description": "Factors that affect cost (3-8 items)",
+      "items": {
+        "type": "object",
+        "required": ["factor", "impact"],
+        "properties": {
+          "factor": {
+            "type": "string",
+            "description": "Factor name",
+            "examples": ["Tank size", "Accessibility", "Location"]
+          },
+          "impact": {
+            "type": "string",
+            "description": "How this affects cost (1-2 sentences)",
+            "examples": [
+              "Larger tanks (1,500+ gallons) require more time and disposal fees, increasing cost by 30-50%."
+            ]
+          },
+          "priceImpact": {
+            "type": "string",
+            "enum": ["low", "moderate", "high"],
+            "description": "Relative impact on total cost"
+          }
+        }
+      },
+      "minItems": 3,
+      "maxItems": 10
+    },
+    "regionalData": {
+      "type": "array",
+      "description": "Optional: Regional pricing variations",
+      "items": {
+        "type": "object",
+        "required": ["region", "averageCost"],
+        "properties": {
+          "region": {
+            "type": "string",
+            "description": "Region or state name",
+            "examples": ["Florida", "South Florida", "Northeast US"]
+          },
+          "averageCost": {
+            "type": "string",
+            "description": "Average cost in this region (formatted string)",
+            "examples": ["$350–$550"]
+          },
+          "notes": {
+            "type": "string",
+            "description": "Why costs differ in this region"
+          }
+        }
+      }
+    },
+    "savingTips": {
+      "type": "array",
+      "description": "Tips to save money (3-6 bullet points)",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3,
+      "maxItems": 8,
+      "examples": [
+        [
+          "Pump on schedule (every 3-5 years) to avoid emergency fees",
+          "Get quotes from 3+ contractors to compare pricing",
+          "Install a riser ($300-500) to reduce future pumping costs",
+          "Avoid pumping during holidays or weekends (surcharges apply)"
+        ]
+      ]
+    },
+    "metaDescription": {
+      "type": "string",
+      "description": "SEO meta description (150-160 characters)",
+      "minLength": 120,
+      "maxLength": 160,
+      "examples": [
+        "How much does septic tank pumping cost? Average prices range from $300–$600. Learn cost factors, regional pricing, and how to save money."
+      ]
+    },
+    "ogImage": {
+      "type": "string",
+      "description": "Path to OG image (relative to /public)",
+      "pattern": "^/images/og/.*\\.(png|jpg|jpeg)$",
+      "examples": ["/images/og/cost-septic-tank-pumping.png"]
+    },
+    "publishedDate": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD)"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD), update when pricing changes"
+    },
+    "sources": {
+      "type": "array",
+      "description": "Sources for pricing data (for credibility)",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["Article", "HowTo"],
+          "default": "Article"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "title": "Septic Tank Pumping Cost Guide (2025)",
+      "slug": "septic-tank-pumping",
+      "service": "septic-tank-pumping",
+      "nationalAverage": {
+        "min": 300,
+        "max": 600,
+        "typical": 425
+      },
+      "priceRange": [
+        {
+          "factor": "750–1,000 gallons",
+          "cost": "$300–$400",
+          "notes": "Most common residential size"
+        },
+        {
+          "factor": "1,000–1,500 gallons",
+          "cost": "$400–$600",
+          "notes": "Larger households"
+        },
+        {
+          "factor": "1,500–2,000 gallons",
+          "cost": "$600–$800",
+          "notes": "Large residential or small commercial"
+        },
+        {
+          "factor": "2,000+ gallons",
+          "cost": "$800–$1,200",
+          "notes": "Commercial or multi-family"
+        }
+      ],
+      "costFactors": [
+        {
+          "factor": "Tank size",
+          "impact": "Larger tanks require more time and disposal fees, increasing cost by 30-50% per size tier.",
+          "priceImpact": "high"
+        },
+        {
+          "factor": "Accessibility",
+          "impact": "Tanks in hard-to-reach locations (under driveways, far from road) may add $100-300 due to extra hose length or equipment.",
+          "priceImpact": "moderate"
+        },
+        {
+          "factor": "Location",
+          "impact": "Urban areas with higher labor costs and disposal fees typically charge 10-20% more than rural areas.",
+          "priceImpact": "moderate"
+        },
+        {
+          "factor": "Tank condition",
+          "impact": "If the tank needs repairs or the baffles are damaged, contractors may charge extra for inspection or immediate fixes.",
+          "priceImpact": "moderate"
+        },
+        {
+          "factor": "Emergency service",
+          "impact": "After-hours, weekend, or emergency pumping can add 50-100% surcharge to the base price.",
+          "priceImpact": "high"
+        }
+      ],
+      "regionalData": [
+        {
+          "region": "South Florida",
+          "averageCost": "$350–$550",
+          "notes": "Higher labor costs in Miami-Dade, Broward, and Palm Beach counties"
+        },
+        {
+          "region": "Central Florida",
+          "averageCost": "$300–$500",
+          "notes": "Lower costs in Orlando, Tampa, and surrounding suburbs"
+        },
+        {
+          "region": "North Florida",
+          "averageCost": "$250–$450",
+          "notes": "More competitive pricing in Jacksonville and Panhandle areas"
+        }
+      ],
+      "savingTips": [
+        "Pump on schedule (every 3-5 years) to avoid emergency fees",
+        "Get quotes from 3+ contractors to compare pricing",
+        "Install a riser ($300-500 one-time cost) to reduce future pumping costs",
+        "Avoid pumping during holidays or weekends when surcharges apply",
+        "Combine pumping with inspection for bundled service discounts",
+        "Check if your county offers septic maintenance programs or rebates"
+      ],
+      "metaDescription": "How much does septic tank pumping cost? Average prices range from $300–$600. Learn cost factors, regional pricing, and how to save money.",
+      "ogImage": "/images/og/cost-septic-tank-pumping.png",
+      "publishedDate": "2025-01-15",
+      "updatedDate": "2025-01-15",
+      "sources": [
+        {
+          "title": "HomeAdvisor — Septic Tank Pumping Cost",
+          "url": "https://www.homeadvisor.com/cost/plumbing/pump-a-septic-tank/"
+        },
+        {
+          "title": "Angi (formerly Angie's List) — Septic Pumping Costs",
+          "url": "https://www.angi.com/articles/septic-tank-pumping-cost.htm"
+        }
+      ],
+      "schema": {
+        "type": "Article"
+      }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Resource Article Schema",
+  "description": "Front matter schema for resource articles (/resources/{service}/{location}.mdx)",
+  "type": "object",
+  "required": [
+    "title",
+    "slug",
+    "service",
+    "state",
+    "city",
+    "primaryKeyword",
+    "metaDescription",
+    "publishedDate",
+    "updatedDate"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "H1 title for the article (50-70 characters, include service + location)",
+      "minLength": 30,
+      "maxLength": 100,
+      "examples": [
+        "Complete Guide to Septic Tank Pumping in Miami, FL",
+        "Septic Tank Inspection in Tampa: What to Expect"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug (auto-generated from service-state-city, no slashes)",
+      "pattern": "^[a-z0-9-]+$",
+      "examples": ["septic-tank-pumping-fl-miami", "septic-inspection-fl-tampa"]
+    },
+    "service": {
+      "type": "string",
+      "description": "Service slug (must match one of 16 canonical services)",
+      "enum": [
+        "septic-tank-pumping",
+        "septic-tank-cleaning",
+        "septic-inspection",
+        "real-estate-septic-inspection",
+        "septic-tank-repair",
+        "emergency-pumping",
+        "drainfield-repair",
+        "drainfield-replacement",
+        "septic-installation",
+        "riser-installation",
+        "baffle-replacement",
+        "septic-tank-locating",
+        "camera-inspection",
+        "lift-station-service",
+        "grease-trap-pumping",
+        "septic-system-maintenance"
+      ]
+    },
+    "state": {
+      "type": "string",
+      "description": "Full state name",
+      "examples": ["Florida", "Georgia", "Texas"]
+    },
+    "stateCode": {
+      "type": "string",
+      "description": "Two-letter state code (uppercase)",
+      "pattern": "^[A-Z]{2}$",
+      "examples": ["FL", "GA", "TX"]
+    },
+    "city": {
+      "type": "string",
+      "description": "City name (title case)",
+      "examples": ["Miami", "Tampa", "Orlando"]
+    },
+    "citySlug": {
+      "type": "string",
+      "description": "URL-friendly city slug (lowercase, hyphenated)",
+      "pattern": "^[a-z0-9-]+$",
+      "examples": ["miami", "fort-lauderdale", "west-palm-beach"]
+    },
+    "primaryKeyword": {
+      "type": "string",
+      "description": "Main target keyword for SEO (usually 'service + in + city + state')",
+      "examples": [
+        "septic tank pumping in Miami FL",
+        "septic inspection Tampa Florida"
+      ]
+    },
+    "supportKeywords": {
+      "type": "array",
+      "description": "Additional keywords to target (3-8 phrases)",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3,
+      "maxItems": 12,
+      "examples": [
+        [
+          "Miami septic pumping cost",
+          "how often to pump septic tank",
+          "septic service Miami-Dade",
+          "licensed septic contractors Miami"
+        ]
+      ]
+    },
+    "metaDescription": {
+      "type": "string",
+      "description": "SEO meta description (150-160 characters, include primary keyword)",
+      "minLength": 120,
+      "maxLength": 160,
+      "examples": [
+        "Everything you need to know about septic tank pumping in Miami: how often to pump, costs, what to expect, and how to find a trusted contractor."
+      ]
+    },
+    "ogImage": {
+      "type": "string",
+      "description": "Path to Open Graph image (1200x630, relative to /public)",
+      "pattern": "^/images/og/.*\\.(png|jpg|jpeg)$",
+      "examples": ["/images/og/septic-tank-pumping-fl-miami.png"]
+    },
+    "publishedDate": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD)",
+      "examples": ["2025-01-15"]
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD), update when content revised",
+      "examples": ["2025-01-20"]
+    },
+    "author": {
+      "type": "string",
+      "description": "Author name or organization",
+      "default": "SepticTankQuoteHub",
+      "examples": ["SepticTankQuoteHub", "Sarah Martinez"]
+    },
+    "sources": {
+      "type": "array",
+      "description": "External sources cited in article (for credibility)",
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Source title or organization name",
+            "examples": ["EPA Septic Systems Guide", "Florida Department of Health"]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Full URL to source",
+            "examples": ["https://www.epa.gov/septic"]
+          }
+        }
+      },
+      "minItems": 0,
+      "maxItems": 10
+    },
+    "relatedArticles": {
+      "type": "array",
+      "description": "Related article slugs (for 'Related Guides' section)",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "minItems": 0,
+      "maxItems": 6,
+      "examples": [
+        [
+          "septic-inspection-fl-miami",
+          "emergency-pumping-fl-miami",
+          "septic-tank-pumping-cost"
+        ]
+      ]
+    },
+    "schema": {
+      "type": "object",
+      "description": "Optional: Additional schema.org properties (if not auto-generated)",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["Article", "HowTo", "FAQPage"],
+          "default": "Article"
+        },
+        "hasFAQ": {
+          "type": "boolean",
+          "description": "Set to true if article contains FAQ section (for FAQPage schema)",
+          "default": false
+        },
+        "hasHowTo": {
+          "type": "boolean",
+          "description": "Set to true if article contains step-by-step instructions (for HowTo schema)",
+          "default": false
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "title": "Complete Guide to Septic Tank Pumping in Miami, FL",
+      "slug": "septic-tank-pumping-fl-miami",
+      "service": "septic-tank-pumping",
+      "state": "Florida",
+      "stateCode": "FL",
+      "city": "Miami",
+      "citySlug": "miami",
+      "primaryKeyword": "septic tank pumping in Miami FL",
+      "supportKeywords": [
+        "Miami septic pumping cost",
+        "how often to pump septic tank",
+        "septic service Miami-Dade",
+        "licensed septic contractors Miami",
+        "septic tank maintenance Miami"
+      ],
+      "metaDescription": "Everything you need to know about septic tank pumping in Miami: how often to pump, costs, what to expect, and how to find a trusted contractor.",
+      "ogImage": "/images/og/septic-tank-pumping-fl-miami.png",
+      "publishedDate": "2025-01-15",
+      "updatedDate": "2025-01-20",
+      "author": "SepticTankQuoteHub",
+      "sources": [
+        {
+          "title": "EPA Septic Systems Guide",
+          "url": "https://www.epa.gov/septic"
+        },
+        {
+          "title": "Florida Department of Health — Septic Systems",
+          "url": "https://www.floridahealth.gov/environmental-health/septic-systems/"
+        }
+      ],
+      "relatedArticles": [
+        "septic-inspection-fl-miami",
+        "emergency-pumping-fl-miami",
+        "drainfield-repair-fl-miami"
+      ],
+      "schema": {
+        "type": "Article",
+        "hasFAQ": true,
+        "hasHowTo": false
+      }
+    }
+  ]
+}

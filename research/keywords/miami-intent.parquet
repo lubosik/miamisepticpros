@@ -1,0 +1,3 @@
+PARQUET_PLACEHOLDER
+# DataForSEO MCP not available in this environment.
+# TODO: Replace with a real Parquet export containing: keyword, city, vol, KD, CPC, intent.

@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Colors */
+  --color-primary-navy: #1a2332;
+  --color-charcoal: #2d3748;
+  --color-body-text: #374151;
+  --color-muted-text: #6b7280;
+  --color-accent-green: #047857;
+  --color-accent-green-hover: #065f46;
+
+  --color-surface-white: #ffffff;
+  --color-surface-gray-50: #f9fafb;
+  --color-surface-gray-100: #f3f4f6;
+
+  --color-border-light: #e5e7eb;
+  --color-border-default: #d1d5db;
+
+  /* Font Families */
+  --font-serif-headings: 'Source Serif Pro', 'Georgia', 'Cambria', serif;
+  --font-sans-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans-ui: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-monospace: 'SF Mono', 'Consolas', 'Monaco', monospace;
+
+  /* Type Scale */
+  --font-size-h1: clamp(2.25rem, 4vw, 3rem);
+  --font-size-h2: clamp(1.75rem, 3vw, 2.25rem);
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-h5: 1.125rem;
+  --font-size-h6: 1rem;
+  --font-size-body: 1rem;
+  --font-size-body-lg: 1.125rem;
+  --font-size-small: 0.875rem;
+  --font-size-tiny: 0.75rem;
+
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-snug: -0.01em;
+  --letter-spacing-wide: 0.05em;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Border Radius */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 200ms ease-in-out;
+  --transition-slow: 300ms ease-in-out;
+}
+
+body {
+  @apply bg-surface-white text-body-text font-sans-body;
+}
+
+/* Prose max-width enforced globally for article content */
+.prose {
+  max-width: 72ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+

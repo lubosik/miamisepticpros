@@ -1,0 +1,42 @@
+{
+  "slug": "drainfield-repair",
+  "title": "Drainfield Repair",
+  "icon": "🏗️",
+  "shortDescription": "Restore failed drainfields with professional repair services.",
+  "fullDescription": "## What Is Drainfield Repair?\n\nDrainfield repair addresses problems with your septic system's soil absorption area, where treated effluent is dispersed into the ground. When drainfields fail, repairs can restore function without complete replacement.\n\n## Common Drainfield Problems\n\n- **Clogged drain pipes:** Solids blocking distribution pipes\n- **Compacted soil:** Soil too dense for proper absorption\n- **Bio-mat buildup:** Excessive bacterial layer preventing drainage\n- **Tree root invasion:** Roots clogging or damaging pipes\n- **Shallow water table:** Groundwater interfering with drainage\n\n## Repair Options\n\n1. **Pipe cleaning:** Hydro-jetting to clear clogs\n2. **Aeration:** Breaking up compacted soil\n3. **Partial replacement:** Replacing failed sections only\n4. **Soil amendment:** Adding materials to improve drainage\n5. **Alternative systems:** Installing aerobic or pressure distribution",
+  "metaDescription": "Professional drainfield repair services. Learn about drainfield problems, repair options, costs, and how our licensed technicians restore your drainfield.",
+  "faqs": [
+    {
+      "question": "How do I know if my drainfield needs repair?",
+      "answer": "Signs include soggy ground over the drainfield, sewage odors, slow drains, or water backing up. A professional inspection can determine if repair is possible or replacement is needed."
+    },
+    {
+      "question": "Can a failed drainfield be repaired?",
+      "answer": "Many drainfield problems can be repaired if caught early. Severe failures may require partial or complete replacement. An inspection will determine the best approach."
+    },
+    {
+      "question": "How much does drainfield repair cost?",
+      "answer": "Repairs range from $1,000–$5,000 for minor issues like pipe cleaning. Partial replacements cost $5,000–$10,000. Complete replacement costs $10,000–$25,000 or more."
+    },
+    {
+      "question": "How long does drainfield repair take?",
+      "answer": "Simple repairs like pipe cleaning take a few hours. Partial replacements typically require 1–3 days. The timeline depends on the extent of damage and local permitting requirements."
+    }
+  ],
+  "relatedServices": [
+    "drainfield-replacement",
+    "septic-tank-repair",
+    "septic-inspection",
+    "camera-inspection"
+  ],
+  "averageCost": {
+    "min": 1000,
+    "max": 5000,
+    "unit": "per service"
+  },
+  "schema": {
+    "serviceType": "Drainfield Repair",
+    "category": "Repair"
+  }
+}
+

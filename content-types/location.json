@@ -1,0 +1,139 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Location Schema",
+  "description": "Data schema for location definition files (/content/locations/{state}/{city}.json)",
+  "type": "object",
+  "required": ["city", "state", "stateCode", "slug"],
+  "properties": {
+    "city": {
+      "type": "string",
+      "description": "City name (title case)",
+      "examples": ["Miami", "Tampa", "Fort Lauderdale"]
+    },
+    "state": {
+      "type": "string",
+      "description": "Full state name (title case)",
+      "examples": ["Florida", "Georgia", "Texas"]
+    },
+    "stateCode": {
+      "type": "string",
+      "description": "Two-letter state code (uppercase)",
+      "pattern": "^[A-Z]{2}$",
+      "examples": ["FL", "GA", "TX"]
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly city slug (lowercase, hyphenated)",
+      "pattern": "^[a-z0-9-]+$",
+      "examples": ["miami", "fort-lauderdale", "west-palm-beach"]
+    },
+    "county": {
+      "type": "string",
+      "description": "County name (optional, for display)",
+      "examples": ["Miami-Dade County", "Hillsborough County"]
+    },
+    "population": {
+      "type": "integer",
+      "description": "Approximate population (optional, for sorting/display)",
+      "minimum": 0,
+      "examples": [442241, 387050]
+    },
+    "availableServices": {
+      "type": "array",
+      "description": "List of service slugs available in this city (default: all 16)",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 16,
+      "default": [
+        "septic-tank-pumping",
+        "septic-tank-cleaning",
+        "septic-inspection",
+        "real-estate-septic-inspection",
+        "septic-tank-repair",
+        "emergency-pumping",
+        "drainfield-repair",
+        "drainfield-replacement",
+        "septic-installation",
+        "riser-installation",
+        "baffle-replacement",
+        "septic-tank-locating",
+        "camera-inspection",
+        "lift-station-service",
+        "grease-trap-pumping",
+        "septic-system-maintenance"
+      ]
+    },
+    "localInsights": {
+      "type": "string",
+      "description": "Optional: Local-specific information (markdown supported, 200-500 words). Include: soil type, water table, local regulations, climate considerations.",
+      "minLength": 100,
+      "maxLength": 2000,
+      "examples": [
+        "## Septic Systems in Miami\n\nMiami's high water table and porous limestone soil present unique challenges for septic systems. Most systems in Miami-Dade County require elevated drainfields or aerobic treatment units to meet health department regulations.\n\n### Local Regulations\n\nMiami-Dade County follows strict septic system regulations. All new installations and repairs require permits from the Florida Department of Health. Tanks must be pumped at regular intervals and inspected during real estate transactions.\n\n### Climate Considerations\n\nSouth Florida's heavy rainfall and hurricane season can stress septic systems. Flooding can damage drainfields and tanks. After storms, have your system inspected by a licensed contractor."
+      ]
+    },
+    "metaDescription": {
+      "type": "string",
+      "description": "SEO meta description for city landing page (150-160 characters)",
+      "minLength": 120,
+      "maxLength": 160,
+      "examples": [
+        "Find trusted septic pros in Miami, FL. Get free quotes for pumping, inspection, repair, drainfield work, and emergency service. Local experts."
+      ]
+    },
+    "coordinates": {
+      "type": "object",
+      "description": "Optional: Geographic coordinates for map display (future enhancement)",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      },
+      "required": ["latitude", "longitude"]
+    }
+  },
+  "examples": [
+    {
+      "city": "Miami",
+      "state": "Florida",
+      "stateCode": "FL",
+      "slug": "miami",
+      "county": "Miami-Dade County",
+      "population": 442241,
+      "availableServices": [
+        "septic-tank-pumping",
+        "septic-tank-cleaning",
+        "septic-inspection",
+        "real-estate-septic-inspection",
+        "septic-tank-repair",
+        "emergency-pumping",
+        "drainfield-repair",
+        "drainfield-replacement",
+        "septic-installation",
+        "riser-installation",
+        "baffle-replacement",
+        "septic-tank-locating",
+        "camera-inspection",
+        "lift-station-service",
+        "septic-system-maintenance"
+      ],
+      "localInsights": "## Septic Systems in Miami\n\nMiami's high water table and porous limestone soil present unique challenges for septic systems. Most systems in Miami-Dade County require elevated drainfields or aerobic treatment units to meet Florida Department of Health regulations.\n\n### Local Regulations\n\nMiami-Dade County enforces strict septic system regulations. All installations, repairs, and replacements require permits from the Florida Department of Health in Miami-Dade County. Tanks must be inspected during real estate transactions, and pumping records should be maintained.\n\n### Climate Considerations\n\nSouth Florida's heavy rainfall (60+ inches annually) and hurricane season can stress septic systems. Flooding can damage drainfields and contaminate tanks. After major storms, have your system inspected by a licensed contractor to ensure proper operation.\n\n### Common Issues\n\n- **High water table:** Can cause drainfields to fail or become saturated\n- **Saltwater intrusion:** Coastal areas may experience saltwater damage to concrete tanks\n- **Tree roots:** Mature tropical trees can infiltrate tanks and drainfields\n- **Heavy usage:** Year-round warm weather increases water usage and system load",
+      "metaDescription": "Find trusted septic pros in Miami, FL. Get free quotes for pumping, inspection, repair, drainfield work, and emergency service. Local experts.",
+      "coordinates": {
+        "latitude": 25.7617,
+        "longitude": -80.1918
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "septic-tank-pumping",
+  "title": "Septic Tank Pumping",
+  "icon": "🚛",
+  "shortDescription": "Regular removal of solid waste to prevent backups and extend system life.",
+  "fullDescription": "## What Is Septic Tank Pumping?\n\nSeptic tank pumping is the process of removing accumulated solids (sludge and scum) from your septic tank using a vacuum truck. Over time, these solids build up and reduce the tank's effective capacity. If not pumped regularly, solids can overflow into the drainfield, causing system failure and costly repairs.\n\n## Why You Need Regular Pumping\n\n- **Prevent backups:** Full tanks can cause sewage backups into your home\n- **Extend system life:** Regular pumping can add 10-20 years to your system\n- **Avoid drainfield damage:** Solids in the drainfield are expensive to fix\n- **Maintain health standards:** Proper maintenance prevents groundwater contamination\n\n## How It Works\n\n1. Locate the tank access port (we can help if you don't know where it is)\n2. Pump out all liquids and solids using a vacuum truck\n3. Inspect tank condition and baffles\n4. Rinse and backflush if needed\n5. Document service for your records",
+  "metaDescription": "Professional septic tank pumping services. Learn what it is, how often to pump, average costs, and how to find a trusted contractor near you.",
+  "faqs": [
+    {
+      "question": "How often should I pump my septic tank?",
+      "answer": "Most septic tanks should be pumped every 3–5 years, depending on household size, tank capacity, and water usage. Larger households or smaller tanks may need more frequent pumping."
+    },
+    {
+      "question": "How much does septic tank pumping cost?",
+      "answer": "Average cost ranges from $300–$600, depending on tank size, location, and accessibility. Tanks larger than 1,500 gallons or in hard-to-reach locations may cost more."
+    },
+    {
+      "question": "What happens if I don't pump my septic tank?",
+      "answer": "If not pumped regularly, solids can overflow into the drainfield, causing clogs, backups, and system failure. Repairs can cost $5,000–$20,000 or more."
+    },
+    {
+      "question": "Can I pump my septic tank myself?",
+      "answer": "No. Septic tank pumping requires specialized vacuum equipment and proper disposal of waste at approved facilities. It's also dangerous due to toxic gases. Always hire a licensed professional."
+    }
+  ],
+  "relatedServices": [
+    "septic-tank-cleaning",
+    "septic-inspection",
+    "drainfield-repair",
+    "septic-tank-locating"
+  ],
+  "averageCost": {
+    "min": 300,
+    "max": 600,
+    "unit": "per service"
+  },
+  "schema": {
+    "serviceType": "Septic Tank Pumping",
+    "category": "Maintenance"
+  }
+}
+

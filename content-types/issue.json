@@ -1,0 +1,234 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Issue Schema",
+  "description": "Front matter schema for issue/symptom pages (/issues/{slug}.mdx)",
+  "type": "object",
+  "required": ["title", "slug", "symptoms", "metaDescription", "publishedDate"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Issue title (usually a question, 40-60 characters)",
+      "minLength": 20,
+      "maxLength": 80,
+      "examples": [
+        "Why Are My Drains Gurgling?",
+        "Slow Draining Sinks: Causes & Solutions",
+        "Sewage Backup in House: What to Do"
+      ]
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-friendly slug",
+      "pattern": "^[a-z0-9-]+$",
+      "examples": ["drains-gurgling", "slow-draining-sinks", "sewage-backup"]
+    },
+    "symptoms": {
+      "type": "array",
+      "description": "List of symptoms/signs (3-8 bullet points)",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2,
+      "maxItems": 10,
+      "examples": [
+        [
+          "Gurgling sounds when flushing toilet or running water",
+          "Slow draining sinks or tubs",
+          "Bubbles in toilet bowl",
+          "Sewage odors near drains"
+        ]
+      ]
+    },
+    "causes": {
+      "type": "array",
+      "description": "List of likely causes (3-6 items)",
+      "items": {
+        "type": "object",
+        "required": ["cause", "description"],
+        "properties": {
+          "cause": {
+            "type": "string",
+            "description": "Cause name (short)",
+            "examples": ["Full septic tank", "Clogged vent pipe"]
+          },
+          "description": {
+            "type": "string",
+            "description": "Explanation (1-2 sentences)",
+            "examples": [
+              "When the septic tank is full, air can't escape properly, causing gurgling sounds in drains."
+            ]
+          },
+          "likelihood": {
+            "type": "string",
+            "enum": ["common", "moderate", "rare"],
+            "description": "How common this cause is"
+          }
+        }
+      },
+      "minItems": 2,
+      "maxItems": 8
+    },
+    "solutions": {
+      "type": "array",
+      "description": "Recommended solutions (3-6 items, ordered by priority)",
+      "items": {
+        "type": "object",
+        "required": ["solution", "description"],
+        "properties": {
+          "solution": {
+            "type": "string",
+            "description": "Solution name (short, action-oriented)",
+            "examples": ["Pump your septic tank", "Clear vent pipe"]
+          },
+          "description": {
+            "type": "string",
+            "description": "Explanation (1-3 sentences)",
+            "examples": [
+              "If your tank hasn't been pumped in 3+ years, schedule a pumping service immediately. This resolves most gurgling drain issues."
+            ]
+          },
+          "urgency": {
+            "type": "string",
+            "enum": ["immediate", "soon", "routine"],
+            "description": "How urgent this solution is"
+          },
+          "diy": {
+            "type": "boolean",
+            "description": "Can homeowner do this themselves?",
+            "default": false
+          }
+        }
+      },
+      "minItems": 2,
+      "maxItems": 8
+    },
+    "relatedServices": {
+      "type": "array",
+      "description": "Service slugs that can help resolve this issue",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "minItems": 1,
+      "maxItems": 6,
+      "examples": [
+        ["septic-tank-pumping", "camera-inspection", "drainfield-repair"]
+      ]
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "emergency"],
+      "description": "Issue severity level",
+      "examples": ["medium"]
+    },
+    "metaDescription": {
+      "type": "string",
+      "description": "SEO meta description (150-160 characters)",
+      "minLength": 120,
+      "maxLength": 160,
+      "examples": [
+        "Hearing gurgling sounds from your drains? Learn the most common causes (full septic tank, clogged vent, drainfield issues) and what to do next."
+      ]
+    },
+    "ogImage": {
+      "type": "string",
+      "description": "Path to OG image (relative to /public)",
+      "pattern": "^/images/og/.*\\.(png|jpg|jpeg)$",
+      "examples": ["/images/og/drains-gurgling.png"]
+    },
+    "publishedDate": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD)"
+    },
+    "updatedDate": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO 8601 date (YYYY-MM-DD)"
+    },
+    "schema": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["Article", "HowTo"],
+          "default": "Article"
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "title": "Why Are My Drains Gurgling?",
+      "slug": "drains-gurgling",
+      "symptoms": [
+        "Gurgling sounds when flushing toilet or running water",
+        "Slow draining sinks or tubs",
+        "Bubbles in toilet bowl",
+        "Sewage odors near drains or in yard"
+      ],
+      "causes": [
+        {
+          "cause": "Full septic tank",
+          "description": "When the septic tank is full, air can't escape properly through the vent, causing gurgling sounds as water drains. This is the most common cause.",
+          "likelihood": "common"
+        },
+        {
+          "cause": "Clogged vent pipe",
+          "description": "The plumbing vent allows air to enter the drain system. If blocked by debris, leaves, or a bird's nest, it creates negative pressure that causes gurgling.",
+          "likelihood": "moderate"
+        },
+        {
+          "cause": "Drainfield problems",
+          "description": "A failing drainfield can't absorb effluent properly, causing backups and gurgling. This often accompanies wet spots in the yard or sewage odors.",
+          "likelihood": "moderate"
+        },
+        {
+          "cause": "Blocked drain line",
+          "description": "Tree roots, grease buildup, or foreign objects can partially block the drain line between your house and septic tank.",
+          "likelihood": "moderate"
+        }
+      ],
+      "solutions": [
+        {
+          "solution": "Pump your septic tank",
+          "description": "If your tank hasn't been pumped in 3+ years, schedule a pumping service immediately. This resolves most gurgling drain issues within hours.",
+          "urgency": "soon",
+          "diy": false
+        },
+        {
+          "solution": "Inspect and clear vent pipe",
+          "description": "Check your roof vent for blockages. You can clear debris yourself if safe to access, or hire a plumber. This is a quick, inexpensive fix.",
+          "urgency": "soon",
+          "diy": true
+        },
+        {
+          "solution": "Camera inspection",
+          "description": "If pumping doesn't resolve the issue, schedule a camera inspection to identify blockages, root intrusion, or drainfield problems.",
+          "urgency": "routine",
+          "diy": false
+        },
+        {
+          "solution": "Drainfield repair or replacement",
+          "description": "If the drainfield is failing, you may need repair or full replacement. This is expensive ($3,000-$15,000) but necessary to restore system function.",
+          "urgency": "soon",
+          "diy": false
+        }
+      ],
+      "relatedServices": [
+        "septic-tank-pumping",
+        "camera-inspection",
+        "drainfield-repair",
+        "septic-inspection"
+      ],
+      "severity": "medium",
+      "metaDescription": "Hearing gurgling sounds from your drains? Learn the most common causes (full septic tank, clogged vent, drainfield issues) and what to do next.",
+      "ogImage": "/images/og/drains-gurgling.png",
+      "publishedDate": "2025-01-15",
+      "updatedDate": "2025-01-15",
+      "schema": {
+        "type": "Article"
+      }
+    }
+  ]
+}

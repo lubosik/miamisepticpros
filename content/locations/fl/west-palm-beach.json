@@ -1,0 +1,27 @@
+{
+  "city": "West Palm Beach",
+  "state": "Florida",
+  "stateCode": "FL",
+  "slug": "west-palm-beach",
+  "county": "Palm Beach County",
+  "population": 117415,
+  "availableServices": [
+    "septic-tank-pumping",
+    "septic-tank-cleaning",
+    "septic-inspection",
+    "real-estate-septic-inspection",
+    "septic-tank-repair",
+    "emergency-pumping",
+    "drainfield-repair",
+    "drainfield-replacement",
+    "septic-installation",
+    "riser-installation",
+    "baffle-replacement",
+    "septic-tank-locating",
+    "camera-inspection",
+    "lift-station-service",
+    "septic-system-maintenance"
+  ],
+  "metaDescription": "Find trusted septic pros in West Palm Beach, FL. Get free quotes for pumping, inspection, repair, drainfield work, and emergency service. Local experts."
+}
+
