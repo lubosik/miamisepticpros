@@ -19,8 +19,8 @@ export function generateBreadcrumbSchema(items: BreadcrumbItem[]) {
 export function generateArticleSchema({
   headline,
   description,
-  author = 'SepticTankQuoteHub',
-  publisher = 'SepticTankQuoteHub',
+  author = 'Miami Septic Pros',
+  publisher = 'Miami Septic Pros',
   datePublished,
   dateModified,
   image,
@@ -35,7 +35,7 @@ export function generateArticleSchema({
   image?: string
   url: string
 }) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
   const imageUrl = image ? (image.startsWith('http') ? image : `${siteUrl}${image}`) : undefined
 
   return {
@@ -49,7 +49,7 @@ export function generateArticleSchema({
     },
     publisher: {
       '@type': 'Organization',
-      name: publisher,
+      name: publisher === 'SepticTankQuoteHub' ? 'Miami Septic Pros' : publisher,
       logo: {
         '@type': 'ImageObject',
         url: `${siteUrl}/logo.png`,
@@ -83,7 +83,7 @@ export function generateServiceSchema({
   serviceType: string
   areaServed?: Array<{ '@type': string; name: string; containedIn?: { '@type': string; name: string } }> | string
 }) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
   
   // Default Miami-Dade service area if not provided
   const defaultAreaServed = [
@@ -105,7 +105,7 @@ export function generateServiceSchema({
     serviceType,
     provider: {
       '@type': 'Organization',
-      name: 'SepticTankQuoteHub',
+      name: 'Miami Septic Pros',
       url: siteUrl,
     },
     areaServed: typeof resolvedAreaServed === 'string'
@@ -155,7 +155,7 @@ export function generateHowToSchema({
 }
 
 export function generateItemListSchema(items: Array<{ name: string; url: string }>) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
   
   return {
     '@context': 'https://schema.org',
@@ -170,15 +170,15 @@ export function generateItemListSchema(items: Array<{ name: string; url: string 
 }
 
 export function generateOrganizationSchema() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
-  
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'SepticTankQuoteHub',
+    name: 'Miami Septic Pros',
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
-    description: 'Our licensed technicians handle septic services in Miami-Dade & South Florida. Transparent estimates.',
+    description: 'Licensed septic service technicians serving Miami-Dade County. Professional pumping, cleaning, repairs, and installations.',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
@@ -188,14 +188,12 @@ export function generateOrganizationSchema() {
 }
 
 export function generateLocalBusinessSchema() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
 
-  // TODO: Add actual Miami address when available
-  // Current address fields are placeholders
   return {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'Plumber'],
-    name: 'SepticTankQuoteHub',
+    name: 'Miami Septic Pros',
     url: siteUrl,
     address: {
       '@type': 'PostalAddress',

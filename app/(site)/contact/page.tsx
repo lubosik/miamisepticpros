@@ -3,17 +3,17 @@ import SchemaJSON from '@/components/SchemaJSON'
 import { generateBreadcrumbSchema, renderLocalBusiness } from '@/lib/seo/schemaGenerators'
 
 export async function generateMetadata() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
 
   return generateMeta({
-    title: 'Contact Us — Septic Pros Miami | Get Your Free Quote',
-    description: 'Reach out to our licensed septic service team in Miami. Call us for immediate assistance or fill out our contact form for a free estimate.',
+    title: 'Contact Miami Septic Pros — Get Your Free Quote Today',
+    description: 'Reach out to our licensed septic service team in Miami-Dade County. Call us for immediate assistance or request a free estimate online.',
     canonical: '/contact/',
   })
 }
 
 export default function ContactPage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
 
   const localBusinessSchema = renderLocalBusiness()
   const breadcrumbSchema = generateBreadcrumbSchema([
@@ -30,10 +30,10 @@ export default function ContactPage() {
         {/* Page Header */}
         <section className="text-center mb-12">
           <h1 className="text-h1 font-serif-headings font-bold text-primary-navy mb-6">
-            Contact Septic Pros Miami
+            Contact Miami Septic Pros
           </h1>
           <p className="text-body-lg text-body-text max-w-2xl mx-auto">
-            We're here to help with all your septic service needs. Reach out today for fast, reliable service across Miami-Dade and neighboring counties.
+            We're here to help with all your septic service needs. Reach out today for fast, reliable service across Miami-Dade County.
           </p>
         </section>
 
@@ -49,10 +49,10 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-h4 font-semibold text-charcoal mb-2">Phone</h3>
                   <a
-                    href="tel:"
+                    href="tel:+13055550100"
                     className="text-body-lg text-accent-green hover:text-accent-green-hover"
                   >
-                    [Phone Number TBD]
+                    +1 (305) 555-0100
                   </a>
                   <p className="text-small text-muted-text mt-1">
                     Available Monday-Saturday 8am-6pm, Sunday 9am-3pm
@@ -62,20 +62,28 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-h4 font-semibold text-charcoal mb-2">Email</h3>
                   <a
-                    href="mailto:"
+                    href="mailto:info@miamisepticpros.com"
                     className="text-body text-accent-green hover:text-accent-green-hover"
                   >
-                    [Email TBD]
+                    info@miamisepticpros.com
                   </a>
+                </div>
+
+                <div>
+                  <h3 className="text-h4 font-semibold text-charcoal mb-2">Address</h3>
+                  <p className="text-body text-body-text">
+                    55 SW 9th ST APT 3806<br />
+                    Miami, FL 33130
+                  </p>
                 </div>
 
                 <div>
                   <h3 className="text-h4 font-semibold text-charcoal mb-2">Service Area</h3>
                   <p className="text-body text-body-text">
-                    Miami-Dade County, Broward County, and Palm Beach County
+                    Miami-Dade County
                   </p>
                   <p className="text-small text-muted-text mt-1">
-                    Serving Miami, Miami Beach, Coral Gables, Hialeah, Doral, Homestead, and surrounding areas
+                    Serving Miami, Coral Gables, Kendall, Doral, Hialeah, Aventura, Homestead, and surrounding areas
                   </p>
                 </div>
               </div>
@@ -108,18 +116,15 @@ export default function ContactPage() {
             </h2>
             <div className="rounded-md overflow-hidden shadow-md">
               <iframe
-                src="https://www.google.com/maps?q=Miami,FL&output=embed"
+                src="https://www.google.com/maps?q=55+SW+9th+ST+APT+3806+Miami+FL+33130&output=embed"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Septic Pros Miami Location"
+                title="Miami Septic Pros Location"
               />
             </div>
-            <p className="text-small text-muted-text mt-2">
-              Map placeholder - will be updated with exact address once NAP is finalized
-            </p>
           </section>
         </div>
 
@@ -132,10 +137,10 @@ export default function ContactPage() {
             We offer 24/7 emergency septic service for urgent situations like backups, overflows, and system failures. Call us now for immediate assistance.
           </p>
           <a
-            href="tel:"
+            href="tel:+13055550100"
             className="inline-block bg-primary-navy text-white px-8 py-4 rounded-sm font-sans-ui font-semibold hover:opacity-90 transition-opacity shadow-md"
           >
-            Call for Emergency Service
+            Call +1 (305) 555-0100 for Emergency Service
           </a>
         </section>
       </div>

@@ -71,7 +71,7 @@ export default function SiteLayout({
                 {localBusinessData.name}
               </h3>
               <p className="text-body text-body-text mb-4">
-                Licensed septic service company serving Miami-Dade, Broward, and Palm Beach Counties. Professional pumping, cleaning, installation, and repairs.
+                Licensed septic service company serving Miami-Dade County. Professional pumping, cleaning, installation, and repairs for Miami, Coral Gables, Kendall, Doral, Hialeah, Aventura, and Homestead.
               </p>
               {phone && (
                 <a
@@ -122,9 +122,13 @@ export default function SiteLayout({
                 {serviceArea} and surrounding communities
               </p>
               <ul className="text-small text-muted-text space-y-1">
-                <li>Miami-Dade County</li>
-                <li>Broward County</li>
-                <li>Palm Beach County</li>
+                <li>Miami</li>
+                <li>Coral Gables</li>
+                <li>Kendall</li>
+                <li>Doral</li>
+                <li>Hialeah</li>
+                <li>Aventura</li>
+                <li>Homestead</li>
               </ul>
             </div>
           </div>

@@ -5,17 +5,17 @@ import LocationCard from '@/components/LocationCard'
 import { generateBreadcrumbSchema, generateOrganizationSchema, generateItemListSchema, renderLocalBusiness } from '@/lib/seo/schemaGenerators'
 
 export async function generateMetadata() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
-  
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
+
   return generateMeta({
-    title: 'Miami Septic Services — Pumping, Cleaning, Installs & Emergency Support | SepticTankQuoteHub',
-    description: 'Our licensed technicians serve Miami-Dade and neighboring areas. Get clear, upfront estimates for pumping, cleaning, inspection, repair, and more.',
+    title: 'Miami Septic Pros — Expert Septic Services in Miami-Dade County',
+    description: 'Licensed septic technicians serving Miami, Coral Gables, Kendall, Doral, and all of Miami-Dade. Professional pumping, cleaning, repairs, and installations.',
     canonical: '/',
   })
 }
 
 export default function HomePage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
 
   // Services data - will be loaded from JSON in Phase 4
   const services = [
@@ -76,10 +76,10 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="text-center mb-20">
           <h1 className="text-h1 font-serif-headings font-bold text-primary-navy mb-6">
-            Miami Septic Services — Pumping, Cleaning, Installs & Emergency Support
+            Miami Septic Pros — Professional Septic Services in Miami-Dade County
           </h1>
           <p className="text-body-lg text-body-text mb-8 max-w-2xl mx-auto">
-            Licensed technicians, rapid scheduling, and transparent estimates. Serving Miami-Dade and nearby Broward & Palm Beach.
+            Licensed septic technicians serving Miami, Coral Gables, Kendall, Doral, Hialeah, Aventura, and Homestead. Expert pumping, cleaning, repairs, and installations.
           </p>
           {/* Search placeholder - non-functional for now */}
           <div className="max-w-xl mx-auto">

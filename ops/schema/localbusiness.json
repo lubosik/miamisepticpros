@@ -1,29 +1,28 @@
 {
   "@context": "https://schema.org",
   "@type": ["LocalBusiness","Plumber"],
-  "name": "Septic Pros Miami",
+  "name": "Miami Septic Pros",
   "url": "https://example.com",
-  "telephone": "",
-  "email": "",
+  "telephone": "+1-305-555-0100",
+  "email": "info@miamisepticpros.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "",
+    "streetAddress": "55 SW 9th ST APT 3806",
     "addressLocality": "Miami",
     "addressRegion": "FL",
-    "postalCode": "",
+    "postalCode": "33130",
     "addressCountry": "US"
   },
   "geo": {"@type":"GeoCoordinates","latitude":25.7617,"longitude":-80.1918},
   "areaServed": [
     {"@type":"City","name":"Miami"},
-    {"@type":"City","name":"Miami Beach"},
     {"@type":"City","name":"Coral Gables"},
-    {"@type":"City","name":"Hialeah"},
+    {"@type":"City","name":"Kendall"},
     {"@type":"City","name":"Doral"},
+    {"@type":"City","name":"Hialeah"},
+    {"@type":"City","name":"Aventura"},
     {"@type":"City","name":"Homestead"},
-    {"@type":"County","name":"Miami-Dade County"},
-    {"@type":"County","name":"Broward County"},
-    {"@type":"County","name":"Palm Beach County"}
+    {"@type":"County","name":"Miami-Dade County"}
   ],
   "openingHoursSpecification": [
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"18:00"},
