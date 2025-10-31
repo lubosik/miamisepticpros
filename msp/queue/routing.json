@@ -1,8 +1,15 @@
 {
-  "version": "1.0",
+  "version": "2.0",
+  "brand": "Miami Septic Pros",
   "base_url": "https://miamisepticpros.com",
   "paths": {
     "hub": "/miami/services/",
+    "category_hubs": {
+      "primary": "/miami/services/septic-system-service/",
+      "contractor": "/miami/services/septic-system-contractor/",
+      "drainage": "/miami/services/drainage-contractor/",
+      "sewage": "/miami/services/sewage-treatment-service/"
+    },
     "service_path_pattern": "/miami/services/{service_slug}/",
     "images_path": "/public/images/og/",
     "briefs_path": "/msp/briefs/",
@@ -12,11 +19,16 @@
     "slug_format": "kebab-case",
     "trailing_slash": true,
     "canonical_pattern": "https://miamisepticpros.com/miami/services/{service_slug}/",
+    "category_canonical_pattern": "https://miamisepticpros.com/miami/services/{category_slug}/",
     "og_image_pattern": "/images/og/{service_slug}.png"
   },
   "internal_link_targets": {
     "home": "/",
     "services_hub": "/miami/services/",
+    "category_primary": "/miami/services/septic-system-service/",
+    "category_contractor": "/miami/services/septic-system-contractor/",
+    "category_drainage": "/miami/services/drainage-contractor/",
+    "category_sewage": "/miami/services/sewage-treatment-service/",
     "miami_location": "/locations/fl/miami/",
     "contact": "/contact/",
     "quote": "/quote/",
@@ -24,13 +36,16 @@
   },
   "sitemap_config": {
     "include_in_sitemap": true,
-    "priority": 0.8,
+    "service_priority": 0.8,
+    "category_priority": 0.9,
     "changefreq": "monthly"
   },
   "content_output": {
     "format": "mdx",
-    "destination": "/content/services/",
-    "filename_pattern": "{service_slug}.mdx"
+    "service_destination": "/pages/miami/services/",
+    "category_destination": "/pages/miami/services/{category_slug}/",
+    "filename_pattern": "{service_slug}.mdx",
+    "category_filename": "index.mdx"
   },
   "validation": {
     "required_sections": [
@@ -45,6 +60,11 @@
     "max_word_count": 3000,
     "min_internal_links": 3,
     "min_external_citations": 3,
-    "min_faq_items": 5
+    "min_faq_items": 5,
+    "required_schema": [
+      "faq",
+      "service",
+      "breadcrumb"
+    ]
   }
 }

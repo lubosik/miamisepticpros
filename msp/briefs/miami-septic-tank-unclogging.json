@@ -1,0 +1,82 @@
+{
+  "service": "Septic Tank Unclogging",
+  "slug": "septic-tank-unclogging",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic tank clog miami",
+  "support_kws": [
+    "septic tank clog miami",
+    "septic unclogging miami",
+    "septic drain cleaning miami",
+    "septic tank blockage miami",
+    "septic drain unclogging miami",
+    "clogged septic tank miami",
+    "septic tank drain cleaning miami",
+    "septic backup miami"
+  ],
+  "vol": 390,
+  "KD": 32,
+  "PAA": [
+    "What causes septic tank clogs?",
+    "How much does septic tank unclogging cost in Miami?",
+    "Can I unclog my septic tank myself?",
+    "What's the difference between septic unclogging and pumping?",
+    "How do professionals unclog septic tanks?",
+    "How long does septic tank unclogging take?",
+    "When do I need septic tank unclogging vs cleaning?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County septic system maintenance requirements and licensed contractor requirements"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH requirements for septic contractors performing unclogging and drain cleaning services"
+    }
+  ],
+  "linkable_points": [
+    "Common causes of septic clogs include tree roots, grease buildup, non-flushable items, excessive toilet paper, and solid waste accumulation in pipes and tank",
+    "Professional unclogging uses hydro jetting, mechanical augers, video inspection, and specialized tools to clear blockages without damaging pipes",
+    "Unclogging costs typically range from $200-$600 in Miami-Dade, depending on blockage location, severity, and equipment needed",
+    "Miami's high water table and heavy rainfall can cause soil and debris to enter pipes, creating clogs that require professional removal",
+    "Tree roots are a major cause of septic clogs in Miami due to year-round growing season and moisture-seeking roots",
+    "Hydro jetting uses high-pressure water to clear blockages and clean pipe walls, effective for grease and debris buildup",
+    "Video inspection helps identify exact clog location and cause, allowing targeted treatment and preventing unnecessary work",
+    "Prevention through regular pumping, avoiding grease disposal, and proper waste disposal can reduce clog frequency significantly"
+  ],
+  "competitors": [
+    {
+      "url": "www.alligatorseptic.com",
+      "notes": "Comprehensive septic pumping, unclogging, repair, and drain cleaning services in Miami"
+    },
+    {
+      "url": "www.championseptictank.com",
+      "notes": "Same-day and 24/7 septic tank unclogging and drain cleaning, highly rated"
+    },
+    {
+      "url": "www.abetteraimseptic.com",
+      "notes": "25+ years experience, unclogging, cleaning, drain hydro jetting services"
+    }
+  ],
+  "outline": [
+    "Intro - What septic unclogging is, common causes of clogs, why Miami properties need it",
+    "Fast Facts - 8 linkable points about causes, methods, costs, prevention",
+    "Costs - Unclogging pricing factors, typical ranges, what affects cost",
+    "What's Included - Professional unclogging methods, equipment, process, timeline",
+    "Causes of Clogs - Common causes, Miami-specific factors, prevention tips",
+    "Methods - Hydro jetting, mechanical augers, video inspection, professional techniques",
+    "When Unclogging vs Other Services - Unclogging vs pumping vs cleaning, when each is needed",
+    "Miami Environment - How local conditions affect clog frequency, tree roots, heavy rain, high water table",
+    "Related Services - Links to pumping, cleaning, inspection, repair services",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Unclogging costs vary based on blockage location, severity, equipment needed, and access difficulty.",
+  "local_factors": [
+    "Miami's year-round growing season causes tree roots to seek moisture year-round, leading to more root-related clogs",
+    "Heavy rainfall and high water table can cause soil and debris to enter pipes, creating blockages",
+    "Hurricane flooding introduces debris and sediment that can clog pipes and tank components",
+    "Coastal saltwater areas may experience different root growth patterns affecting pipe integrity"
+  ]
+}
+

@@ -1,0 +1,72 @@
+{
+  "service": "Septic Baffle Replacement",
+  "slug": "septic-baffle-replacement",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic baffle repair miami",
+  "support_kws": [
+    "septic baffle repair miami",
+    "septic baffle replacement miami",
+    "septic tank baffle repair miami",
+    "septic baffle replacement miami dade",
+    "septic baffle cost miami",
+    "baffle replacement septic tank miami"
+  ],
+  "vol": 180,
+  "KD": 22,
+  "PAA": [
+    "What is a septic tank baffle?",
+    "How much does septic baffle replacement cost in Miami?",
+    "How do I know if my septic baffle is broken?",
+    "What happens if septic baffle is broken?",
+    "Do I need permits for baffle replacement?",
+    "How long does baffle replacement take?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County septic system modification and repair requirements"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH requirements for septic system repairs and modifications"
+    }
+  ],
+  "linkable_points": [
+    "Septic tank baffles are internal devices at the inlet and outlet that control wastewater flow and prevent solids from entering the drain field",
+    "Outlet baffles are the most critical component - if they fail, solids flow directly into the drain field causing expensive damage",
+    "Older systems often have concrete baffles that deteriorate over time, while newer systems use durable PVC baffles",
+    "Baffle replacement typically costs $200-$600 in Miami-Dade, depending on baffle type, access difficulty, and whether both inlet and outlet need replacement",
+    "Signs of baffle problems include slow drains, backups, premature drain field failure, and solids appearing in effluent areas",
+    "Proper baffle function prevents blockages, extends system life, and protects the drain field from costly damage",
+    "Miami's high water table and heavy rainfall make properly functioning baffles especially important for system protection",
+    "Baffle inspection and replacement should be done during routine septic maintenance, typically every 3-5 years"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic service providers",
+      "notes": "Most local competitors focus on general septic services rather than specific baffle replacement pages"
+    }
+  ],
+  "outline": [
+    "Intro - What baffles are, why they matter, critical role in septic function",
+    "Fast Facts - 8 linkable points about baffles, costs, signs, Miami importance",
+    "Costs - Baffle replacement pricing factors, typical ranges, what affects costs",
+    "Permits - Miami-Dade requirements for baffle replacement and repairs",
+    "What's Included - Replacement process, materials used, timeline, inspection",
+    "Signs of Problems - Warning signs that indicate baffle issues",
+    "Benefits - Why proper baffles protect your system and save money",
+    "When Replacement is Needed - Older systems, deterioration, damage scenarios",
+    "Miami Environment - How local conditions make baffles especially critical",
+    "Related Services - Links to inspection, pumping, cleaning services",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary based on baffle type (concrete vs PVC), access difficulty, and whether one or both baffles need replacement.",
+  "local_factors": [
+    "Miami's high water table means baffle failure can cause more rapid drain field damage",
+    "Heavy rainfall and storm events put extra stress on baffles, making proper maintenance critical",
+    "Older homes in Miami-Dade often have deteriorating concrete baffles requiring replacement",
+    "Coastal saltwater intrusion can accelerate baffle deterioration in some areas"
+  ]
+}
+

@@ -1,0 +1,72 @@
+{
+  "service": "Drain Field Repair",
+  "slug": "drain-field-repair",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "drain field repair miami",
+  "support_kws": [
+    "drain field repair miami",
+    "septic drain field repair miami",
+    "leach field repair miami",
+    "drain field replacement miami",
+    "septic field repair miami dade",
+    "drain field repair cost miami"
+  ],
+  "vol": 320,
+  "KD": 28,
+  "PAA": [
+    "How much does drain field repair cost in Miami?",
+    "What are signs of drain field failure?",
+    "Can a drain field be repaired or does it need replacement?",
+    "How long does drain field repair take?",
+    "Do I need permits for drain field repair?",
+    "What causes drain field failure?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County drain field repair and replacement requirements"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH requirements for drain field modifications and repairs"
+    }
+  ],
+  "linkable_points": [
+    "Drain fields (also called leach fields) are underground systems of perforated pipes that distribute treated wastewater from septic tanks into surrounding soil for final treatment and disposal",
+    "Drain field repair typically costs $2,000-$8,000 in Miami-Dade, while full replacement costs $5,000-$15,000+ depending on system size, soil conditions, and access difficulty",
+    "Signs of drain field failure include slow drains, wet spots or standing water in yard, foul odors, unusually green grass over drain field, and sewage backups in home",
+    "Repair methods include aeration treatment to restore soil permeability, pipe cleaning/jetting, and partial field restoration for localized problems",
+    "Miami's high water table and heavy clay soils make drain field problems more common and repair more challenging than in other areas",
+    "When drain fields fail completely, replacement is usually required rather than repair, making early intervention and repair critical for cost savings",
+    "Drain field work requires permits from Miami-Dade County and Florida DOH, with soil testing and system design often required before approval",
+    "Miami-Dade County prohibits conventional drain fields for new systems (since 2023), requiring advanced treatment systems that are more expensive but more reliable"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic service providers",
+      "notes": "Drain field repair is a specialized service offered by most established septic contractors"
+    }
+  ],
+  "outline": [
+    "Intro - What drain fields are, why they fail, repair importance",
+    "Fast Facts - 8 linkable points about drain fields, costs, repair methods, Miami factors",
+    "Costs - Drain field repair and replacement pricing, what affects costs",
+    "Permits - Miami-Dade requirements for drain field work",
+    "What's Included - Repair methods and process, materials, timeline",
+    "Signs of Failure - Warning signs that indicate drain field problems",
+    "Repair vs Replacement - When repair is possible vs when replacement is needed",
+    "Repair Methods - Aeration, pipe work, restoration techniques",
+    "Miami Environment - How local conditions affect drain field repair",
+    "Related Services - Links to inspection, pumping, system maintenance",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary significantly based on repair method, system size, soil conditions, and whether partial repair or full replacement is needed.",
+  "local_factors": [
+    "Miami's high water table means drain fields sit closer to groundwater, making them more prone to saturation and failure",
+    "Heavy clay soils in many Miami areas drain poorly, causing drain fields to fail faster than in sandy soil areas",
+    "Heavy rainfall and storm events can cause rapid drain field saturation, requiring immediate repair or replacement",
+    "Miami-Dade regulations since 2023 require advanced treatment systems for new construction, affecting repair options for older systems"
+  ]
+}
+

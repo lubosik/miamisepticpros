@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "firecrawl-mcp": {
+      "command": "npx",
+      "args": ["-y", "firecrawl-mcp"],
+      "env": {
+        "FIRECRAWL_API_KEY": "fc-78beeb0d99274bb7ad3ed215ae90cd19"
+      }
+    },
+    "dataforseo-mcp": {
+      "command": "node",
+      "args": ["/Users/ghost/dataforseo-mcp-server/index.js"],
+      "env": {
+        "DATAFORSEO_USERNAME": "dp@bizzautomate.io",
+        "DATAFORSEO_API_KEY": "61b58f4a530a0f5b"
+      }
+    }
+  }
+}
+
