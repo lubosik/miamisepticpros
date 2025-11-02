@@ -1,0 +1,72 @@
+{
+  "service": "Holding Tank Installation",
+  "slug": "holding-tank-installation",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "holding tank installation miami",
+  "support_kws": [
+    "holding tank installation miami",
+    "install holding tank miami",
+    "holding tank installation cost miami",
+    "holding tank service miami",
+    "wastewater holding tank miami",
+    "holding tank contractor miami"
+  ],
+  "vol": 180,
+  "KD": 15,
+  "PAA": [
+    "How much does holding tank installation cost?",
+    "What is a holding tank and when is it used?",
+    "How often do holding tanks need pumping?",
+    "What's the difference between holding tanks and septic systems?",
+    "Do holding tanks require permits?",
+    "How long do holding tanks last?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County wastewater system requirements and permitting"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH wastewater system regulations"
+    }
+  ],
+  "linkable_points": [
+    "Holding tanks are watertight containers designed solely to store wastewater without processing or treating it, collecting all household wastewater and holding it until pumped out by professional service",
+    "Holding tank installation in Miami-Dade typically costs $3,000-$8,000 depending on tank size, material type, site conditions, and installation complexity",
+    "Holding tanks require frequent pumping every two weeks or more depending on usage, significantly increasing long-term ownership costs compared to septic systems",
+    "Unlike septic systems, holding tanks have no outlet and do not release wastewater into surrounding soil, functioning purely as storage until manual removal",
+    "Installation process includes site evaluation, permit acquisition from DERM, tank selection and sizing, excavation, tank installation, alarm system installation, and final inspection",
+    "Miami-Dade County requires permits for holding tank installation, professional installation by licensed contractors, regular inspections, and compliance with environmental regulations",
+    "Holding tanks are typically used for temporary housing, properties where septic systems cannot be installed due to soil conditions, construction sites, or areas with restrictive building codes",
+    "Professional installation ensures compliance with Miami-Dade County regulations, proper tank sizing, alarm system function, environmental protection, and long-term reliability"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami wastewater contractors",
+      "notes": "Licensed contractors provide holding tank installation services throughout Miami-Dade County"
+    }
+  ],
+  "outline": [
+    "Intro - What holding tanks are, when used, Miami context",
+    "Fast Facts - 8 linkable points about costs, usage, requirements, pumping frequency",
+    "Costs - Installation pricing, factors affecting costs, long-term costs",
+    "What is a Holding Tank - Definition, how they work, when used",
+    "Holding Tanks vs Septic Systems - Key differences, when to use each",
+    "Installation Process - Step-by-step installation process",
+    "Permits and Requirements - Miami-Dade permits and regulations",
+    "Pumping and Maintenance - Pumping frequency, maintenance requirements",
+    "Professional Installation - Why professional installation matters",
+    "Related Services - Links to pumping, septic installation, system design",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary based on tank size, material type, site accessibility, permit requirements, and installation complexity.",
+  "local_factors": [
+    "Miami-Dade County DERM permit requirements",
+    "High water table may affect installation methods",
+    "Tropical climate requiring durable materials",
+    "Professional installation required for compliance"
+  ]
+}
+

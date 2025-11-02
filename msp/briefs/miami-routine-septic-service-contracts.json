@@ -1,0 +1,71 @@
+{
+  "service": "Routine Septic Service Contracts",
+  "slug": "routine-septic-service-contracts",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic service contract miami",
+  "support_kws": [
+    "septic service contract miami",
+    "septic maintenance contract miami",
+    "septic service plan miami",
+    "annual septic service miami",
+    "septic maintenance agreement miami",
+    "septic service program miami"
+  ],
+  "vol": 160,
+  "KD": 19,
+  "PAA": [
+    "What is included in a septic service contract?",
+    "How much does a septic service contract cost?",
+    "Are septic service contracts worth it?",
+    "How often do septic systems need service?",
+    "What is the difference between contract and one-time service?",
+    "What happens if I cancel a septic service contract?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County septic system maintenance requirements and schedules"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH recommendations for septic system maintenance frequency"
+    }
+  ],
+  "linkable_points": [
+    "Routine septic service contracts typically include annual or bi-annual pumping, inspections, and preventive maintenance to keep systems functioning optimally",
+    "Service contracts in Miami-Dade typically cost $300-$600 per year, depending on service frequency, tank size, and included services",
+    "Contracts provide scheduled maintenance that prevents problems before they occur, reducing likelihood of expensive emergency repairs or drain field replacement",
+    "Service contracts typically include pumping every 2-3 years, annual inspections, minor repairs, priority service scheduling, and discounted emergency services",
+    "Miami's warm climate and high water table may require more frequent service than cooler climates, making contracts especially valuable for preventive care",
+    "Contract customers often receive priority scheduling, discounted rates, and comprehensive system monitoring that catches problems early before they become expensive",
+    "Service contracts can save money long-term by preventing expensive repairs, extending system life, and providing predictable maintenance costs versus unexpected emergency expenses",
+    "Regular contract service ensures compliance with Miami-Dade County maintenance requirements and helps maintain system efficiency in challenging environmental conditions"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic service providers",
+      "notes": "Most established septic contractors offer service contracts with varying levels of included services"
+    }
+  ],
+  "outline": [
+    "Intro - What service contracts are, what they include, benefits",
+    "Fast Facts - 8 linkable points about contracts, costs, benefits, Miami factors",
+    "Costs - Contract pricing, what affects costs, value comparison",
+    "What's Included - Typical contract services (pumping, inspection, maintenance)",
+    "Contract vs One-Time - Benefits of contracts vs individual service calls",
+    "Service Frequency - How often visits are scheduled, Miami-specific needs",
+    "Benefits - Why contracts save money and prevent problems",
+    "Miami Environment - How local conditions make contracts valuable",
+    "Related Services - Links to pumping, inspection, repair services",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary based on service frequency, tank size, included services, and contract terms.",
+  "local_factors": [
+    "Miami's warm climate and high water table may require more frequent service than cooler climates",
+    "Heavy rainfall during wet season can stress systems, making regular maintenance more important",
+    "Miami-Dade County requirements may influence service frequency needs",
+    "Tropical environment conditions make preventive maintenance contracts especially valuable"
+  ]
+}
+

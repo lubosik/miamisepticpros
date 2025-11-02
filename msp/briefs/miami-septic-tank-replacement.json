@@ -1,0 +1,72 @@
+{
+  "service": "Septic Tank Replacement",
+  "slug": "septic-tank-replacement",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic tank replacement miami",
+  "support_kws": [
+    "septic tank replacement miami",
+    "replace septic tank miami",
+    "septic tank replacement cost miami",
+    "new septic tank installation miami",
+    "septic tank replacement service miami",
+    "septic tank replacement contractor miami"
+  ],
+  "vol": 380,
+  "KD": 26,
+  "PAA": [
+    "How much does septic tank replacement cost?",
+    "When do you need to replace a septic tank?",
+    "How long does septic tank replacement take?",
+    "Can you repair a septic tank instead of replacing?",
+    "What are signs you need septic tank replacement?",
+    "Do you need permits to replace a septic tank?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County septic tank replacement requirements and permitting"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH requirements for septic tank replacement"
+    }
+  ],
+  "linkable_points": [
+    "Septic tank replacement in Miami-Dade typically costs $5,000-$15,000 depending on tank size, site access, and whether drain field work is needed",
+    "Complete tank replacement is required when tanks have structural damage, severe cracks, collapsed walls, or are beyond repair, typically when repair costs exceed replacement costs",
+    "Replacement process includes removing old tank, excavation for new tank, installing new tank meeting current standards, reconnecting plumbing, and final inspection",
+    "Miami-Dade County requires permits for complete tank replacement, and new tanks must meet current Type 2, Type 3, or Type 4 system requirements (Type 1 prohibited for replacements)",
+    "Replacement timeline typically takes 1-3 weeks from permit approval through final inspection, depending on tank size, site access, and weather conditions",
+    "Signs indicating replacement needed include persistent leaks, structural damage visible during inspection, repeated repair failures, tank collapse or settling, and age-related deterioration",
+    "Professional replacement ensures compliance with current Miami-Dade regulations, proper installation, environmental protection, and system function for years to come",
+    "Replacement costs are higher than repairs but provide long-term solution, eliminate ongoing problems, and ensure system meets current environmental standards"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic contractors",
+      "notes": "Multiple licensed contractors provide septic tank replacement services throughout Miami-Dade County"
+    }
+  ],
+  "outline": [
+    "Intro - When replacement is needed, importance of proper replacement, Miami context",
+    "Fast Facts - 8 linkable points about replacement costs, process, signs, requirements, timeline",
+    "Costs - Replacement pricing, what affects costs, replacement vs repair comparison",
+    "When Replacement is Needed - Signs indicating replacement vs repair, damage types",
+    "Replacement Process - Step-by-step replacement process from removal to final inspection",
+    "Permits and Requirements - Miami-Dade permits needed, current system type requirements",
+    "Replacement vs Repair - When to replace vs repair, cost comparison, decision factors",
+    "Timeline - How long replacement takes, factors affecting duration",
+    "Professional Replacement - Why professional installation matters, compliance requirements",
+    "Related Services - Links to repair, inspection, drain field services",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary significantly based on tank size, site access, whether drain field work is needed, and current regulatory requirements.",
+  "local_factors": [
+    "Miami-Dade County requires Type 2, Type 3, or Type 4 systems for replacements (Type 1 prohibited)",
+    "High water table may require special considerations during replacement",
+    "Permits and approvals required through DERM",
+    "Current environmental standards must be met for new tank installations"
+  ]
+}
+

@@ -1,0 +1,73 @@
+{
+  "service": "Expansion of Existing Septic Systems",
+  "slug": "expansion-of-existing-septic-systems",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic system expansion miami",
+  "support_kws": [
+    "septic system expansion miami",
+    "expand septic system miami",
+    "septic system expansion cost miami",
+    "expand drain field miami",
+    "add septic capacity miami",
+    "septic system upgrade miami"
+  ],
+  "vol": 110,
+  "KD": 12,
+  "PAA": [
+    "How much does septic system expansion cost?",
+    "When do you need to expand a septic system?",
+    "Can you expand an existing drain field?",
+    "Do you need permits to expand a septic system?",
+    "What's the process for expanding a septic system?",
+    "Is expansion better than replacement?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County requirements for septic system modifications and expansions"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH requirements for septic system expansion and modifications"
+    }
+  ],
+  "linkable_points": [
+    "Septic system expansion in Miami-Dade typically costs $6,000-$15,000 depending on scope, whether drainfield expansion or additional capacity needed, site conditions, and permit requirements",
+    "Expansion needed when existing system capacity insufficient for increased household size, adding bedrooms or bathrooms, increased water usage exceeding system capacity, or drainfield showing signs of overload",
+    "Expansion process includes system evaluation to determine current capacity and needs, site assessment to identify expansion options, permit application for modifications, drainfield expansion or additional lines, connection to existing system, and final inspection",
+    "Miami-Dade County requires permits for all septic system modifications including expansions, with new components meeting current standards including elevation requirements (36 inches above high water table) and setback distances",
+    "Expansion typically takes 2-4 weeks from permit approval through completion, longer if new drainfield location needed or site modifications required to meet current standards",
+    "Expansion vs replacement decision depends on system age, condition of existing components, available space for expansion, cost comparison, and whether expansion can meet increased capacity needs",
+    "Drainfield expansion involves adding additional distribution lines to existing drainfield or installing new drainfield area, requiring proper soil conditions, adequate space, and meeting current installation standards",
+    "Professional expansion ensures compliance with Miami-Dade County regulations, proper capacity calculations, appropriate expansion methods, meeting elevation and setback requirements, and long-term system reliability"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic contractors",
+      "notes": "Licensed contractors provide septic system expansion services throughout Miami-Dade County"
+    }
+  ],
+  "outline": [
+    "Intro - What expansion is, when needed, Miami context",
+    "Fast Facts - 8 linkable points about costs, process, requirements, expansion vs replacement",
+    "Costs - Expansion pricing, factors affecting costs, vs replacement",
+    "When Expansion Needed - Capacity issues, household growth, signs of overload",
+    "Expansion Process - Step-by-step expansion process",
+    "Drainfield Expansion - Adding capacity to drainfield",
+    "Permits and Requirements - Permits needed, Miami-Dade standards",
+    "Expansion vs Replacement - When expansion makes sense vs replacement",
+    "Professional Expansion - Why professional service matters",
+    "Related Services - Links to replacement, maintenance, system design",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Expansion costs vary based on scope, drainfield expansion needed, site conditions, permit requirements, and whether current standards can be met.",
+  "local_factors": [
+    "Miami-Dade County permit requirements for modifications",
+    "Elevation requirements (36 inches above high water table)",
+    "Setback distances from property lines and water bodies",
+    "High water table considerations",
+    "Type 2, 3, or 4 system requirements for modifications"
+  ]
+}
+

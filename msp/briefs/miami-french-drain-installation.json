@@ -1,0 +1,74 @@
+{
+  "service": "French Drain Installation",
+  "slug": "french-drain-installation",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "french drain installation miami",
+  "support_kws": [
+    "french drain installation miami",
+    "french drain miami",
+    "french drain cost miami",
+    "french drain installation cost miami",
+    "drainage solutions miami",
+    "yard drainage miami"
+  ],
+  "vol": 890,
+  "KD": 18,
+  "PAA": [
+    "How much does French drain installation cost?",
+    "What is a French drain?",
+    "How does a French drain work?",
+    "When do you need a French drain?",
+    "Do you need permits for French drain installation?",
+    "How long does French drain installation take?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/",
+      "why": "Miami-Dade County building permits and utility line requirements"
+    },
+    {
+      "url": "Local Miami drainage contractors",
+      "why": "Miami-specific French drain installation costs and practices"
+    }
+  ],
+  "linkable_points": [
+    "French drain installation in Miami typically costs $2,670-$3,848 on average, with exterior drains costing $10-$15 per linear foot including all parts and labor for standard $1,000-$1,500 installations",
+    "French drains are perforated pipes placed in trenches that absorb and direct water flow away from areas susceptible to damage, with exterior French drains in Miami installed 2-3 feet beneath earth to move surface water away from houses",
+    "Labor costs represent 85.7% of total French drain installation expenses compared to 14.3% for materials, with digging through limestone and rocky soil in Miami-Dade significantly increasing labor costs and project timelines",
+    "French drains are needed to prevent expensive foundation repairs, flooding, erosion, mold and mildew, and pest breeding grounds, making them particularly valuable in Miami's tropical climate with heavy seasonal rainfall",
+    "Miami-Dade County typically requires permits for French drain installation, especially for exterior drains, and requires utility line verification before excavation begins to prevent damage to underground infrastructure",
+    "Interior French drains cost substantially more ($40-$100 per linear foot) due to construction complexity and required sump pump additions, while exterior drains range from $10-$65 per linear foot depending on scope",
+    "Miami's high water table requires deeper footing drains (placed at least one foot below surface) rather than shallow drains, and limestone bedrock presents excavation challenges requiring specialized equipment and experienced contractors",
+    "Professional French drain installation ensures proper slope for water flow, compliance with Miami-Dade County requirements, utility line safety, proper installation depth for high water table, and long-term drainage effectiveness"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami drainage contractors",
+      "notes": "Licensed contractors provide French drain installation services throughout Miami-Dade County"
+    }
+  ],
+  "outline": [
+    "Intro - What French drains are, how they work, Miami context",
+    "Fast Facts - 8 linkable points about costs, installation, requirements, Miami-specific factors",
+    "Costs - Installation pricing, factors affecting costs, interior vs exterior",
+    "What is a French drain - Definition, how they work, components",
+    "When Needed - Foundation protection, flooding, erosion, Miami-specific needs",
+    "Installation Process - Step-by-step installation process",
+    "Miami Considerations - High water table, limestone, tropical weather, permits",
+    "Benefits - Advantages over other drainage solutions",
+    "Maintenance - Ongoing maintenance requirements",
+    "Professional Installation - Why professional service matters",
+    "Related Services - Links to yard drainage, septic services",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed drainage contractors. Costs vary based on drain type (interior vs exterior), linear footage, depth requirements, soil conditions (limestone excavation), permits, and additional components like sump pumps.",
+  "local_factors": [
+    "Miami's high water table requiring deeper installation",
+    "Limestone bedrock excavation challenges",
+    "Heavy tropical rainfall and storm season",
+    "Permit requirements for exterior drains",
+    "Utility line verification requirements"
+  ]
+}
+

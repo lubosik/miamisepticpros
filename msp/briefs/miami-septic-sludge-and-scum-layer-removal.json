@@ -1,0 +1,71 @@
+{
+  "service": "Septic Sludge and Scum Layer Removal",
+  "slug": "septic-sludge-and-scum-layer-removal",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic sludge removal miami",
+  "support_kws": [
+    "septic sludge removal miami",
+    "septic scum removal miami",
+    "septic tank sludge removal miami",
+    "septic tank cleaning miami",
+    "deep septic cleaning miami",
+    "septic tank scum removal miami"
+  ],
+  "vol": 170,
+  "KD": 20,
+  "PAA": [
+    "What is septic tank sludge?",
+    "How much does septic sludge removal cost?",
+    "How often should sludge be removed from septic tank?",
+    "What is the difference between pumping and sludge removal?",
+    "Can I remove sludge from my septic tank myself?",
+    "What happens if sludge is not removed?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County septic system maintenance requirements"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH requirements for septic system maintenance"
+    }
+  ],
+  "linkable_points": [
+    "Septic tanks naturally separate waste into three layers: scum (floating), effluent (middle liquid), and sludge (settled solids at bottom)",
+    "Sludge and scum removal typically costs $400-$800 in Miami-Dade, more than regular pumping due to complete cleaning required",
+    "When sludge reaches one-third of tank depth or scum layers become thick, complete removal is needed to prevent system problems",
+    "Complete sludge and scum removal differs from regular pumping by thoroughly cleaning all layers and tank interior, restoring full capacity",
+    "Removing sludge and scum layers prevents solids from entering drain fields, protecting expensive drain field systems from damage",
+    "Miami's high water table and warm climate can accelerate sludge accumulation, making regular removal especially important",
+    "Professional sludge removal uses specialized equipment to break up and remove hardened sludge that standard pumping cannot remove",
+    "Sludge and scum removal should be done every 3-5 years or when layers become excessive, maintaining optimal tank function"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic service providers",
+      "notes": "Most septic contractors offer sludge and scum removal as part of comprehensive cleaning services"
+    }
+  ],
+  "outline": [
+    "Intro - What sludge and scum are, why removal matters, layer formation",
+    "Fast Facts - 8 linkable points about layers, removal, costs, Miami factors",
+    "Costs - Sludge and scum removal pricing, what affects costs",
+    "What's Included - Removal process, equipment, timeline",
+    "Pumping vs Complete Removal - Difference between regular pumping and deep cleaning",
+    "When Removal is Needed - Signs that complete removal is required",
+    "Removal Process - Step-by-step how professionals remove layers",
+    "Miami Environment - How local conditions affect sludge and scum accumulation",
+    "Related Services - Links to pumping, inspection, cleaning services",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary based on tank size, layer thickness, and equipment needed for complete removal.",
+  "local_factors": [
+    "Miami's warm climate accelerates bacterial activity that can increase sludge accumulation rates",
+    "High water table can affect how quickly sludge builds up and when removal is needed",
+    "Heavy rainfall during wet season can stress systems and increase sludge production",
+    "Tropical vegetation and organic matter can contribute to scum layer buildup"
+  ]
+}
+

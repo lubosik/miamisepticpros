@@ -1,0 +1,71 @@
+{
+  "service": "Septic Tank Camera Inspections",
+  "slug": "septic-tank-camera-inspections",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic camera inspection miami",
+  "support_kws": [
+    "septic camera inspection miami",
+    "septic tank camera inspection miami",
+    "camera inspection septic miami",
+    "video inspection septic miami",
+    "septic camera service miami",
+    "drain field camera inspection miami"
+  ],
+  "vol": 180,
+  "KD": 21,
+  "PAA": [
+    "What is a septic tank camera inspection?",
+    "How much does a septic camera inspection cost?",
+    "What can a camera inspection show about my septic tank?",
+    "When do you need a camera inspection vs regular inspection?",
+    "How long does a camera inspection take?",
+    "Can camera inspections find drain field problems?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County septic system inspection requirements and standards"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH requirements for septic system diagnostics and inspections"
+    }
+  ],
+  "linkable_points": [
+    "Camera inspections use specialized waterproof cameras inserted into septic tanks and drain lines to visually inspect interior conditions without excavation",
+    "Camera inspections typically cost $200-$500 in Miami-Dade, depending on system complexity and inspection scope",
+    "Camera inspections reveal cracks, root intrusion, blockages, structural damage, and other problems not visible during surface inspections",
+    "Camera inspections are especially valuable for diagnosing persistent problems, evaluating repair needs, and planning system maintenance or replacement",
+    "Drain field camera inspections can identify pipe blockages, root intrusion, and structural problems that cause drain field failure",
+    "Camera inspections provide visual documentation of system condition that helps with repair planning and property transaction documentation",
+    "Miami's high water table and soil conditions can make camera inspections more useful than surface inspections for identifying hidden problems",
+    "Camera inspections are recommended when visual inspections don't reveal causes of system problems or when detailed condition assessment is needed"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic service providers",
+      "notes": "Most established septic contractors offer camera inspection services for diagnostic purposes"
+    }
+  ],
+  "outline": [
+    "Intro - What camera inspections are, why they're valuable, when needed",
+    "Fast Facts - 8 linkable points about camera inspections, costs, benefits, Miami factors",
+    "Costs - Camera inspection pricing, what affects costs",
+    "What Camera Inspections Show - Problems cameras can identify",
+    "When Camera Inspections Are Needed - Scenarios requiring camera work",
+    "Tank vs Drain Field - Different camera inspection types",
+    "Benefits - Why camera inspections save money and improve diagnosis",
+    "Miami Environment - How local conditions affect camera inspection usefulness",
+    "Related Services - Links to repairs, pumping, inspection services",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary based on system complexity, inspection scope, and equipment needed.",
+  "local_factors": [
+    "Miami's high water table can make camera inspections more valuable for identifying problems not visible from surface",
+    "Sandy soils and limestone bedrock may affect camera clarity or access in some situations",
+    "Heavy vegetation and landscaping can obscure surface inspection, making cameras more useful",
+    "Older systems with unknown history benefit especially from camera inspections to assess condition"
+  ]
+}
+

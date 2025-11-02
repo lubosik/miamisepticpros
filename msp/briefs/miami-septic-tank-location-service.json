@@ -1,0 +1,71 @@
+{
+  "service": "Septic Tank Location Service",
+  "slug": "septic-tank-location-service",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "find septic tank miami",
+  "support_kws": [
+    "find septic tank miami",
+    "septic tank location miami",
+    "locate septic tank miami",
+    "septic tank finder miami",
+    "septic tank locating service miami",
+    "where is my septic tank miami"
+  ],
+  "vol": 210,
+  "KD": 19,
+  "PAA": [
+    "How do I find my septic tank?",
+    "How much does it cost to locate a septic tank?",
+    "Can I locate my septic tank myself?",
+    "How do professionals locate septic tanks?",
+    "Why do I need to know where my septic tank is?",
+    "What tools are used to find septic tanks?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County septic system records and permits"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH records that may contain septic tank location information"
+    }
+  ],
+  "linkable_points": [
+    "Professional septic tank location services use electronic locators, ground-penetrating radar, and specialized probing equipment to find buried tanks",
+    "Tank location typically costs $100-$300 in Miami-Dade, depending on property size, access difficulty, and equipment needed",
+    "Knowing your tank location is essential for maintenance, repairs, and preventing damage during landscaping or construction projects",
+    "Miami's high water table and sandy/limestone soils can make tank location more challenging than in other areas",
+    "Many older properties have lost records of tank location, making professional location services necessary for safe access",
+    "Accurate tank location prevents expensive damage to tanks and drain fields during digging or excavation work",
+    "Professional locators provide detailed reports including tank depth, lid locations, and access recommendations",
+    "Locating tanks before pumping, inspection, or repairs saves time and reduces costs for maintenance work"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic service providers",
+      "notes": "Most septic contractors offer location services as part of maintenance or inspection visits"
+    }
+  ],
+  "outline": [
+    "Intro - What tank location is, why it matters, when it's needed",
+    "Fast Facts - 8 linkable points about location methods, costs, importance, Miami factors",
+    "Costs - Location service pricing, what affects costs",
+    "Methods - Electronic locators, GPR, probing, visual inspection",
+    "When Needed - Scenarios requiring tank location",
+    "Benefits - Why knowing location saves money and prevents damage",
+    "DIY vs Professional - When homeowners can locate vs when professionals are needed",
+    "Miami Environment - How local conditions affect location methods",
+    "Related Services - Links to inspection, pumping, riser installation",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary based on property size, soil conditions, and equipment needed.",
+  "local_factors": [
+    "Miami's high water table can make probing and excavation more difficult",
+    "Sandy soils and limestone bedrock affect which location methods work best",
+    "Heavy vegetation and landscaping common in Miami can obscure visual clues",
+    "Many older Miami properties lack accurate records of tank locations"
+  ]
+}
+

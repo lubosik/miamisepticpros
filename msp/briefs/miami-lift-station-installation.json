@@ -1,0 +1,73 @@
+{
+  "service": "Lift Station Installation",
+  "slug": "lift-station-installation",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "lift station installation miami",
+  "support_kws": [
+    "lift station installation miami",
+    "install lift station miami",
+    "lift station installation cost miami",
+    "pump station installation miami",
+    "sewage lift station miami",
+    "lift station contractor miami"
+  ],
+  "vol": 160,
+  "KD": 14,
+  "PAA": [
+    "How much does lift station installation cost?",
+    "What is a lift station and when is it needed?",
+    "How do lift stations work?",
+    "What are Miami-Dade requirements for lift stations?",
+    "Do lift stations require permits?",
+    "How are lift stations maintained?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County Pump Station Improvement Program and design guidelines for lift stations"
+    },
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County wastewater infrastructure requirements and permitting"
+    }
+  ],
+  "linkable_points": [
+    "Lift stations pump sewage from lower elevations to higher elevations or treatment facilities when gravity flow is not feasible, essential in Miami-Dade's flat topography requiring mechanical pumping",
+    "Lift station installation in Miami-Dade typically costs $15,000-$50,000 depending on pump capacity, station type, site conditions, electrical requirements, and installation complexity",
+    "Standard submersible lift stations are used for locations requiring up to approximately 60 horsepower per pump, generally less than 24 feet wet well depth, and typically 2 pumps",
+    "Wet well/dry well configurations are used when lift stations require individual pumps greater than 60 horsepower, providing separation between pumping area and sump area for larger equipment",
+    "Miami-Dade classifies all wet wells as Permit Required Confined Spaces requiring OSHA compliance, proper ventilation systems, and Class I Division 2 electrical classifications",
+    "All new or replacement lift station installations require mandatory prior written approval from Miami-Dade County director before construction, including design review and permit approval",
+    "Miami-Dade requires ventilation for submersible lift stations, wet-wells, vented dry-wells, and valve vaults, with preferred control housing in separate electrical/control buildings",
+    "Professional installation ensures compliance with Miami-Dade County design standards, proper pump sizing, electrical safety, confined space protocols, environmental protection, and long-term reliability"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami wastewater contractors",
+      "notes": "Licensed contractors provide lift station installation services throughout Miami-Dade County"
+    }
+  ],
+  "outline": [
+    "Intro - What lift stations are, when needed, Miami context",
+    "Fast Facts - 8 linkable points about costs, types, requirements, installation",
+    "Costs - Installation pricing, factors affecting costs, life cycle costs",
+    "What is a Lift Station - Definition, how they work, when needed",
+    "Types of Lift Stations - Submersible vs wet well/dry well configurations",
+    "Installation Process - Step-by-step installation process",
+    "Permits and Requirements - Miami-Dade permits, confined space, ventilation",
+    "Maintenance - Ongoing maintenance requirements",
+    "Professional Installation - Why professional installation matters",
+    "Related Services - Links to pump service, repair, maintenance",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors and engineers. Costs vary significantly based on pump capacity, station type, electrical requirements, site conditions, and installation complexity.",
+  "local_factors": [
+    "Miami-Dade County Pump Station Improvement Program design standards",
+    "Flat topography requiring mechanical pumping",
+    "High water table affecting installation methods",
+    "Confined space and OSHA requirements",
+    "Tropical climate and environmental conditions"
+  ]
+}
+

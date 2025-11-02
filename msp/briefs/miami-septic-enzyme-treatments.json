@@ -1,0 +1,71 @@
+{
+  "service": "Septic Enzyme Treatments",
+  "slug": "septic-enzyme-treatments",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic enzyme treatment miami",
+  "support_kws": [
+    "septic enzyme treatment miami",
+    "septic enzymes miami",
+    "septic tank enzyme treatment miami",
+    "enzyme treatment septic system miami",
+    "septic system enzymes miami",
+    "biological septic treatment miami"
+  ],
+  "vol": 140,
+  "KD": 18,
+  "PAA": [
+    "What are septic enzyme treatments?",
+    "Do enzyme treatments work for septic tanks?",
+    "How much do septic enzyme treatments cost?",
+    "When should you use enzyme treatments?",
+    "What is the difference between enzymes and bacteria for septic?",
+    "How often should you add enzymes to septic tank?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County septic system maintenance requirements"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH guidance on septic system maintenance products"
+    }
+  ],
+  "linkable_points": [
+    "Enzyme treatments contain biological enzymes that break down organic waste materials in septic tanks, helping digest solids and reduce sludge accumulation",
+    "Enzyme treatments typically cost $20-$60 per treatment in Miami-Dade, applied monthly or quarterly depending on product and system needs",
+    "Enzyme treatments work best as preventive maintenance, helping break down waste before it accumulates, but may not solve existing severe problems",
+    "Enzyme treatments differ from bacterial additives by focusing on breaking down specific organic compounds rather than adding living bacteria to systems",
+    "Enzyme treatments are most effective when used regularly as maintenance, helping reduce need for frequent pumping and maintaining optimal tank function",
+    "Miami's warm climate can support enzyme activity, but effectiveness depends on proper tank conditions and regular maintenance practices",
+    "Enzyme treatments may help reduce odors, break down grease, and improve system function when used appropriately, but professional evaluation is needed for serious problems",
+    "Overuse of enzyme treatments or using inappropriate products can disrupt natural tank balance, so professional guidance is recommended"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic service providers",
+      "notes": "Many septic contractors offer enzyme treatments as part of maintenance programs"
+    }
+  ],
+  "outline": [
+    "Intro - What enzyme treatments are, how they work, when appropriate",
+    "Fast Facts - 8 linkable points about enzymes, costs, effectiveness, Miami factors",
+    "Costs - Enzyme treatment pricing, what affects costs",
+    "How Enzyme Treatments Work - Science behind enzyme action in septic tanks",
+    "Benefits and Limitations - What enzymes can and cannot do",
+    "Enzymes vs Bacteria - Difference between enzyme and bacterial additives",
+    "When to Use - Appropriate situations for enzyme treatment use",
+    "Miami Environment - How local conditions affect enzyme effectiveness",
+    "Related Services - Links to pumping, cleaning, inspection services",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors and product suppliers. Costs vary based on product type, treatment frequency, and system size.",
+  "local_factors": [
+    "Miami's warm climate can support enzyme activity year-round, but effectiveness depends on tank conditions",
+    "High water table and heavy rainfall can affect how enzymes work in Miami systems",
+    "Tropical vegetation and organic matter may influence enzyme treatment needs",
+    "Regular maintenance including pumping remains essential regardless of enzyme use"
+  ]
+}
+

@@ -1,0 +1,75 @@
+{
+  "service": "Drainage System Repairs",
+  "slug": "drainage-system-repairs",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "drainage repair miami",
+  "support_kws": [
+    "drainage repair miami",
+    "drainage system repair miami",
+    "drainage repair cost miami",
+    "fix drainage problems miami",
+    "drainage pipe repair miami",
+    "storm drain repair miami"
+  ],
+  "vol": 320,
+  "KD": 28,
+  "PAA": [
+    "How much does drainage system repair cost?",
+    "What causes drainage system problems?",
+    "How do you repair a drainage system?",
+    "What are signs drainage needs repair?",
+    "Can you repair drainage pipes?",
+    "When does drainage need replacement vs repair?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/",
+      "why": "Miami-Dade County drainage maintenance and reporting procedures"
+    },
+    {
+      "url": "Local Miami drainage contractors",
+      "why": "Miami-specific drainage repair services and costs"
+    }
+  ],
+  "linkable_points": [
+    "Drainage system repairs in Miami typically cost $300-$700 for routine maintenance, $500-$2,500 for pipe repairs, $1,000-$5,000 for catch basin repairs, and $2,000-$10,000 for extensive system repairs depending on scope and complexity",
+    "Blockage and accumulation of sediment and debris in drainage systems are leading causes of flooding in Miami-Dade County, with grass clippings, leaves, debris, and excessive lawn care products blown into stormwater inlets causing system failures",
+    "Common signs drainage systems need repair include standing water after rainfall, visible flooding during average rain events, clogged storm drains with visible debris, sinkholes or subsidence around drainage structures, foul odors from drains, and foundation water intrusion",
+    "Drainage repair process includes field inspection of existing systems, pipe desilting to inspect joints and identify structural deficiencies, video inspection where access allows, coordination with drainage and maintenance offices, and comprehensive summary report of findings",
+    "Emergency drainage repairs for flooding situations in Miami-Dade require contacting 311 for immediate flooding reports or municipal Public Works Departments during business hours, with Miami-Dade County Stormwater Utility addressing polluted stormwater and flooding susceptibility",
+    "Preventive maintenance to avoid drainage repairs includes following manufacturer instructions for pesticides and fertilizers, proper storage and disposal of chemicals at Miami-Dade County Home Chemical Collection Center, disposing litter and yard waste properly, and avoiding paving or filling grass swales designed to hold water",
+    "Repair vs replacement decision depends on corrosion assessment of existing pipes, pressure rating requirements with pipes over 10 psi requiring replacement, utility conflict resolution potentially requiring relocation, and embankment considerations requiring geotechnical coordination",
+    "Professional drainage repair ensures proper diagnostic assessment using video inspection, compliance with FDOT drainage design standards, coordination with multiple agencies, adequate maintenance access for future repairs, and long-term system reliability preventing cascading failures"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami drainage contractors",
+      "notes": "Licensed contractors provide drainage system repair services throughout Miami-Dade County"
+    }
+  ],
+  "outline": [
+    "Intro - Drainage repair importance, common problems, Miami context",
+    "Fast Facts - 8 linkable points about costs, problems, repair process, prevention",
+    "Costs - Repair pricing, factors affecting costs, emergency vs routine",
+    "Common Problems - Blockages, sediment, structural failures, flooding",
+    "Signs of Problems - Warning signs drainage needs repair",
+    "Diagnostic Process - Inspection, video inspection, assessment",
+    "Repair Process - Step-by-step repair process",
+    "Emergency Repairs - Flooding situations, emergency response",
+    "Prevention - Maintenance and prevention strategies",
+    "Repair vs Replacement - When repair vs replacement needed",
+    "Professional Benefits - Why professional repair matters",
+    "Related Services - Links to installation, maintenance",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed drainage contractors. Repair costs vary based on problem type, system complexity, access difficulty, emergency vs routine repairs, and whether repair or replacement needed.",
+  "local_factors": [
+    "Blockage and sediment accumulation causing flooding",
+    "Miami-Dade County reporting procedures (311)",
+    "Stormwater Utility addressing pollution and flooding",
+    "Coordination with multiple agencies",
+    "FDOT drainage design standards compliance"
+  ]
+}
+

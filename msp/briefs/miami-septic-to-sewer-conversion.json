@@ -1,0 +1,73 @@
+{
+  "service": "Septic to Sewer Conversion",
+  "slug": "septic-to-sewer-conversion",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "septic to sewer conversion miami",
+  "support_kws": [
+    "septic to sewer conversion miami",
+    "sewer connection miami",
+    "septic to sewer conversion cost miami",
+    "sewer hookup miami",
+    "abandon septic tank miami",
+    "connect to sewer miami"
+  ],
+  "vol": 150,
+  "KD": 13,
+  "PAA": [
+    "How much does septic to sewer conversion cost?",
+    "How do you convert from septic to sewer?",
+    "Do you have to connect to sewer if available?",
+    "What permits do you need for sewer connection?",
+    "How long does septic to sewer conversion take?",
+    "What happens to the old septic tank?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County First Time Sewer Connection requirements and procedures"
+    },
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County Code Article V Section 32-79 sewer connection regulations"
+    }
+  ],
+  "linkable_points": [
+    "Properties within WASD service areas with existing sewer laterals are required to connect to municipal sewer facilities when converting from septic systems, making conversion mandatory rather than optional",
+    "Septic to sewer conversion in Miami-Dade typically costs $5,000-$25,000 depending on connection fees, permit costs, septic abandonment, plumbing work, and site conditions",
+    "Conversion process requires permits and approvals from five agencies including DRER Sewer Capacity Certification, WASD allocation letter, plumbing permit, Florida DOH septic abandonment permit, and WASD approval with connection fee payment",
+    "After paying WASD connection charges, county allows 90 days before beginning sewer billing process, providing grace period for system verification and activation",
+    "First required step is obtaining Sewer Capacity Certification Letter from Miami-Dade County DRER Wastewater Section, which verifies sewer main has sufficient capacity and is prerequisite for other permits",
+    "Septic tank abandonment requires Florida Department of Health Pump-out and Abandon Permit, with professional pumping and abandonment following proper procedures to prevent environmental contamination",
+    "Funding assistance programs available including state and local initiatives providing financial support for septic abandonment and sewer connections, such as programs allocating $800,000 for approximately 13 properties",
+    "Professional conversion ensures compliance with Miami-Dade County requirements, proper septic abandonment, correct sewer connection, environmental protection, and successful system activation"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami plumbing and sewer contractors",
+      "notes": "Licensed contractors provide septic to sewer conversion services throughout Miami-Dade County"
+    }
+  ],
+  "outline": [
+    "Intro - What conversion is, why required, Miami context",
+    "Fast Facts - 8 linkable points about requirements, costs, process, timeline",
+    "Costs - Conversion pricing, factors affecting costs, funding assistance",
+    "What is Septic to Sewer Conversion - Definition, process overview, why required",
+    "Conversion Process - Step-by-step conversion process",
+    "Permits and Requirements - Required permits and approvals",
+    "Benefits - Advantages of converting to sewer",
+    "Timeline - How long conversion takes",
+    "Professional Conversion - Why professional service matters",
+    "Related Services - Links to septic abandonment, sewer connection, system design",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors and based on WASD connection fee structure. Costs vary significantly based on property usage, connection fees, permit costs, septic abandonment complexity, and plumbing work required.",
+  "local_factors": [
+    "Miami-Dade County mandatory connection requirement where sewer available",
+    "WASD connection fees based on property usage",
+    "Multi-agency permit coordination required",
+    "Florida DOH septic abandonment requirements",
+    "90-day billing grace period after connection"
+  ]
+}
+

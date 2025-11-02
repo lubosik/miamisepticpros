@@ -1,0 +1,72 @@
+{
+  "service": "Drain Field Installation",
+  "slug": "drain-field-installation",
+  "region": "Miami, FL",
+  "county": "Miami-Dade County",
+  "primary_kw": "drain field installation miami",
+  "support_kws": [
+    "drain field installation miami",
+    "install drain field miami",
+    "drain field installation cost miami",
+    "septic drain field installation miami",
+    "leach field installation miami",
+    "drain field contractor miami"
+  ],
+  "vol": 290,
+  "KD": 23,
+  "PAA": [
+    "How much does drain field installation cost?",
+    "How do you install a drain field?",
+    "How long does drain field installation take?",
+    "What is required for drain field installation?",
+    "Do you need permits to install a drain field?",
+    "What type of drain field is best for Miami?"
+  ],
+  "sources": [
+    {
+      "url": "https://www.miamidade.gov/global/service.page?Mduid_service=ser1469380618086923",
+      "why": "Miami-Dade County drain field installation requirements and regulations"
+    },
+    {
+      "url": "https://www.floridahealth.gov/environmental-health/onsite-sewage/disposal-system-permits/index.html",
+      "why": "Florida DOH requirements for drain field installation and design"
+    }
+  ],
+  "linkable_points": [
+    "Drain field installation in Miami-Dade typically costs $3,000-$15,000 depending on size, soil conditions, and system type, with costs varying significantly based on site complexity",
+    "Drain fields must be installed with bottom at least 36 inches above wet season high water table in Miami, requiring careful elevation planning and sometimes elevated or mound systems",
+    "Installation process includes site evaluation, soil testing, excavation, pipe installation, gravel bed preparation, backfilling, and final inspection to ensure proper drainage function",
+    "Miami-Dade County requires permits for drain field installation, and new drain fields must comply with current system type requirements and setback distances from water bodies",
+    "Installation timeline typically takes 1-2 weeks for standard drain fields, longer for complex sites requiring specialized systems or elevated drain fields",
+    "Soil percolation testing is mandatory before installation to determine drain field sizing, with results affecting system design, installation method, and overall costs",
+    "Professional installation ensures proper slope, pipe spacing, and drainage function critical for long-term system performance and environmental protection in Miami's challenging soil conditions",
+    "Drain field installation is essential component of new septic systems and often needed when existing drain fields fail, requiring professional design and installation for proper function"
+  ],
+  "competitors": [
+    {
+      "url": "Local Miami septic contractors",
+      "notes": "Licensed contractors provide drain field installation services throughout Miami-Dade County"
+    }
+  ],
+  "outline": [
+    "Intro - What drain fields are, installation importance, Miami context",
+    "Fast Facts - 8 linkable points about installation costs, process, requirements, timeline",
+    "Costs - Installation pricing, what affects costs, system type differences",
+    "Installation Process - Step-by-step process from site evaluation through final inspection",
+    "Site Requirements - Soil testing, percolation tests, elevation requirements",
+    "Drain Field Types - Different drain field systems used in Miami",
+    "Permits and Requirements - Miami-Dade permits needed, setback requirements",
+    "Timeline - How long installation takes, factors affecting duration",
+    "Professional Installation - Why professional installation matters",
+    "Related Services - Links to repair, replacement, system installation",
+    "FAQs - 7 question-answer pairs addressing PAA questions"
+  ],
+  "cost_methodology": "Ranges commonly reported by Miami-Dade licensed contractors. Costs vary significantly based on drain field size, soil conditions, system type, and installation complexity.",
+  "local_factors": [
+    "Miami's high water table requires drain field bottom at least 36 inches above wet season high water table",
+    "Sandy soils common in Miami affect percolation rates and drain field design",
+    "Proximity to water bodies requires strict setback compliance",
+    "Heavy rainfall may require larger drain fields or specialized designs"
+  ]
+}
+

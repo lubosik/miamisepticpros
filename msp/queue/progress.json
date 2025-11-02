@@ -2,31 +2,31 @@
   "version": "1.0",
   "last_updated": "2025-01-XX",
   "total_articles": 54,
-  "completed": 10,
-  "pending": 44,
+  "completed": 54,
+  "pending": 0,
   "failed": 0,
   "statistics": {
     "completion_rate": "18.5%",
     "by_category": {
       "primary": {
         "total": 20,
-        "completed": 10,
-        "pending": 10
+        "completed": 20,
+        "pending": 0
       },
       "contractor": {
         "total": 14,
-        "completed": 0,
-        "pending": 14
+        "completed": 14,
+        "pending": 0
       },
       "drainage": {
         "total": 10,
-        "completed": 0,
-        "pending": 10
+        "completed": 10,
+        "pending": 0
       },
       "sewage": {
         "total": 10,
-        "completed": 0,
-        "pending": 10
+        "completed": 10,
+        "pending": 0
       }
     },
     "by_priority": {
@@ -62,7 +62,52 @@
     "septic-tank-riser-installation",
     "septic-baffle-replacement",
     "septic-filter-cleaning-replacement",
-    "septic-alarm-repair-replacement"
+    "septic-alarm-repair-replacement",
+    "drain-field-repair",
+    "septic-odor-troubleshooting",
+    "septic-tank-location-service",
+    "real-estate-septic-inspections",
+    "septic-tank-camera-inspections",
+    "septic-sludge-and-scum-layer-removal",
+    "septic-enzyme-treatments",
+    "routine-septic-service-contracts",
+    "septic-system-winterization-storm-proofing",
+    "residential-septic-services",
+    "commercial-septic-tank-service",
+    "new-septic-system-installation",
+    "septic-tank-replacement",
+    "drain-field-installation",
+    "drain-field-replacement",
+    "septic-tank-lid-replacement",
+    "septic-system-design-and-permitting",
+    "holding-tank-installation",
+    "lift-station-installation",
+    "grease-trap-installation-for-restaurants",
+    "septic-to-sewer-conversion",
+    "site-evaluation-for-septic-installation",
+    "septic-permit-application-and-approvals",
+    "advanced-treatment-unit-installation",
+    "expansion-of-existing-septic-systems",
+    "french-drain-installation",
+    "yard-drainage-solutions",
+    "drainage-system-repairs",
+    "catch-basin-installation",
+    "surface-water-management-systems",
+    "stormwater-runoff-control",
+    "drain-field-troubleshooting-and-jetting",
+    "drainage-inspections-and-mapping",
+    "erosion-control-around-septic-systems",
+    "emergency-drainage-backups",
+    "sewage-system-pumping",
+    "sewage-ejector-pump-repair-replacement",
+    "sewage-spill-cleanup-and-sanitization",
+    "wastewater-treatment-system-installation",
+    "septic-safe-cleaning-product-consultation",
+    "lift-station-monitoring-and-service",
+    "sludge-hauling-and-disposal",
+    "grease-interceptor-cleaning",
+    "drain-cleaning-with-jetting-for-sewage-lines",
+    "sludge-digesters-and-bio-treatment-unit-service"
   ],
   "failed": [],
   "notes": {

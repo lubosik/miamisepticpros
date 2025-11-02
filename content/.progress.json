@@ -1,0 +1,13 @@
+{
+  "total": 54,
+  "done": ["septic-tank-pumping"],
+  "current_slug": "septic-tank-pumping",
+  "last_published_at": "2025-10-30T00:00:00Z",
+  "notes": [
+    "Created Checkatrade-style article layout system with hero band, sticky TOC, callouts, verified banner, and sources section",
+    "Applied new layout to septic-tank-pumping article",
+    "Added article.css for Checkatrade-style styling",
+    "Added toc.js for sticky TOC behavior with IntersectionObserver"
+  ]
+}
+

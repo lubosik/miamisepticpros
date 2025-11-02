@@ -110,7 +110,7 @@
       "service_name": "Septic Tank Location Service",
       "category": "primary",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "find septic tank miami",
       "estimated_intent": "medium-commercial"
     },
@@ -120,7 +120,7 @@
       "service_name": "Real Estate Septic Inspections",
       "category": "primary",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic inspection real estate miami",
       "estimated_intent": "high-commercial"
     },
@@ -130,7 +130,7 @@
       "service_name": "Septic Tank Camera Inspections",
       "category": "primary",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic camera inspection miami",
       "estimated_intent": "medium-commercial"
     },
@@ -150,7 +150,7 @@
       "service_name": "Septic Sludge and Scum Layer Removal",
       "category": "primary",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic sludge removal miami",
       "estimated_intent": "medium-commercial"
     },
@@ -160,7 +160,7 @@
       "service_name": "Septic Enzyme Treatments",
       "category": "primary",
       "priority": "low",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic enzyme treatment miami",
       "estimated_intent": "informational-commercial"
     },
@@ -170,7 +170,7 @@
       "service_name": "Routine Septic Service Contracts",
       "category": "primary",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic service contract miami",
       "estimated_intent": "medium-commercial"
     },
@@ -180,7 +180,7 @@
       "service_name": "Septic System Winterization & Storm Proofing",
       "category": "primary",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic hurricane preparation miami",
       "estimated_intent": "seasonal-informational"
     },
@@ -190,7 +190,7 @@
       "service_name": "Residential Septic Services",
       "category": "primary",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "residential septic service miami",
       "estimated_intent": "high-commercial"
     },
@@ -200,7 +200,7 @@
       "service_name": "Commercial Septic Tank Service",
       "category": "primary",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "commercial septic service miami",
       "estimated_intent": "high-commercial"
     },
@@ -210,7 +210,7 @@
       "service_name": "New Septic System Installation",
       "category": "contractor",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic system installation miami",
       "estimated_intent": "high-commercial"
     },
@@ -220,7 +220,7 @@
       "service_name": "Septic Tank Replacement",
       "category": "contractor",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic tank replacement miami",
       "estimated_intent": "high-commercial"
     },
@@ -230,7 +230,7 @@
       "service_name": "Drain Field Installation",
       "category": "contractor",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "drain field installation miami",
       "estimated_intent": "high-commercial"
     },
@@ -240,7 +240,7 @@
       "service_name": "Drain Field Replacement",
       "category": "contractor",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "drain field replacement miami",
       "estimated_intent": "high-commercial"
     },
@@ -250,7 +250,7 @@
       "service_name": "Septic Tank Lid Replacement",
       "category": "contractor",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic lid replacement miami",
       "estimated_intent": "medium-commercial"
     },
@@ -260,7 +260,7 @@
       "service_name": "Septic System Design and Permitting",
       "category": "contractor",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic system design miami",
       "estimated_intent": "high-commercial"
     },
@@ -270,7 +270,7 @@
       "service_name": "Holding Tank Installation",
       "category": "contractor",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "holding tank installation miami",
       "estimated_intent": "medium-commercial"
     },
@@ -280,7 +280,7 @@
       "service_name": "Lift Station Installation",
       "category": "contractor",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "lift station installation miami",
       "estimated_intent": "medium-commercial"
     },
@@ -290,7 +290,7 @@
       "service_name": "Grease Trap Installation for Restaurants",
       "category": "contractor",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "grease trap installation miami",
       "estimated_intent": "commercial"
     },
@@ -300,7 +300,7 @@
       "service_name": "Septic to Sewer Conversion",
       "category": "contractor",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic to sewer conversion miami",
       "estimated_intent": "medium-commercial"
     },
@@ -310,7 +310,7 @@
       "service_name": "Site Evaluation for Septic Installation",
       "category": "contractor",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic site evaluation miami",
       "estimated_intent": "medium-commercial"
     },
@@ -320,7 +320,7 @@
       "service_name": "Septic Permit Application and Approvals",
       "category": "contractor",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic permit miami",
       "estimated_intent": "informational-commercial"
     },
@@ -330,7 +330,7 @@
       "service_name": "Advanced Treatment Unit Installation",
       "category": "contractor",
       "priority": "low",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "ATU installation miami",
       "estimated_intent": "low-commercial"
     },
@@ -340,7 +340,7 @@
       "service_name": "Expansion of Existing Septic Systems",
       "category": "contractor",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic system expansion miami",
       "estimated_intent": "medium-commercial"
     },
@@ -350,7 +350,7 @@
       "service_name": "French Drain Installation",
       "category": "drainage",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "french drain installation miami",
       "estimated_intent": "high-commercial"
     },
@@ -360,7 +360,7 @@
       "service_name": "Yard Drainage Solutions",
       "category": "drainage",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "yard drainage miami",
       "estimated_intent": "high-commercial"
     },
@@ -370,7 +370,7 @@
       "service_name": "Drainage System Repairs",
       "category": "drainage",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "drainage repair miami",
       "estimated_intent": "high-commercial"
     },
@@ -380,7 +380,7 @@
       "service_name": "Catch Basin Installation",
       "category": "drainage",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "catch basin installation miami",
       "estimated_intent": "medium-commercial"
     },
@@ -390,7 +390,7 @@
       "service_name": "Surface Water Management Systems",
       "category": "drainage",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "surface water management miami",
       "estimated_intent": "commercial"
     },
@@ -400,7 +400,7 @@
       "service_name": "Stormwater Runoff Control",
       "category": "drainage",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "stormwater control miami",
       "estimated_intent": "commercial"
     },
@@ -410,7 +410,7 @@
       "service_name": "Drain Field Troubleshooting and Jetting",
       "category": "drainage",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "drain field jetting miami",
       "estimated_intent": "high-commercial"
     },
@@ -420,7 +420,7 @@
       "service_name": "Drainage Inspections and Mapping",
       "category": "drainage",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "drainage inspection miami",
       "estimated_intent": "medium-commercial"
     },
@@ -430,7 +430,7 @@
       "service_name": "Erosion Control Around Septic Systems",
       "category": "drainage",
       "priority": "low",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic erosion control miami",
       "estimated_intent": "low-commercial"
     },
@@ -440,7 +440,7 @@
       "service_name": "Emergency Drainage Backups",
       "category": "drainage",
       "priority": "critical",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "emergency drainage miami",
       "estimated_intent": "urgent-commercial"
     },
@@ -450,7 +450,7 @@
       "service_name": "Sewage System Pumping",
       "category": "sewage",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "sewage pumping miami",
       "estimated_intent": "high-commercial"
     },
@@ -460,7 +460,7 @@
       "service_name": "Sewage Ejector Pump Repair & Replacement",
       "category": "sewage",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "ejector pump repair miami",
       "estimated_intent": "high-commercial"
     },
@@ -470,7 +470,7 @@
       "service_name": "Sewage Spill Cleanup and Sanitization",
       "category": "sewage",
       "priority": "critical",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "sewage cleanup miami",
       "estimated_intent": "urgent-commercial"
     },
@@ -480,7 +480,7 @@
       "service_name": "Wastewater Treatment System Installation",
       "category": "sewage",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "wastewater system installation miami",
       "estimated_intent": "commercial"
     },
@@ -490,7 +490,7 @@
       "service_name": "Septic-Safe Cleaning Product Consultation",
       "category": "sewage",
       "priority": "low",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "septic safe products miami",
       "estimated_intent": "informational"
     },
@@ -500,7 +500,7 @@
       "service_name": "Lift Station Monitoring and Service",
       "category": "sewage",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "lift station service miami",
       "estimated_intent": "medium-commercial"
     },
@@ -510,7 +510,7 @@
       "service_name": "Sludge Hauling and Disposal",
       "category": "sewage",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "sludge disposal miami",
       "estimated_intent": "commercial"
     },
@@ -520,7 +520,7 @@
       "service_name": "Grease Interceptor Cleaning",
       "category": "sewage",
       "priority": "medium",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "grease trap cleaning miami",
       "estimated_intent": "commercial"
     },
@@ -530,7 +530,7 @@
       "service_name": "Drain Cleaning with Jetting for Sewage Lines",
       "category": "sewage",
       "priority": "high",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "sewer jetting miami",
       "estimated_intent": "high-commercial"
     },
@@ -540,7 +540,7 @@
       "service_name": "Sludge Digesters and Bio-Treatment Unit Service",
       "category": "sewage",
       "priority": "low",
-      "status": "pending",
+      "status": "complete",
       "primary_kw": "bio treatment unit miami",
       "estimated_intent": "commercial"
     }
