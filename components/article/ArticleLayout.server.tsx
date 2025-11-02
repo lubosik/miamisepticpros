@@ -166,21 +166,19 @@ export default function ArticleLayout({
             <article dangerouslySetInnerHTML={{ __html: contentHtml }} />
           </section>
 
-          {/* FAQ section - ALWAYS render <section> tag (even if empty) to prevent hydration mismatch */}
+          {/* FAQ section - ALWAYS render <section> with same structure to prevent hydration mismatch */}
           <section className="faq-section" aria-labelledby="faq-heading" data-static>
-            {faqs.length > 0 && (
-              <>
-                <h2 id="faq-heading">Frequently Asked Questions</h2>
-                <FAQAccordion faqs={faqs} />
-              </>
-            )}
+            <h2 id="faq-heading" className={faqs.length === 0 ? 'sr-only' : ''}>
+              Frequently Asked Questions
+            </h2>
+            <FAQAccordion faqs={faqs} />
           </section>
 
           {/* CTA - always render */}
           <ArticleCTA serviceName={title.replace(' in Miami, FL', '').replace(' | Miami Septic Pros', '')} />
 
-          {/* Sources - render always (empty if not provided, but structure exists) */}
-          {sources.length > 0 && <Sources sources={sources} />}
+          {/* Sources - always render to maintain structure */}
+          <Sources sources={sources} />
         </main>
 
         {/* Right rail TOC - always render nav structure, client enhances */}
