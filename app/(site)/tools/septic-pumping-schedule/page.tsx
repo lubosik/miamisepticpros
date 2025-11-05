@@ -11,7 +11,6 @@ export async function generateMetadata() {
     title: 'Free Septic Tank Pumping Schedule Calculator | Miami Septic Pros',
     description: 'Calculate when your septic tank needs pumping based on household size, tank capacity, and usage. Free tool from Miami Septic Pros. Get your personalized pumping schedule instantly.',
     canonical: '/tools/septic-pumping-schedule',
-    keywords: 'septic tank pumping schedule calculator, when to pump septic tank, septic tank maintenance schedule, septic pumping frequency calculator, free septic calculator',
   })
 }
 

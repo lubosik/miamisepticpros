@@ -123,7 +123,7 @@ export default function CheckatradeArticleLayout({
         </main>
 
         <aside>
-          <StickyTOC headings={headings} />
+          <StickyTOC items={headings} />
         </aside>
       </div>
     </>
