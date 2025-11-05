@@ -2,6 +2,7 @@ import { generateMetadata as generateMeta } from '@/components/MetaTags'
 import SchemaJSON from '@/components/SchemaJSON'
 import ServiceCard from '@/components/ServiceCard'
 import LocationCard from '@/components/LocationCard'
+import HeroImage from '@/components/HeroImage.client'
 import { generateBreadcrumbSchema, generateOrganizationSchema, generateItemListSchema, renderLocalBusiness } from '@/lib/seo/schemaGenerators'
 
 export async function generateMetadata() {
@@ -86,8 +87,17 @@ export default function HomePage() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         {/* Hero Section */}
-        <section className="text-center mb-20">
-          <div className="mb-6">
+        <section className="mb-20">
+          {/* Hero Image */}
+          <div className="mb-12">
+            <HeroImage
+              query="septic tank service truck professional plumbing"
+              alt="Professional septic service in Miami-Dade County"
+            />
+          </div>
+
+          {/* Hero Content */}
+          <div className="text-center">
             <p className="text-small text-accent-green font-semibold uppercase tracking-wide mb-3">Licensed & Insured</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif-headings font-bold text-primary-navy mb-4 sm:mb-6 px-4 sm:px-0">
               Professional Septic Services in Miami-Dade County

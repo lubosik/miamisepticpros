@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import { generateMetadata as generateMeta } from '@/components/MetaTags'
 import SchemaJSON from '@/components/SchemaJSON'
 import Breadcrumbs from '@/components/Breadcrumbs'
+import ResourceHeroImage from '@/components/ResourceHeroImage.client'
 import { getResourceBySlug, getService } from '@/lib/content/registry'
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/seo/schemaGenerators'
 import Link from 'next/link'
@@ -84,28 +85,37 @@ export default function ResourceDetailPage({ params }: { params: { slug: string 
     <>
       <SchemaJSON schema={articleSchema} />
       <SchemaJSON schema={breadcrumbSchema} />
-      
-      <div className="max-w-7xl mx-auto px-4 py-16">
+
+      <div className="max-w-7xl mx-auto px-4 py-8 sm:py-12 md:py-16">
         <Breadcrumbs items={breadcrumbs} />
-        
+
         <article className="mt-8">
-          <h1 className="text-h1 font-serif-headings font-bold text-primary-navy mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif-headings font-bold text-primary-navy mb-6 sm:mb-8">
             {resource.title}
           </h1>
-          
-          <div 
-            className="prose-content mt-8"
+
+          {/* Hero Image */}
+          {frontMatter.city && frontMatter.service && (
+            <ResourceHeroImage
+              city={frontMatter.city}
+              service={frontMatter.service}
+              alt={`${frontMatter.service} in ${frontMatter.city}, Florida`}
+            />
+          )}
+
+          <div
+            className="prose prose-sm sm:prose-base lg:prose-lg max-w-none mt-8"
             dangerouslySetInnerHTML={{ __html: content }}
           />
-          
+
           {service && (
             <div className="mt-12 pt-8 border-t border-border-light">
-              <p className="text-body text-muted-text mb-2">
+              <p className="text-sm sm:text-base text-muted-text mb-2">
                 Related service:
               </p>
               <Link
                 href={service.slug}
-                className="inline-block text-accent-green hover:text-accent-green-hover font-semibold"
+                className="inline-block text-accent-green hover:text-accent-green-hover font-semibold text-sm sm:text-base"
               >
                 {service.name} →
               </Link>
