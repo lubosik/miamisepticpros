@@ -1,0 +1,123 @@
+import { notFound } from 'next/navigation'
+import { generateMetadata as generateMeta } from '@/components/MetaTags'
+import SchemaJSON from '@/components/SchemaJSON'
+import Breadcrumbs from '@/components/Breadcrumbs'
+import { getResourceBySlug, getService } from '@/lib/content/registry'
+import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/seo/schemaGenerators'
+import Link from 'next/link'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
+
+export async function generateStaticParams() {
+  const { getAllResources } = await import('@/lib/content/registry')
+  const resources = getAllResources()
+  return resources.map((resource) => {
+    const slug = resource.slug.replace('/resources/', '')
+    return { slug }
+  })
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const fullSlug = `/resources/${params.slug}`
+  const resource = getResourceBySlug(fullSlug)
+  
+  if (!resource) {
+    return {
+      title: 'Resource Not Found',
+    }
+  }
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+  
+  return generateMeta({
+    title: `${resource.title} | Miami Septic Pros`,
+    description: resource.excerpt || resource.title,
+    canonical: resource.slug,
+  })
+}
+
+export default function ResourceDetailPage({ params }: { params: { slug: string } }) {
+  const fullSlug = `/resources/${params.slug}`
+  const resource = getResourceBySlug(fullSlug)
+  
+  if (!resource) {
+    notFound()
+  }
+
+  const service = getService(resource.serviceKey)
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
+
+  // Load article content from sourcePath
+  let content = ''
+  let frontMatter: Record<string, any> = {}
+  
+  try {
+    const sourcePath = path.join(process.cwd(), resource.sourcePath)
+    if (fs.existsSync(sourcePath)) {
+      const fileContent = fs.readFileSync(sourcePath, 'utf-8')
+      const parsed = matter(fileContent)
+      content = parsed.content
+      frontMatter = parsed.data || {}
+    }
+  } catch (error) {
+    console.error(`Error loading resource content: ${error}`)
+  }
+
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Resources', href: '/resources' },
+    { label: resource.title, href: resource.slug },
+  ]
+
+  const articleSchema = generateArticleSchema({
+    headline: resource.title,
+    description: resource.excerpt || resource.title,
+    author: frontMatter.author || 'Miami Septic Pros',
+    datePublished: resource.updated || frontMatter.published || new Date().toISOString(),
+    dateModified: resource.updated || frontMatter.updated || new Date().toISOString(),
+    image: resource.hero || frontMatter.og_image,
+    url: resource.slug,
+  })
+
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    breadcrumbs.map(b => ({ name: b.label, item: `${siteUrl}${b.href}` }))
+  )
+
+  return (
+    <>
+      <SchemaJSON schema={articleSchema} />
+      <SchemaJSON schema={breadcrumbSchema} />
+      
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <Breadcrumbs items={breadcrumbs} />
+        
+        <article className="mt-8">
+          <h1 className="text-h1 font-serif-headings font-bold text-primary-navy mb-6">
+            {resource.title}
+          </h1>
+          
+          <div 
+            className="prose-content mt-8"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
+          
+          {service && (
+            <div className="mt-12 pt-8 border-t border-border-light">
+              <p className="text-body text-muted-text mb-2">
+                Related service:
+              </p>
+              <Link
+                href={service.slug}
+                className="inline-block text-accent-green hover:text-accent-green-hover font-semibold"
+              >
+                {service.name} →
+              </Link>
+            </div>
+          )}
+        </article>
+      </div>
+    </>
+  )
+}
+

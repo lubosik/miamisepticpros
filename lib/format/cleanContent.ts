@@ -58,9 +58,9 @@ export function ensureHeadingIds(html: string): string {
  * Break long paragraphs into shorter ones (every 3-5 sentences)
  */
 export function breakLongParagraphs(html: string): string {
-  return html.replace(/<p([^>]*)>(.*?)<\/p>/gis, (match, attrs, content) => {
+  return html.replace(/<p([^>]*)>([\s\S]*?)<\/p>/gi, (match, attrs, content) => {
     // Count sentences (basic pattern)
-    const sentences = content.split(/([.!?]+)\s+/).filter(s => s.trim())
+    const sentences = content.split(/([.!?]+)\s+/).filter((s: string) => s.trim())
     
     if (sentences.length <= 5) {
       return match

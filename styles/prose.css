@@ -1,0 +1,71 @@
+/* styles/prose.css */
+.prose {
+  line-height: 1.8;
+}
+
+.prose p {
+  margin: 0 0 1rem 0;
+}
+
+.prose h1 {
+  margin: 0 0 1.5rem 0;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #1e293b;
+}
+
+.prose h2 {
+  margin: 2.25rem 0 0.75rem;
+  font-weight: 800;
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.prose h3 {
+  margin: 1.75rem 0 0.5rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.prose ul,
+.prose ol {
+  margin: 0.75rem 0 1rem 1.25rem;
+}
+
+.prose li {
+  margin: 0.25rem 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.25rem 0;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.prose thead th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.prose a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose img {
+  border-radius: 0.5rem;
+  display: block;
+  margin: 1rem 0;
+  max-width: 100%;
+  height: auto;
+}
+

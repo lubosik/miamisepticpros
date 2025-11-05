@@ -1,4 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "JSXElement[openingElement.name.name='a'] JSXElement[openingElement.name.name='a']",
+        "message": "Do not nest <a> inside <a> — causes hydration errors."
+      },
+      {
+        "selector": "JSXElement[openingElement.name.name='Link'] JSXElement[openingElement.name.name='a']",
+        "message": "Do not nest <a> inside <Link> — causes hydration errors."
+      },
+      {
+        "selector": "JSXElement[openingElement.name.name='a'] JSXElement[openingElement.name.name='Link']",
+        "message": "Do not nest <Link> inside <a> — causes hydration errors."
+      },
+      {
+        "selector": "JSXElement[openingElement.name.name='Link'] JSXElement[openingElement.name.name='Link']",
+        "message": "Do not nest <Link> inside <Link> — causes hydration errors."
+      }
+    ]
+  }
 }
 

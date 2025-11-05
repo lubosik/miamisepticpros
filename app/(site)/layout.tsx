@@ -31,7 +31,7 @@ export default function SiteLayout({
                 </span>
               </div>
               <a
-                href="/contact"
+                href="/book"
                 className="text-body-text hover:text-accent-green"
               >
                 Contact Us
@@ -50,8 +50,9 @@ export default function SiteLayout({
               <a href="/services" className="text-body-text hover:text-accent-green">Services</a>
               <a href="/locations" className="text-body-text hover:text-accent-green">Locations</a>
               <a href="/resources" className="text-body-text hover:text-accent-green">Resources</a>
-              <a href="/contact" className="text-body-text hover:text-accent-green">Contact</a>
-              <a href="/quote" className="bg-accent-green text-white px-4 py-2 rounded-sm hover:bg-accent-green-hover font-semibold">
+              <a href="/tools/septic-pumping-schedule" className="text-body-text hover:text-accent-green">Free Tools</a>
+              <a href="/book" className="text-body-text hover:text-accent-green">Contact</a>
+              <a href="/book" className="bg-accent-green text-white px-4 py-2 rounded-sm hover:bg-accent-green-hover font-semibold">
                 Get Free Quote
               </a>
             </div>
@@ -73,6 +74,10 @@ export default function SiteLayout({
               <p className="text-body text-body-text mb-4">
                 Licensed septic service company serving Miami-Dade County. Professional pumping, cleaning, installation, and repairs for Miami, Coral Gables, Kendall, Doral, Hialeah, Aventura, and Homestead.
               </p>
+              <address className="text-body text-body-text mb-4 not-italic">
+                55 SW 9th ST APT 3806<br />
+                Miami, FL 33130
+              </address>
               {phone && (
                 <a
                   href={`tel:${phone}`}
@@ -83,13 +88,18 @@ export default function SiteLayout({
               )}
             </div>
 
-            {/* Quick Links */}
+            {/* Explore */}
             <div>
-              <h4 className="text-h5 font-semibold text-charcoal mb-4">Quick Links</h4>
+              <h4 className="text-h5 font-semibold text-charcoal mb-4">Explore</h4>
               <ul className="space-y-2">
                 <li>
                   <a href="/services" className="text-body text-body-text hover:text-accent-green">
-                    Our Services
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="/resources" className="text-body text-body-text hover:text-accent-green">
+                    Resources
                   </a>
                 </li>
                 <li>
@@ -98,17 +108,12 @@ export default function SiteLayout({
                   </a>
                 </li>
                 <li>
-                  <a href="/resources" className="text-body text-body-text hover:text-accent-green">
-                    Resources & Guides
-                  </a>
-                </li>
-                <li>
-                  <a href="/quote" className="text-body text-body-text hover:text-accent-green">
+                  <a href="/book" className="text-body text-body-text hover:text-accent-green">
                     Get a Quote
                   </a>
                 </li>
                 <li>
-                  <a href="/contact" className="text-body text-body-text hover:text-accent-green">
+                  <a href="/book" className="text-body text-body-text hover:text-accent-green">
                     Contact Us
                   </a>
                 </li>

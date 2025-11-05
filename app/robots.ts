@@ -13,7 +13,11 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'GPTBot', allow: '/' },
       { userAgent: 'OAI-SearchBot', allow: '/' },
     ],
-    sitemap: `${siteUrl}/sitemap.xml`,
+    sitemap: [
+      `${siteUrl}/sitemap.xml`,
+      `${siteUrl}/sitemap-services.xml`,
+      `${siteUrl}/sitemap-resources.xml`,
+    ],
   }
 }
 

@@ -12,8 +12,6 @@ export default function ArticleHero({
   title,
   formattedDate,
   byline = 'Miami Septic Pros',
-  heroImage,
-  heroImageAlt,
 }: ArticleHeroProps) {
 
   return (

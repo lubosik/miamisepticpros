@@ -75,7 +75,7 @@ function extractHeadings(html: string): Array<{ id: string; text: string; level:
 }
 
 function extractAtAGlance(html: string): Array<{ label: string; value: string }> | null {
-  const atGlanceMatch = html.match(/<div[^>]*class="[^"]*bg-(?:blue|green)-50[^"]*"[^>]*>.*?<h3[^>]*>At a glance<\/h3>(.*?)<\/div>/is)
+  const atGlanceMatch = html.match(/<div[^>]*class="[^"]*bg-(?:blue|green)-50[^"]*"[^>]*>[\s\S]*?<h3[^>]*>At a glance<\/h3>([\s\S]*?)<\/div>/i)
   if (!atGlanceMatch) return null
   
   const content = atGlanceMatch[1]
@@ -98,7 +98,7 @@ function extractAtAGlance(html: string): Array<{ label: string; value: string }>
 
 function extractThisArticleCovers(html: string): string[] | null {
   // Look for existing TOC nav
-  const tocMatch = html.match(/<nav[^>]*>.*?<h2[^>]*>On this page<\/h2>.*?<ul[^>]*>(.*?)<\/ul>.*?<\/nav>/is)
+  const tocMatch = html.match(/<nav[^>]*>[\s\S]*?<h2[^>]*>On this page<\/h2>[\s\S]*?<ul[^>]*>([\s\S]*?)<\/ul>[\s\S]*?<\/nav>/i)
   if (!tocMatch) return null
   
   const items: string[] = []
@@ -114,26 +114,26 @@ function extractThisArticleCovers(html: string): string[] | null {
   return items.length > 0 ? items : null
 }
 
-function cleanArticleContent(html: string): string {
+function cleanArticleContent(html: string, serviceName?: string): string {
   // Remove hero image figure (will be in hero section)
-  html = html.replace(/<figure[^>]*class="mb-8"[^>]*>.*?<\/figure>/is, '')
+  html = html.replace(/<figure[^>]*class="mb-8"[^>]*>[\s\S]*?<\/figure>/i, '')
   
   // Remove H1 (will be in hero)
   html = html.replace(/<h1[^>]*>.*?<\/h1>/i, '')
   
   // Remove existing "At a glance" callout (we'll add it via component)
-  html = html.replace(/<div[^>]*class="[^"]*bg-(?:blue|green)-50[^"]*"[^>]*>.*?<h3[^>]*>At a glance<\/h3>.*?<\/div>/is, '')
+  html = html.replace(/<div[^>]*class="[^"]*bg-(?:blue|green)-50[^"]*"[^>]*>[\s\S]*?<h3[^>]*>At a glance<\/h3>[\s\S]*?<\/div>/i, '')
   
   // Remove existing TOC nav (we'll add sticky TOC via component)
-  html = html.replace(/<nav[^>]*class="[^"]*mb-8[^"]*"[^>]*>.*?<\/nav>/is, '')
+  html = html.replace(/<nav[^>]*class="[^"]*mb-8[^"]*"[^>]*>[\s\S]*?<\/nav>/i, '')
   
   // Remove existing "Sources & References" section (we'll add via component)
-  html = html.replace(/<div[^>]*class="[^"]*mt-6[^"]*"[^>]*>.*?<\/div>/is, '')
-  html = html.replace(/<h2[^>]*>Sources &amp; References<\/h2>.*?<\/div>/is, '')
+  html = html.replace(/<div[^>]*class="[^"]*mt-6[^"]*"[^>]*>[\s\S]*?<\/div>/i, '')
+  html = html.replace(/<h2[^>]*>Sources &amp; References<\/h2>[\s\S]*?<\/div>/i, '')
   
   // Convert cost cards to table format
   html = html.replace(
-    /<div[^>]*class="[^"]*bg-green-50[^"]*"[^>]*>.*?<h3[^>]*>Average[^<]*Cost[^<]*<\/h3>(.*?)<\/div>/is,
+    /<div[^>]*class="[^"]*bg-green-50[^"]*"[^>]*>[\s\S]*?<h3[^>]*>Average[^<]*Cost[^<]*<\/h3>([\s\S]*?)<\/div>/i,
     (match, tableContent) => {
       const minMatch = tableContent.match(/Minimum Cost[\s\S]*?\$(\d+)/i)
       const avgMatch = tableContent.match(/Average Cost[\s\S]*?\$(\d+)/i)
@@ -177,14 +177,14 @@ function cleanArticleContent(html: string): string {
   html = html.replace(/<h2[^>]*>[\s]*Frequently Asked Questions[\s]*<\/h2>/gi, '')
   
   // Remove CTA section (will be handled separately if needed)
-  html = html.replace(/<div[^>]*class="[^"]*mt-12[^"]*"[^>]*bg-gradient[^"]*"[^>]*>[\s\S]*?<\/div>/is, '')
+  html = html.replace(/<div[^>]*class="[^"]*mt-12[^"]*"[^>]*bg-gradient[^"]*"[^>]*>[\s\S]*?<\/div>/i, '')
   
   // Remove Sources & References section (will be rendered via Sources component)
-  html = html.replace(/<div[^>]*class="[^"]*mt-8[^"]*"[^>]*pt-6[^"]*"[^"]*border-t[^"]*"[^>]*>[\s\S]*?<h2[^>]*>Sources[^<]*<\/h2>[\s\S]*?<\/div>[\s\S]*?<\/div>/is, '')
-  html = html.replace(/<h2[^>]*>Sources[^<]*<\/h2>[\s\S]*?<\/div>/is, '')
+  html = html.replace(/<div[^>]*class="[^"]*mt-8[^"]*"[^>]*pt-6[^"]*"[^"]*border-t[^"]*"[^>]*>[\s\S]*?<h2[^>]*>Sources[^<]*<\/h2>[\s\S]*?<\/div>[\s\S]*?<\/div>/i, '')
+  html = html.replace(/<h2[^>]*>Sources[^<]*<\/h2>[\s\S]*?<\/div>/i, '')
   
   // Remove service area footer section
-  html = html.replace(/<div[^>]*class="[^"]*mt-6[^"]*"[^>]*pt-6[^"]*"[^"]*border-t[^"]*"[^>]*text-sm[^"]*"[^>]*>[\s\S]*?<\/div>/is, '')
+  html = html.replace(/<div[^>]*class="[^"]*mt-6[^"]*"[^>]*pt-6[^"]*"[^"]*border-t[^"]*"[^>]*text-sm[^"]*"[^>]*>[\s\S]*?<\/div>/i, '')
   
   // Remove any remaining <hr /> tags
   html = html.replace(/<hr\s*\/?>/gi, '')
@@ -201,10 +201,60 @@ function cleanArticleContent(html: string): string {
   html = cleanContent(html, {
     ensureIds: true,
     breakParagraphs: false, // Keep existing paragraph structure
-    linkCitations: false, // We'll handle this separately
+    // linkCitations handled separately via Sources component
   })
   
+  // Insert mid-article CTA after the cost section
+  html = insertMidArticleCTA(html, serviceName)
+  
   return html.trim()
+}
+
+function insertMidArticleCTA(html: string, serviceName?: string): string {
+  // Find the cost section (h2 with id="cost")
+  const costSectionMatch = html.match(/<h2[^>]*id=["']cost["'][^>]*>[\s\S]*?<\/h2>([\s\S]*?)(?=<h2|$)/i)
+  
+  if (!costSectionMatch) {
+    // If no cost section, insert after first h2 section
+    const firstH2Match = html.match(/(<h2[^>]*>[\s\S]*?<\/h2>)([\s\S]*?)(?=<h2|$)/i)
+    if (firstH2Match) {
+      const insertionPoint = firstH2Match.index! + firstH2Match[0].length
+      const ctaHTML = generateMidArticleCTA(serviceName)
+      return html.slice(0, insertionPoint) + ctaHTML + html.slice(insertionPoint)
+    }
+    return html
+  }
+  
+  // Find the end of the cost section content (before next h2 or end)
+  const costSectionEnd = costSectionMatch.index! + costSectionMatch[0].length
+  
+  // Insert CTA after cost section
+  const ctaHTML = generateMidArticleCTA(serviceName)
+  return html.slice(0, costSectionEnd) + ctaHTML + html.slice(costSectionEnd)
+}
+
+function generateMidArticleCTA(serviceName?: string): string {
+  const displayName = serviceName || 'Septic Service'
+  return `
+<div class="mt-12 p-8 bg-gradient-to-r from-green-600 to-green-700 rounded-lg text-white text-center">
+  <h2 class="text-3xl font-bold mb-4">Ready to Schedule Your ${displayName}?</h2>
+  <p class="text-lg mb-6 text-green-50">Get a fast, transparent quote from Miami's trusted septic experts.</p>
+  <div class="flex flex-col sm:flex-row gap-4 justify-center">
+    <a 
+      href="/quote/" 
+      class="inline-block bg-white text-green-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors"
+    >
+      Get Free Quote
+    </a>
+    <a 
+      href="tel:+13055550100" 
+      class="inline-block bg-green-800 text-white px-8 py-3 rounded-md font-semibold hover:bg-green-900 transition-colors"
+    >
+      Call (305) 555-0100
+    </a>
+  </div>
+</div>
+  `.trim()
 }
 
 export default function MiamiServicePage({ params }: { params: { slug: string } }) {
@@ -251,8 +301,15 @@ export default function MiamiServicePage({ params }: { params: { slug: string } 
     }
   }
 
+  // Extract service name for CTA (remove common suffixes)
+  const serviceName = title
+    .replace(' in Miami, FL', '')
+    .replace(' in Miami', '')
+    .replace(' | Miami Septic Pros', '')
+    .trim()
+  
   // Extract and clean content (this will remove FAQ section)
-  let cleanedContent = cleanArticleContent(rawContent)
+  let cleanedContent = cleanArticleContent(rawContent, serviceName)
   const headings = extractHeadings(cleanedContent)
   const atAGlance = extractAtAGlance(rawContent)
   const thisArticleCovers = extractThisArticleCovers(rawContent)

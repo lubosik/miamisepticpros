@@ -1,7 +1,6 @@
 import { MetadataRoute } from 'next'
-import { getAllServices } from '@/lib/content/services'
+import { getAllServices, getAllResources } from '@/lib/content/registry'
 import { getAllStates, getLocationsByState } from '@/lib/content/locations'
-import { getAllArticles } from '@/lib/content/articles'
 import { getAllIssues } from '@/lib/content/issues'
 import { getAllCostGuides } from '@/lib/content/costs'
 
@@ -45,19 +44,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
-  // Service detail pages
+  // Service detail pages (from registry)
   try {
     const services = getAllServices()
     services.forEach((service) => {
       urls.push({
-        url: `${siteUrl}/services/${service.slug}`,
-        lastModified: baseDate,
+        url: `${siteUrl}${service.slug}`,
+        lastModified: service.updated ? new Date(service.updated) : baseDate,
         changeFrequency: 'monthly',
         priority: 0.6,
       })
     })
   } catch (error) {
     console.error('Error loading services for sitemap:', error)
+  }
+
+  // Resource detail pages (from registry)
+  try {
+    const resources = getAllResources()
+    resources.forEach((resource) => {
+      urls.push({
+        url: `${siteUrl}${resource.slug}`,
+        lastModified: resource.updated ? new Date(resource.updated) : baseDate,
+        changeFrequency: 'weekly',
+        priority: 0.6,
+      })
+    })
+  } catch (error) {
+    console.error('Error loading resources for sitemap:', error)
   }
 
   // State landing pages
@@ -91,21 +105,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   } catch (error) {
     console.error('Error loading locations for sitemap:', error)
-  }
-
-  // Article pages
-  try {
-    const articles = getAllArticles()
-    articles.forEach(({ service, stateCity }) => {
-      urls.push({
-        url: `${siteUrl}/resources/${service}/${stateCity}`,
-        lastModified: baseDate,
-        changeFrequency: 'weekly',
-        priority: 0.6,
-      })
-    })
-  } catch (error) {
-    console.error('Error loading articles for sitemap:', error)
   }
 
   // Issue pages

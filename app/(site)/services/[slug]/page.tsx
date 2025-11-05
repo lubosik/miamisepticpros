@@ -1,186 +1,192 @@
 import { notFound } from 'next/navigation'
-import { getService, getAllServices } from '@/lib/content/services'
+import fs from 'fs'
+import path from 'path'
+import matter from 'gray-matter'
 import { generateMetadata as generateMeta } from '@/components/MetaTags'
 import SchemaJSON from '@/components/SchemaJSON'
-import Breadcrumbs from '@/components/Breadcrumbs'
-import ServiceCard from '@/components/ServiceCard'
-import { generateServiceSchema, generateBreadcrumbSchema, generateFAQPageSchema } from '@/lib/seo/schemaGenerators'
+import CheckatradeArticleLayout from '@/components/layouts/CheckatradeArticleLayout'
+import { getService } from '@/lib/content/registry'
+import { extractTOC } from '@/lib/content'
+import { insertCTAsIntoHtml } from '@/lib/insertCtas'
+import { generateServiceSchema, generateBreadcrumbSchema } from '@/lib/seo/schemaGenerators'
+
+const contentDirectory = path.join(process.cwd(), 'pages/miami/services')
+
+// CTA HTML strings (server-side injection)
+const CTA1_HTML = `
+<section class="my-10 rounded-xl border bg-white p-5 shadow-sm">
+  <h3 class="text-xl font-bold">Need help today?</h3>
+  <p class="mt-2 text-gray-700">Same-day service across Miami-Dade. Licensed &amp; insured.</p>
+  <a class="mt-4 inline-block rounded-lg bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700" href="tel:+13055550100">
+    Call Miami Septic Pros
+  </a>
+</section>
+`
+
+const CTA2_HTML = `
+<section class="my-10 rounded-xl border bg-white p-5 shadow-sm">
+  <h3 class="text-xl font-bold">Get a clear, no-pressure quote</h3>
+  <p class="mt-2 text-gray-700">Describe your job. We&apos;ll confirm price and schedule.</p>
+  <a class="mt-4 inline-block rounded-lg bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700" href="/book">
+    Get My Free Quote
+  </a>
+</section>
+`
 
 export async function generateStaticParams() {
-  const services = getAllServices()
-  return services.map((service) => ({
-    slug: service.slug,
-  }))
+  try {
+    const { getAllServices } = await import('@/lib/content/registry')
+    const services = getAllServices()
+    const params = services.map((service) => ({
+      slug: service.key,
+    }))
+    console.log(`[generateStaticParams] Generated ${params.length} service params`)
+    return params
+  } catch (error) {
+    console.error('[generateStaticParams] Error:', error)
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const service = getService(params.slug)
   
   if (!service) {
-    return {}
+    return {
+      title: 'Service Not Found',
+    }
+  }
+
+  const filePath = path.join(contentDirectory, params.slug, 'index.html')
+  let frontMatter: Record<string, any> = {}
+  
+  if (fs.existsSync(filePath)) {
+    try {
+      const fileContents = fs.readFileSync(filePath, 'utf8')
+      const parsed = matter(fileContents)
+      frontMatter = parsed.data || {}
+    } catch (error) {
+      // Continue without front matter
+    }
   }
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
-  const canonical = `/services/${service.slug}`
-
+  const title = frontMatter.title?.replace(/\s*\|\s*Miami Septic Pros\s*$/i, '').trim() || service.name
+  
   return generateMeta({
-    title: `${service.title} Services | How It Works, Cost & More`,
-    description: service.metaDescription,
-    canonical,
+    title: `${title} | Miami Septic Pros`,
+    description: frontMatter.meta_description || service.summary,
+    canonical: service.slug,
+    ogImage: frontMatter.og_image || service.hero,
+    ogType: 'article',
   })
 }
 
-export default function ServiceDetailPage({ params }: { params: { slug: string } }) {
+export default async function ServiceDetailPage({ params }: { params: { slug: string } }) {
   const service = getService(params.slug)
-
+  
   if (!service) {
+    console.error(`[ServiceDetailPage] Service not found for slug: ${params.slug}`)
     notFound()
   }
 
+  const filePath = path.join(contentDirectory, params.slug, 'index.html')
+  
+  if (!fs.existsSync(filePath)) {
+    console.error(`[ServiceDetailPage] File not found: ${filePath}`)
+    notFound()
+  }
+
+  const fileContents = fs.readFileSync(filePath, 'utf8')
+  const { data: frontMatter, content: rawContent } = matter(fileContents)
+
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://septictankquotehub.com'
-  const canonical = `/services/${service.slug}`
+  
+  // Extract title without "| Miami Septic Pros"
+  const title = (frontMatter.title || service.name)
+    .replace(/\s*\|\s*Miami Septic Pros\s*$/i, '')
+    .trim()
 
-  const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: service.title, href: canonical },
-  ]
+  // Extract subtitle (first paragraph or meta_description)
+  const subtitle = frontMatter.meta_description || rawContent.match(/<p[^>]*>(.*?)<\/p>/)?.[1]?.replace(/<[^>]+>/g, '').substring(0, 150) || ''
 
+  // Format updated date
+  const updated = frontMatter.updated || frontMatter.published || service.updated
+  const formattedDate = updated ? new Date(updated).toLocaleDateString('en-US', { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric' 
+  }) : undefined
+
+  // Extract ToC from HTML (h2-h4 with IDs)
+  const tocItems = extractTOC(rawContent)
+
+  // Remove the first h1 from content if it exists (since layout already shows title)
+  const contentWithoutH1 = rawContent.replace(/<h1[^>]*>.*?<\/h1>/i, '').trim()
+
+  // Inject CTAs server-side
+  const contentWithCTAs = insertCTAsIntoHtml(contentWithoutH1, CTA1_HTML, CTA2_HTML)
+
+  // Generate JSON-LD schemas
   const serviceSchema = generateServiceSchema({
-    name: service.title,
-    description: service.metaDescription,
-    url: canonical,
-    serviceType: service.schema?.serviceType || service.title,
+    name: service.name,
+    description: frontMatter.meta_description || service.summary,
+    url: `${siteUrl}${service.slug}`,
+    serviceType: service.name,
+    areaServed: [
+      { '@type': 'City', name: 'Miami', containedIn: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Miami Beach', containedIn: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Coral Gables', containedIn: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Hialeah', containedIn: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'City', name: 'Homestead', containedIn: { '@type': 'State', name: 'Florida' } },
+      { '@type': 'County', name: 'Miami-Dade County', containedIn: { '@type': 'State', name: 'Florida' } },
+    ],
   })
 
-  const breadcrumbSchema = generateBreadcrumbSchema(
-    breadcrumbs.map(b => ({ name: b.label, item: `${siteUrl}${b.href}` }))
-  )
+  const localBusinessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: 'Miami Septic Pros',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '55 SW 9th ST APT 3806',
+      addressLocality: 'Miami',
+      addressRegion: 'FL',
+      postalCode: '33130',
+      addressCountry: 'US',
+    },
+    telephone: '+13055550100',
+    areaServed: {
+      '@type': 'County',
+      name: 'Miami-Dade County',
+      containedIn: {
+        '@type': 'State',
+        name: 'Florida',
+      },
+    },
+  }
 
-  const faqSchema = service.faqs && service.faqs.length > 0
-    ? generateFAQPageSchema(service.faqs)
-    : null
-
-  // Convert markdown description to HTML
-  const htmlDescription = service.fullDescription
-    .split('\n')
-    .map(line => {
-      if (line.startsWith('## ')) {
-        const text = line.replace('## ', '').trim()
-        return `<h2 class="text-h2 font-serif-headings font-semibold text-charcoal mt-12 mb-4">${escapeHtml(text)}</h2>`
-      }
-      if (line.startsWith('- **')) {
-        const match = line.match(/- \*\*(.+?):\*\* (.+)/)
-        if (match) {
-          return `<li class="text-body text-body-text mb-3"><strong>${escapeHtml(match[1])}:</strong> ${escapeHtml(match[2])}</li>`
-        }
-      }
-      if (line.startsWith('- ')) {
-        const text = line.replace('- ', '').trim()
-        return `<li class="text-body text-body-text mb-3">${escapeHtml(text)}</li>`
-      }
-      if (line.match(/^\d+\. /)) {
-        const text = line.replace(/^\d+\. /, '').trim()
-        return `<li class="text-body text-body-text mb-3">${escapeHtml(text)}</li>`
-      }
-      if (line.trim()) {
-        return `<p class="text-body text-body-text mb-6 leading-relaxed">${escapeHtml(line)}</p>`
-      }
-      return ''
-    })
-    .filter(Boolean)
-    .join('')
-
-  // Get related services
-  const allServices = getAllServices()
-  const relatedServices = service.relatedServices
-    ? allServices.filter(s => service.relatedServices!.includes(s.slug))
-    : []
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', item: `${siteUrl}/` },
+    { name: 'Services', item: `${siteUrl}/services` },
+    { name: service.name, item: `${siteUrl}${service.slug}` },
+  ])
 
   return (
     <>
       <SchemaJSON schema={serviceSchema} />
+      <SchemaJSON schema={localBusinessSchema} />
       <SchemaJSON schema={breadcrumbSchema} />
-      {faqSchema && <SchemaJSON schema={faqSchema} />}
-      
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <Breadcrumbs items={breadcrumbs} />
-        
-        <div className="mb-8">
-          <div className="text-4xl mb-4">{service.icon}</div>
-          <h1 className="text-h1 font-serif-headings font-bold text-primary-navy mb-4">
-            {service.title}
-          </h1>
-          <p className="text-body-lg text-body-text">
-            {service.shortDescription}
-          </p>
-          <p className="text-small text-muted-text mt-2">
-            Service Area: Miami-Dade • Broward • Palm Beach
-          </p>
-        </div>
 
-        {service.averageCost && (
-          <div className="mb-8 p-6 bg-surface-gray-50 border border-border-light rounded-md">
-            <p className="text-body font-semibold text-charcoal mb-2">Average Cost:</p>
-            <p className="text-h3 font-serif-headings text-accent-green">
-              ${service.averageCost.min}–${service.averageCost.max}
-              <span className="text-body text-muted-text ml-2">({service.averageCost.unit})</span>
-            </p>
-          </div>
-        )}
-
-        <div className="prose-content mb-12">
-          <div dangerouslySetInnerHTML={{ __html: htmlDescription }} />
-        </div>
-
-        {service.faqs && service.faqs.length > 0 && (
-          <section className="mb-12">
-            <h2 className="text-h2 font-serif-headings font-semibold text-charcoal mb-6">
-              Frequently Asked Questions
-            </h2>
-            <div className="space-y-4">
-              {service.faqs.map((faq, idx) => (
-                <details key={idx} className="border border-border-light rounded-md p-4">
-                  <summary className="cursor-pointer font-semibold text-charcoal mb-2">
-                    {faq.question}
-                  </summary>
-                  <p className="text-body text-body-text mt-2">{faq.answer}</p>
-                </details>
-              ))}
-            </div>
-          </section>
-        )}
-
-        {relatedServices.length > 0 && (
-          <section className="mt-12">
-            <h2 className="text-h2 font-serif-headings font-semibold text-charcoal mb-6">
-              Related Services
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {relatedServices.map((related) => (
-                <ServiceCard
-                  key={related.slug}
-                  title={related.title}
-                  icon={related.icon}
-                  description={related.shortDescription}
-                  href={`/services/${related.slug}`}
-                />
-              ))}
-            </div>
-          </section>
-        )}
-      </div>
+      <CheckatradeArticleLayout
+        title={title}
+        subtitle={subtitle}
+        updated={formattedDate}
+        heroSrc={frontMatter.og_image || service.hero}
+        tocItems={tocItems}
+      >
+        <div dangerouslySetInnerHTML={{ __html: contentWithCTAs }} />
+      </CheckatradeArticleLayout>
     </>
   )
-}
-
-function escapeHtml(text: string): string {
-  const map: Record<string, string> = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#039;',
-  }
-  return text.replace(/[&<>"']/g, m => map[m])
 }

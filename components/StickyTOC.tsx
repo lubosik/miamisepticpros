@@ -1,62 +1,35 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-
 interface Heading {
   id: string
   text: string
-  level: number
+  level?: number
 }
 
 interface StickyTOCProps {
-  headings: Heading[]
+  items: Array<{ id: string; text: string }>
 }
 
-export default function StickyTOC({ headings }: StickyTOCProps) {
-  const [activeId, setActiveId] = useState<string>('')
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-    // Load TOC script only once
-    if (!document.querySelector('script[src="/js/toc.js"]')) {
-      const script = document.createElement('script')
-      script.src = '/js/toc.js'
-      script.async = true
-      document.body.appendChild(script)
-
-      return () => {
-        if (document.body.contains(script)) {
-          document.body.removeChild(script)
-        }
-      }
-    }
-  }, [])
-
-  if (headings.length === 0) {
+export default function StickyTOC({ items }: StickyTOCProps) {
+  if (!items || items.length === 0) {
     return null
   }
 
   return (
-    <nav className="article-toc" aria-label="On this page" data-toc>
-      <div className="article-toc-title">Table of contents</div>
-      <ul className="article-toc-list">
-        {headings.map((heading) => (
-          <li
-            key={heading.id}
-            className={`article-toc-item ${heading.level === 3 ? 'sub' : ''}`}
-          >
-            <a
-              href={`#${heading.id}`}
-              className="article-toc-link"
-              aria-current={activeId === heading.id ? 'true' : undefined}
-            >
-              {heading.text}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </nav>
+    <aside className="hidden md:block">
+      <div className="sticky top-24 rounded-lg border p-4">
+        <p className="text-sm font-semibold mb-3">Table of contents</p>
+        <ul className="space-y-2 text-sm">
+          {items.map((i) => (
+            <li key={i.id}>
+              <a href={`#${i.id}`} className="hover:underline">
+                {i.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </aside>
   )
 }
 

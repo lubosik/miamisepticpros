@@ -1,10 +1,11 @@
 import { notFound } from 'next/navigation'
 import { getLocation, getAllLocations } from '@/lib/content/locations'
-import { getAllServices } from '@/lib/content/services'
+import { getAllServices } from '@/lib/content/registry'
 import { generateMetadata as generateMeta } from '@/components/MetaTags'
 import SchemaJSON from '@/components/SchemaJSON'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import ServiceCard from '@/components/ServiceCard'
+import Link from 'next/link'
 import { generateBreadcrumbSchema, generateItemListSchema } from '@/lib/seo/schemaGenerators'
 
 export async function generateStaticParams() {
@@ -56,47 +57,15 @@ export default function CityPage({ params }: { params: { state: string; city: st
   // Get services available in this city
   const allServices = getAllServices()
   const availableServices = location.availableServices
-    ? allServices.filter(s => location.availableServices!.includes(s.slug))
+    ? allServices.filter(s => location.availableServices!.includes(s.key))
     : allServices
 
   const serviceListSchema = generateItemListSchema(
     availableServices.map(s => ({
-      name: s.title,
-      url: `${siteUrl}/services/${s.slug}`,
+      name: s.name,
+      url: `${siteUrl}${s.slug}`,
     }))
   )
-
-  // Convert local insights markdown to HTML
-  const htmlInsights = location.localInsights
-    ? location.localInsights
-        .split('\n')
-        .map(line => {
-          if (line.startsWith('## ')) {
-            const text = line.replace('## ', '').trim()
-            return `<h2 class="text-h2 font-serif-headings font-semibold text-charcoal mt-12 mb-4">${escapeHtml(text)}</h2>`
-          }
-          if (line.startsWith('### ')) {
-            const text = line.replace('### ', '').trim()
-            return `<h3 class="text-h3 font-serif-headings font-semibold text-charcoal mt-10 mb-4">${escapeHtml(text)}</h3>`
-          }
-          if (line.startsWith('- **')) {
-            const match = line.match(/- \*\*(.+?):\*\* (.+)/)
-            if (match) {
-              return `<li class="text-body text-body-text mb-3"><strong>${escapeHtml(match[1])}:</strong> ${escapeHtml(match[2])}</li>`
-            }
-          }
-          if (line.startsWith('- ')) {
-            const text = line.replace('- ', '').trim()
-            return `<li class="text-body text-body-text mb-3">${escapeHtml(text)}</li>`
-          }
-          if (line.trim()) {
-            return `<p class="text-body text-body-text mb-6 leading-relaxed">${escapeHtml(line)}</p>`
-          }
-          return ''
-        })
-        .filter(Boolean)
-        .join('')
-    : ''
 
   return (
     <>
@@ -112,9 +81,6 @@ export default function CityPage({ params }: { params: { state: string; city: st
         {location.county && (
           <p className="text-body-lg text-muted-text mb-4">{location.county}</p>
         )}
-        <p className="text-body text-body-text mb-8">
-          Headquartered in Miami, serving Miami-Dade and neighbors in Broward & Palm Beach.
-        </p>
 
         <div className="mb-12">
           <h2 className="text-h2 font-serif-headings font-semibold text-charcoal mb-6">
@@ -123,42 +89,42 @@ export default function CityPage({ params }: { params: { state: string; city: st
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {availableServices.map((service) => (
               <ServiceCard
-                key={service.slug}
-                title={service.title}
-                icon={service.icon}
-                description={service.shortDescription}
-                href={`/services/${service.slug}`}
+                key={service.key}
+                title={service.name}
+                description={service.summary}
+                href={service.slug}
               />
             ))}
           </div>
         </div>
 
-        {location.localInsights && (
-          <section className="prose-content">
-            <div dangerouslySetInnerHTML={{ __html: htmlInsights }} />
-          </section>
-        )}
-
         <section className="mt-12">
           <h2 className="text-h2 font-serif-headings font-semibold text-charcoal mb-6">
             Related Articles
           </h2>
-          <p className="text-body text-muted-text">
-            Articles for {location.city}, {location.stateCode} coming soon.
-          </p>
+          {availableServices.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {availableServices.slice(0, 6).map((service) => (
+                <Link
+                  key={service.key}
+                  href={service.slug}
+                  className="block p-4 border border-border-light rounded-lg hover:border-accent-green hover:shadow-md transition-all group"
+                >
+                  <h3 className="text-lg font-semibold text-primary-navy mb-1 group-hover:text-accent-green transition-colors">
+                    {service.name} in {location.city}
+                  </h3>
+                  <p className="text-sm text-muted-text line-clamp-2">{service.summary.substring(0, 100)}...</p>
+                  <p className="text-xs text-accent-green font-medium mt-2">Read Article →</p>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <p className="text-body text-muted-text">
+              Articles for {location.city}, {location.stateCode} coming soon.
+            </p>
+          )}
         </section>
       </div>
     </>
   )
-}
-
-function escapeHtml(text: string): string {
-  const map: Record<string, string> = {
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#039;',
-  }
-  return text.replace(/[&<>"']/g, m => map[m])
 }

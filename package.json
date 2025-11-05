@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate:stubs": "tsx scripts/generate-stubs.ts"
+    "generate:stubs": "tsx scripts/generate-stubs.ts",
+    "sweep:a": "tsx scripts/sweep-nested-anchors.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

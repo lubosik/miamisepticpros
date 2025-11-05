@@ -102,6 +102,7 @@ export function generateServiceSchema({
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
+    name,
     serviceType,
     provider: {
       '@type': 'Organization',
