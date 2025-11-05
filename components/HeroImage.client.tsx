@@ -38,7 +38,7 @@ export default function HeroImage({ query, alt = 'Hero image', asBackground = fa
   }, [query])
 
   if (asBackground) {
-    // Background mode - simpler, more transparent
+    // Background mode - more visible image with proper layering
     if (isLoading) {
       return (
         <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 rounded-2xl animate-pulse" />
@@ -52,15 +52,15 @@ export default function HeroImage({ query, alt = 'Hero image', asBackground = fa
     }
 
     return (
-      <div className="absolute inset-0 rounded-2xl overflow-hidden">
+      <div className="absolute inset-0 rounded-2xl overflow-hidden z-0">
         <img
           src={imageUrl}
           alt={alt}
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-70"
           loading="eager"
         />
         {/* Subtle overlay to ensure text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60 z-0" />
       </div>
     )
   }

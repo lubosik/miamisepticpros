@@ -87,9 +87,9 @@ export default function HomePage() {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-0 sm:py-8 md:py-12 lg:py-16">
         {/* Hero Section with Background Image */}
-        <section className="relative mb-12 sm:mb-20 rounded-2xl overflow-hidden">
+        <section className="relative mb-12 sm:mb-20 rounded-2xl overflow-hidden min-h-[400px] sm:min-h-[500px] md:min-h-[600px]">
           {/* Hero Background Image */}
-          <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 z-0">
             <HeroImage
               query="septic tank digging excavation work construction hard labor professional septic service"
               alt="Professional septic service excavation work"
@@ -98,12 +98,9 @@ export default function HomePage() {
           </div>
 
           {/* Hero Content Overlay */}
-          <div className="relative text-center py-12 sm:py-16 md:py-20 px-4 sm:px-6">
-            {/* Dark overlay for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 -z-10"></div>
-            
+          <div className="relative text-center py-12 sm:py-16 md:py-20 px-4 sm:px-6 z-10">
             {/* Content */}
-            <div className="relative z-10">
+            <div className="relative z-20">
               <p className="text-xs sm:text-small text-accent-green font-semibold uppercase tracking-wide mb-2 sm:mb-3">Licensed & Insured</p>
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif-headings font-bold text-white mb-3 sm:mb-4 md:mb-6 drop-shadow-lg">
                 Professional Septic Services in Miami-Dade County
