@@ -87,17 +87,17 @@ export default function SepticPumpingSchedulePage() {
       <SchemaJSON schema={softwareSchema} />
       <SchemaJSON schema={faqSchema} />
       
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         {/* Hero Section */}
-        <section className="text-center mb-12">
-          <h1 className="text-h1 font-serif-headings font-bold text-primary-navy mb-6">
+        <section className="text-center mb-8 sm:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif-headings font-bold text-primary-navy mb-4 sm:mb-6 px-2 sm:px-0">
             Free Septic Tank Pumping Schedule Calculator
           </h1>
-          <p className="text-body-lg text-body-text max-w-3xl mx-auto mb-4">
+          <p className="text-base sm:text-lg text-body-text max-w-3xl mx-auto mb-3 sm:mb-4 px-2 sm:px-0">
             Find out exactly when your septic tank needs pumping based on your household size, tank capacity, and usage patterns. 
             Get your personalized maintenance schedule in seconds.
           </p>
-          <p className="text-small text-muted-text">
+          <p className="text-xs sm:text-small text-muted-text">
             ✅ Free • ✅ No signup required • ✅ Instant results
           </p>
         </section>

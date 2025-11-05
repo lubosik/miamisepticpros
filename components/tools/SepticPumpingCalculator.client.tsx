@@ -118,8 +118,8 @@ export default function SepticPumpingCalculator() {
   }
 
   return (
-    <div className="bg-surface-white border-2 border-border-light rounded-lg p-8 shadow-lg">
-      <h2 className="text-h2 font-serif-headings font-semibold text-charcoal mb-6">
+    <div className="bg-surface-white border-2 border-border-light rounded-lg p-4 sm:p-6 md:p-8 shadow-lg">
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif-headings font-semibold text-charcoal mb-4 sm:mb-6">
         Calculate Your Pumping Schedule
       </h2>
 
@@ -200,7 +200,7 @@ export default function SepticPumpingCalculator() {
         {/* Calculate Button */}
         <button
           onClick={calculateSchedule}
-          className="w-full bg-accent-green text-white px-8 py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green-hover transition-colors shadow-md text-lg"
+          className="w-full sm:w-auto bg-accent-green text-white px-6 sm:px-8 py-3 sm:py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green-hover transition-colors shadow-md text-base sm:text-lg"
         >
           Calculate My Pumping Schedule
         </button>
