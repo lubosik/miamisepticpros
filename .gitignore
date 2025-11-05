@@ -32,3 +32,15 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Research and documentation files
+/docs/
+/msp/
+/research/
+/outputs/
+*SUMMARY*.md
+*BRIEF*.md
+*PHASE*.md
+HYDRATION_FIX_REPORT.md
+FIXES_SUMMARY.md
+~/Downloads/Miami-Septic-Pros-Complete-Summary.md
+
