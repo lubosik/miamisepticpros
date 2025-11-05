@@ -4,9 +4,14 @@ import './globals.css'
 import '../styles/prose.css'
 
 export const metadata: Metadata = {
-  title: 'SepticTankQuoteHub',
-  description: 'Our licensed technicians handle septic services in Miami-Dade & South Florida. Transparent estimates.',
+  title: 'Miami Septic Pros — Expert Septic Services in Miami-Dade County',
+  description: 'Licensed septic technicians serving Miami, Coral Gables, Kendall, Doral, and all of Miami-Dade. Professional pumping, cleaning, repairs, and installations.',
   manifest: '/site.webmanifest',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -27,6 +32,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+      </head>
       <body>
         {gaId && (
           <>

@@ -84,27 +84,27 @@ export default function HomePage() {
       <SchemaJSON schema={breadcrumbSchema} />
       <SchemaJSON schema={serviceListSchema} />
       
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         {/* Hero Section */}
         <section className="text-center mb-20">
           <div className="mb-6">
             <p className="text-small text-accent-green font-semibold uppercase tracking-wide mb-3">Licensed & Insured</p>
-            <h1 className="text-h1 font-serif-headings font-bold text-primary-navy mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif-headings font-bold text-primary-navy mb-4 sm:mb-6 px-4 sm:px-0">
               Professional Septic Services in Miami-Dade County
             </h1>
-            <p className="text-body-lg text-body-text mb-4 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-body-text mb-4 max-w-2xl mx-auto px-4 sm:px-0">
               Licensed septic technicians serving Miami, Coral Gables, Kendall, Doral, Hialeah, Aventura, and Homestead. Expert pumping, cleaning, repairs, and installations.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-6 sm:mt-8 px-4 sm:px-0">
               <a
                 href="/book"
-                className="bg-accent-green text-white px-8 py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green-hover transition-colors shadow-md text-lg"
+                className="w-full sm:w-auto bg-accent-green text-white px-6 sm:px-8 py-3 sm:py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green-hover transition-colors shadow-md text-base sm:text-lg text-center"
               >
                 Get Free Quote
               </a>
               <a
                 href="tel:+13055550100"
-                className="border-2 border-accent-green text-accent-green px-8 py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green hover:text-white transition-colors text-lg"
+                className="w-full sm:w-auto border-2 border-accent-green text-accent-green px-6 sm:px-8 py-3 sm:py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green hover:text-white transition-colors text-base sm:text-lg text-center"
               >
                 Call (305) 555-0100
               </a>
@@ -136,26 +136,26 @@ export default function HomePage() {
         </section>
 
         {/* Free Tool Promotion Section */}
-        <section className="mb-20 bg-gradient-to-br from-accent-green/10 to-green-600/10 rounded-lg p-12 border-2 border-accent-green/20">
+        <section className="mb-12 sm:mb-20 bg-gradient-to-br from-accent-green/10 to-green-600/10 rounded-lg p-6 sm:p-12 border-2 border-accent-green/20 mx-4 sm:mx-0">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-accent-green text-white px-4 py-2 rounded-full text-small font-semibold mb-4">
+            <div className="inline-block bg-accent-green text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-small font-semibold mb-3 sm:mb-4">
               🆓 FREE TOOL
             </div>
-            <h2 className="text-h2 font-serif-headings font-bold text-primary-navy mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif-headings font-bold text-primary-navy mb-3 sm:mb-4 px-2 sm:px-0">
               Find Out When Your Septic Tank Needs Pumping
             </h2>
-            <p className="text-body-lg text-body-text mb-6 max-w-2xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-body-text mb-4 sm:mb-6 max-w-2xl mx-auto px-2 sm:px-0">
               Use our free Septic Tank Pumping Schedule Calculator to determine exactly when your system needs maintenance. 
               Get instant, personalized results based on your household size and usage.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <a
                 href="/tools/septic-pumping-schedule"
-                className="bg-accent-green text-white px-8 py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green-hover transition-colors shadow-md text-lg"
+                className="w-full sm:w-auto bg-accent-green text-white px-6 sm:px-8 py-3 sm:py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green-hover transition-colors shadow-md text-base sm:text-lg text-center"
               >
                 Use Free Calculator →
               </a>
-              <p className="text-small text-muted-text">
+              <p className="text-xs sm:text-small text-muted-text text-center sm:text-left">
                 ✅ No signup required • ✅ Instant results • ✅ Personalized schedule
               </p>
             </div>
