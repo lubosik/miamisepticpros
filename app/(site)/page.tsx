@@ -85,41 +85,48 @@ export default function HomePage() {
       <SchemaJSON schema={breadcrumbSchema} />
       <SchemaJSON schema={serviceListSchema} />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
-        {/* Hero Section */}
-        <section className="mb-20">
-          {/* Hero Image */}
-          <div className="mb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-0 sm:py-8 md:py-12 lg:py-16">
+        {/* Hero Section with Background Image */}
+        <section className="relative mb-12 sm:mb-20 rounded-2xl overflow-hidden">
+          {/* Hero Background Image */}
+          <div className="absolute inset-0 -z-10">
             <HeroImage
-              query="septic tank service truck professional plumbing"
-              alt="Professional septic service in Miami-Dade County"
+              query="septic tank digging excavation work construction hard labor professional septic service"
+              alt="Professional septic service excavation work"
+              asBackground={true}
             />
           </div>
 
-          {/* Hero Content */}
-          <div className="text-center">
-            <p className="text-small text-accent-green font-semibold uppercase tracking-wide mb-3">Licensed & Insured</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif-headings font-bold text-primary-navy mb-4 sm:mb-6 px-4 sm:px-0">
-              Professional Septic Services in Miami-Dade County
-            </h1>
-            <p className="text-base sm:text-lg text-body-text mb-4 max-w-2xl mx-auto px-4 sm:px-0">
-              Licensed septic technicians serving Miami, Coral Gables, Kendall, Doral, Hialeah, Aventura, and Homestead. Expert pumping, cleaning, repairs, and installations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-6 sm:mt-8 px-4 sm:px-0">
-              <a
-                href="/book"
-                className="w-full sm:w-auto bg-accent-green text-white px-6 sm:px-8 py-3 sm:py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green-hover transition-colors shadow-md text-base sm:text-lg text-center"
-              >
-                Get Free Quote
-              </a>
-              <a
-                href="tel:+13055550100"
-                className="w-full sm:w-auto border-2 border-accent-green text-accent-green px-6 sm:px-8 py-3 sm:py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green hover:text-white transition-colors text-base sm:text-lg text-center"
-              >
-                Call (305) 555-0100
-              </a>
+          {/* Hero Content Overlay */}
+          <div className="relative text-center py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 -z-10"></div>
+            
+            {/* Content */}
+            <div className="relative z-10">
+              <p className="text-xs sm:text-small text-accent-green font-semibold uppercase tracking-wide mb-2 sm:mb-3">Licensed & Insured</p>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-serif-headings font-bold text-white mb-3 sm:mb-4 md:mb-6 drop-shadow-lg">
+                Professional Septic Services in Miami-Dade County
+              </h1>
+              <p className="text-sm sm:text-base md:text-lg text-white/95 mb-3 sm:mb-4 max-w-2xl mx-auto drop-shadow-md">
+                Licensed septic technicians serving Miami, Coral Gables, Kendall, Doral, Hialeah, Aventura, and Homestead. Expert pumping, cleaning, repairs, and installations.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center items-center mt-4 sm:mt-6 md:mt-8">
+                <a
+                  href="/book"
+                  className="w-full sm:w-auto bg-accent-green text-white px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 rounded-sm font-sans-ui font-semibold hover:bg-accent-green-hover transition-colors shadow-lg text-sm sm:text-base md:text-lg text-center"
+                >
+                  Get Free Quote
+                </a>
+                <a
+                  href="tel:+13055550100"
+                  className="w-full sm:w-auto border-2 border-white text-white px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 rounded-sm font-sans-ui font-semibold hover:bg-white hover:text-primary-navy transition-colors text-sm sm:text-base md:text-lg text-center"
+                >
+                  Call (305) 555-0100
+                </a>
+              </div>
+              <p className="text-xs sm:text-small text-white/90 mt-3 sm:mt-4 drop-shadow">Available 24/7 for emergency service</p>
             </div>
-            <p className="text-small text-muted-text mt-4">Available 24/7 for emergency service</p>
           </div>
         </section>
 

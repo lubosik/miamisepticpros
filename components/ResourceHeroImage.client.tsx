@@ -52,7 +52,7 @@ export default function ResourceHeroImage({ city, service, alt }: ResourceHeroIm
   }
 
   return (
-    <div className="relative w-full h-48 sm:h-64 md:h-80 rounded-xl overflow-hidden shadow-lg mb-8 group">
+    <div className="hidden md:block relative w-full h-48 sm:h-64 md:h-80 rounded-xl overflow-hidden shadow-lg mb-8 group">
       {/* Subtle glow effect */}
       <div className="absolute -inset-0.5 bg-gradient-to-r from-accent-green/30 to-green-600/30 blur-sm" />
 

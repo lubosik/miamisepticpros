@@ -5,9 +5,10 @@ import { useState, useEffect } from 'react'
 interface HeroImageProps {
   query: string
   alt?: string
+  asBackground?: boolean
 }
 
-export default function HeroImage({ query, alt = 'Hero image' }: HeroImageProps) {
+export default function HeroImage({ query, alt = 'Hero image', asBackground = false }: HeroImageProps) {
   const [imageUrl, setImageUrl] = useState<string>('')
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(false)
@@ -36,6 +37,35 @@ export default function HeroImage({ query, alt = 'Hero image' }: HeroImageProps)
     fetchImage()
   }, [query])
 
+  if (asBackground) {
+    // Background mode - simpler, more transparent
+    if (isLoading) {
+      return (
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 rounded-2xl animate-pulse" />
+      )
+    }
+
+    if (error || !imageUrl) {
+      return (
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800 rounded-2xl" />
+      )
+    }
+
+    return (
+      <div className="absolute inset-0 rounded-2xl overflow-hidden">
+        <img
+          src={imageUrl}
+          alt={alt}
+          className="w-full h-full object-cover opacity-40"
+          loading="eager"
+        />
+        {/* Subtle overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50" />
+      </div>
+    )
+  }
+
+  // Regular mode - existing implementation
   if (isLoading) {
     return (
       <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] bg-gradient-to-br from-gray-200 via-gray-100 to-gray-200 rounded-2xl overflow-hidden shadow-2xl animate-pulse">
