@@ -11,8 +11,19 @@ import { cleanContent } from '@/lib/format/cleanContent'
 const contentDirectory = path.join(process.cwd(), 'pages/miami/services')
 
 export async function generateStaticParams() {
-  // This route redirects to /services/:slug, so we don't generate static params here
-  return []
+  try {
+    const files = fs.readdirSync(contentDirectory, { withFileTypes: true })
+    const params = files
+      .filter(dirent => dirent.isDirectory())
+      .map(dirent => ({
+        slug: dirent.name,
+      }))
+    console.log(`[generateStaticParams miami/services] Generated ${params.length} params`)
+    return params
+  } catch (error) {
+    console.error('[generateStaticParams miami/services] Error:', error)
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {

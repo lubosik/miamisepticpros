@@ -193,7 +193,7 @@ export function generateLocalBusinessSchema() {
 
   return {
     '@context': 'https://schema.org',
-    '@type': ['LocalBusiness', 'Plumber'],
+    '@type': ['LocalBusiness'],
     name: 'Miami Septic Pros',
     url: siteUrl,
     address: {

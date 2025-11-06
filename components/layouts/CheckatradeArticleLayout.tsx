@@ -29,7 +29,7 @@ export default function CheckatradeArticleLayout({
           </div>
           {heroSrc && (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={heroSrc} alt="" className="rounded-xl w-full h-auto object-cover" />
+            <img src={heroSrc} alt="" className="hidden md:block rounded-xl w-full h-auto object-cover" />
           )}
         </div>
       </header>

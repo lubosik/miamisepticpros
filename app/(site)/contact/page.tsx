@@ -2,6 +2,7 @@ import { generateMetadata as generateMeta } from '@/components/MetaTags'
 import SchemaJSON from '@/components/SchemaJSON'
 import { generateBreadcrumbSchema, renderLocalBusiness } from '@/lib/seo/schemaGenerators'
 import Link from 'next/link'
+import ContactForm from '@/components/forms/ContactForm'
 
 export async function generateMetadata() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://miamisepticpros.com'
@@ -158,6 +159,16 @@ export default function ContactPage() {
             </div>
           </section>
         </div>
+
+        {/* Contact Form Section */}
+        <section className="mb-16">
+          <h2 className="text-h2 font-serif-headings font-semibold text-charcoal mb-6 text-center">
+            Send Us a Message
+          </h2>
+          <div className="max-w-2xl mx-auto">
+            <ContactForm />
+          </div>
+        </section>
 
         {/* Emergency Service Banner */}
         <section className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg p-8 text-center">

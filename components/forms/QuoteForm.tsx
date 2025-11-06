@@ -114,28 +114,52 @@ export default function QuoteForm({ services }: QuoteFormProps) {
     setSubmitSuccess(false)
 
     try {
-      const response = await fetch('/api/quote', {
+      // Extract first name for thank you page
+      const firstName = data.name.split(' ')[0] || data.name
+
+      // Prepare form data for Web3Forms
+      const formData = new FormData()
+      formData.append('access_key', 'bc5a03ef-5395-4c81-a84c-037112caa5a0')
+      formData.append('subject', `New Quote Request: ${data.serviceType || 'Septic Service'}`)
+      formData.append('name', data.name)
+      formData.append('email', data.email)
+      formData.append('phone', data.phone)
+      formData.append('address', `${data.address}, ${data.city}, ${data.state} ${data.zip}`)
+      formData.append('service_type', data.serviceType || 'Not specified')
+      formData.append('urgency', data.urgency || 'routine')
+      formData.append('symptoms', data.symptoms || 'None provided')
+      formData.append('utm_source', data.utm_source || '')
+      formData.append('utm_medium', data.utm_medium || '')
+      formData.append('utm_campaign', data.utm_campaign || '')
+      formData.append('utm_term', data.utm_term || '')
+      formData.append('utm_content', data.utm_content || '')
+      formData.append('referrer', data.referrer || '')
+      
+      // Honeypot spam protection
+      formData.append('botcheck', '')
+      
+      // Redirect to thank you page with first name
+      formData.append('redirect', `${window.location.origin}/quote/thank-you?name=${encodeURIComponent(firstName)}`)
+
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
+        body: formData,
       })
 
       const result = await response.json()
 
-      if (!response.ok) {
-        throw new Error(result.error || 'Failed to submit quote request')
+      if (!response.ok || !result.success) {
+        throw new Error(result.message || 'Failed to submit quote request')
       }
 
-      // Success - show inline confirmation, then redirect after 2 seconds
+      // Success - redirect immediately (Web3Forms handles redirect)
       setSubmitSuccess(true)
       reset()
-
-      // Redirect to thank you page after 2 seconds
+      
+      // Fallback redirect in case Web3Forms redirect doesn't work
       setTimeout(() => {
-        window.location.href = '/quote/thank-you'
-      }, 2000)
+        window.location.href = `/quote/thank-you?name=${encodeURIComponent(firstName)}`
+      }, 1000)
     } catch (error) {
       setSubmitError(error instanceof Error ? error.message : 'An error occurred. Please try again.')
       setIsSubmitting(false)

@@ -11,8 +11,18 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export async function generateStaticParams() {
-  // This route redirects to /services/:slug, so we don't generate static params here
-  return []
+  try {
+    const { getAllResources } = await import('@/lib/content/registry')
+    const resources = getAllResources()
+    const params = resources.map((resource) => ({
+      slug: resource.slug.replace('/resources/', ''),
+    }))
+    console.log(`[generateStaticParams] Generated ${params.length} resource params`)
+    return params
+  } catch (error) {
+    console.error('[generateStaticParams] Error:', error)
+    return []
+  }
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
