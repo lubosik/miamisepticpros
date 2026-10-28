@@ -199,3 +199,20 @@ Full read-only snapshot of the live site in `snapshot-live-2026-10-28/` (see its
 - Trailing slash 301 on all 388 probed pages; `www` serves 200 (duplicate host); `/miami/services/*` is a pattern 301 (2 hops); `/index`, `/index.html`, `/404/` serve 200 duplicates; nosniff and SAMEORIGIN on every response; the meta CSP still blocks Web3Forms on every page.
 - Draft rules: `inferred-_redirects` (390 live-parity rules: 389 static, 1 dynamic; 414 commented RECOMMENDED lines) and `inferred-_headers` (7 rules). Inferred from probes; confirm against `.htaccess` when the owner provides it.
 - **Secret exposed live:** the `/tools/compliance-check/` and `/tools/risk-scan/` JS chunks contain a Resend API key used from the browser. Rotate it (owner, Resend dashboard). Those two files are git-ignored in the snapshot (GitHub push protection, rule 8); all else is committed. Size about 67 MB.
+
+## Rebuild moved to the engine (28 Oct 2026)
+
+The owner approved moving this site onto the FCC engine. The rebuild lives in the monorepo
+`lubosik/fcc-lead-engine`, branch `claude/funny-wright-fgsyrs`, folder `sites/septic` (site_id `septic`). This
+repo keeps the live snapshot (`snapshot-live-2026-10-28/`) as the parity baseline; no site code here changes.
+
+- Preview (noindex): https://fcc-septic-preview.lubosikongwa.workers.dev. Nothing live, no DNS change.
+- 182 pages: 178 imported from this snapshot with identical URL, title, H1 and body text except logged removals
+  (false claims, address, Trustpilot, old forms, dashes), plus a sourced Miami-Dade septic-to-sewer guide.
+- City guides: 1 of 284 kept (206 crawled plus 78 orphans found in the owner's cPanel export); the rest 301 to the
+  closest real page. 815 single-hop 301 rules in total.
+- Parity on the preview: 1,898 URLs, 0 failures. Hero quote form on every page posts to the ingest endpoint;
+  a test lead from the preview reached the CRM with site `septic` and was marked invalid.
+- The cPanel export confirmed the `.htaccess` (one `/miami/services/` 301) and matched all 389 crawled pages.
+- Owner actions: rotate the exposed Resend key, send the Search Console export, then follow
+  `sites/septic/CUTOVER.md` in the monorepo after CHECKPOINT 4 approval.
