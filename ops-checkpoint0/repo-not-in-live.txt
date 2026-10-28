@@ -1,0 +1,14 @@
+# Repo routes that render 200 but are not in the live sitemap.
+https://miamisepticpros.com/contact/thank-you
+https://miamisepticpros.com/locations/aventura
+https://miamisepticpros.com/locations/coral-gables
+https://miamisepticpros.com/locations/doral
+https://miamisepticpros.com/locations/hialeah
+https://miamisepticpros.com/locations/homestead
+https://miamisepticpros.com/locations/kendall
+https://miamisepticpros.com/locations/miami
+https://miamisepticpros.com/miami/services
+https://miamisepticpros.com/privacy
+https://miamisepticpros.com/quote/thank-you
+https://miamisepticpros.com/terms
+https://miamisepticpros.com/test-checkatrade
