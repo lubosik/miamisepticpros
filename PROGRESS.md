@@ -189,3 +189,13 @@ Count: 26 items. The footer has a partial dispatcher disclosure, but not the rul
 
 - Contents of the live `.htaccess` (not readable); behaviour above is from probing.
 - Web3Forms behaviour with `to_email` and `redirect` (would need a real submission; none was made).
+
+## WS6C prep (28 Oct 2026): live snapshot taken
+
+Full read-only snapshot of the live site in `snapshot-live-2026-10-28/` (see its README for method). GET requests only; no form submitted; nothing changed live.
+
+- **Correction to CHECKPOINT 0:** the live site has 389 distinct pages, not 178. Besides the 178 sitemap pages there are 206 city guides at `/resources/{service}-fl-{city}/` (200, linked internally, in no sitemap) and 5 utility pages. Each city guide's canonical points to `/resources/{service}/fl-{city}/`, which is 404, and 206 of the 352 dead sitemap URLs are those canonical forms. This needs a decision before the move (fix canonical and sitemap, or 301 the canonical form).
+- 1,213 URLs requested: 623 end in 200, 590 in 404. 25 distinct URLs linked from live pages are 404; 25 double-slash URLs linked from live pages serve 200 duplicates.
+- Trailing slash 301 on all 388 probed pages; `www` serves 200 (duplicate host); `/miami/services/*` is a pattern 301 (2 hops); `/index`, `/index.html`, `/404/` serve 200 duplicates; nosniff and SAMEORIGIN on every response; the meta CSP still blocks Web3Forms on every page.
+- Draft rules: `inferred-_redirects` (390 live-parity rules: 389 static, 1 dynamic; 414 commented RECOMMENDED lines) and `inferred-_headers` (7 rules). Inferred from probes; confirm against `.htaccess` when the owner provides it.
+- **Secret exposed live:** the `/tools/compliance-check/` and `/tools/risk-scan/` JS chunks contain a Resend API key used from the browser. Rotate it (owner, Resend dashboard). Those two files are git-ignored in the snapshot (GitHub push protection, rule 8); all else is committed. Size about 67 MB.

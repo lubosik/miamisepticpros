@@ -1,0 +1,14 @@
+User-Agent: *
+Allow: /
+Allow: /resources/*
+Allow: /services/*
+Disallow: /quote/thank-you/
+Disallow: /api/
+
+User-Agent: GPTBot
+Allow: /
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://miamisepticpros.com/sitemap.xml

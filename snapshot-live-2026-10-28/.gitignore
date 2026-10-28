@@ -1,0 +1,5 @@
+# These two live JS chunks contain a Resend API key (Authorization: Bearer re_...) that the live site ships to every
+# browser. GitHub push protection blocks them, and master plan rule 8 forbids secrets in git. They are kept on local
+# disk only. Their URL, size, SHA-256 and headers are still recorded in manifest.json. The owner should rotate the key.
+assets/_next/static/chunks/app/(site)/tools/compliance-check/page-9bbae3a63a7ff255.js
+assets/_next/static/chunks/app/(site)/tools/risk-scan/page-4e6e143880c9ffcb.js

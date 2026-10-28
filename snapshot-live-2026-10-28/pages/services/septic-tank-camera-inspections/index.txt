@@ -1,0 +1,444 @@
+3:I[4707,[],""]
+5:I[6423,[],""]
+6:I[9657,["2972","static/chunks/2972-93ce39bd5b74f742.js","7457","static/chunks/app/(site)/layout-5ffe5b38c1ea2ccf.js"],"default",1]
+4:["slug","septic-tank-camera-inspections","d"]
+7:{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"}
+8:{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"}
+9:{"display":"inline-block"}
+a:{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0}
+0:["lD0ZKlw6jCWtdyATO3Ny8",[[["",{"children":["(site)",{"children":["services",{"children":[["slug","septic-tank-camera-inspections","d"],{"children":["__PAGE__?{\"slug\":\"septic-tank-camera-inspections\"}",{}]}]}]}]},"$undefined","$undefined",true],["",{"children":["(site)",{"children":["services",{"children":[["slug","septic-tank-camera-inspections","d"],{"children":["__PAGE__",{},[["$L1","$L2",null],null],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","(site)","children","services","children","$4","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[null,["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","(site)","children","services","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined"}]],null]},[[null,["$","$L6",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children","(site)","children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}],"params":{}}]],null],null]},[[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d21915bca80c40cc.css","precedence":"next","crossOrigin":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link",null,{"rel":"icon","href":"/favicon-16x16.png","type":"image/png","sizes":"16x16"}],["$","link",null,{"rel":"icon","href":"/favicon-32x32.png","type":"image/png","sizes":"32x32"}],["$","link",null,{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180"}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=5"}],["$","meta",null,{"httpEquiv":"Content-Security-Policy","content":"default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data: https://www.googletagmanager.com https://www.google-analytics.com https://*.googletagmanager.com https://widget.trustpilot.com https://*.trustpilot.com; style-src 'self' 'unsafe-inline' blob: data:; img-src 'self' data: https: blob:; font-src 'self' data: blob:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://region1.google-analytics.com https://region2.google-analytics.com https://region3.google-analytics.com https://region4.google-analytics.com https://*.googletagmanager.com https://www.googletagmanager.com https://widget.trustpilot.com https://*.trustpilot.com; frame-src 'self' https://www.google.com https://maps.google.com https://*.google.com https://widget.trustpilot.com https://*.trustpilot.com;"}],["$","script",null,{"async":true,"src":"https://www.googletagmanager.com/gtag/js?id=G-S8683S7L28"}],["$","script",null,{"dangerouslySetInnerHTML":{"__html":"\n              window.dataLayer = window.dataLayer || [];\n              function gtag(){dataLayer.push(arguments);}\n              gtag('js', new Date());\n              gtag('config', 'G-S8683S7L28');\n            "}}]]}],["$","body",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":"$7","children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":"$8","children":"404"}],["$","div",null,{"style":"$9","children":["$","h2",null,{"style":"$a","children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[]}]}]]}]],null],null],["$Lb",null]]]]
+c:I[2972,["2972","static/chunks/2972-93ce39bd5b74f742.js","232","static/chunks/app/(site)/services/%5Bslug%5D/page-ba48f8af40583b5c.js"],""]
+e:I[1020,["2972","static/chunks/2972-93ce39bd5b74f742.js","232","static/chunks/app/(site)/services/%5Bslug%5D/page-ba48f8af40583b5c.js"],"default"]
+d:T645d,<p>Camera inspections use specialized waterproof cameras inserted into septic tanks and drain lines to visually inspect interior conditions without excavation. These inspections reveal cracks, root intrusion, blockages, structural damage, and other problems not visible during surface inspections.</p>
+
+<p>Camera inspections are especially valuable for diagnosing persistent problems, evaluating repair needs, and planning system maintenance or replacement. They provide visual documentation of system condition that helps with repair planning and property transaction documentation, as required by <a href="https://www.miamidade.gov/permits/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Miami-Dade County inspection standards</a>.</p>
+
+<p>In Miami, where high water tables and dense landscaping can hide problems, camera inspections provide essential diagnostic information that saves money by identifying exact problems before expensive repairs or excavation work begins, as noted in <a href="https://floridadep.gov/water/domestic-wastewater/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Florida DEP environmental guidelines</a>.</p>
+
+
+<h2 id="cost">How much does Septic Tank Camera Inspection cost in Miami?</h2>
+
+<div class="bg-green-50 border-2 border-green-500 rounded-lg p-6 my-6">
+  <h3 class="text-2xl font-bold mb-4">Average Septic Camera Inspection Cost in Miami</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+    <div class="bg-white p-4 rounded">
+      <p class="text-sm text-gray-600 mb-1">Minimum Cost</p>
+      <p class="text-3xl font-bold text-green-600">$150</p>
+      <p class="text-xs text-gray-500 mt-1">Basic camera inspection, simple system</p>
+    </div>
+    <div class="bg-white p-4 rounded">
+      <p class="text-sm text-gray-600 mb-1">Average Cost</p>
+      <p class="text-3xl font-bold text-green-600">$300</p>
+      <p class="text-xs text-gray-500 mt-1">Standard camera inspection</p>
+    </div>
+    <div class="bg-white p-4 rounded">
+      <p class="text-sm text-gray-600 mb-1">Maximum Cost</p>
+      <p class="text-3xl font-bold text-green-600">$600</p>
+      <p class="text-xs text-gray-500 mt-1">Comprehensive inspection with drain field</p>
+    </div>
+  </div>
+  <p class="text-sm text-gray-700"><strong>Typical Range:</strong> $200-$500 for most camera inspections in Miami-Dade County</p>
+</div>
+
+<p>Camera inspection costs vary based on system complexity, inspection scope, and equipment needed. Most Miami-Dade homeowners spend $200-$500 for professional camera inspections.</p>
+
+<strong>Factors affecting costs:</strong>
+
+<p><strong>Inspection scope:</strong> Basic camera inspections of main sewer lines cost $200-$300. Comprehensive inspections including drain field pipes cost $400-$500. Tank-only inspections cost $150-$250.</p>
+
+<p><strong>System complexity:</strong> Simple single-tank systems cost less to inspect ($200-$300). Multi-tank systems, advanced treatment units, or complex drain field layouts cost more ($350-$500) due to additional inspection time.</p>
+
+<p><strong>Access difficulty:</strong> Easy access through cleanouts costs standard rates. Difficult access requiring special equipment or multiple entry points adds $50-$100. Camera inspections don't require excavation, but access point availability affects costs.</p>
+
+<p><strong>Documentation needs:</strong> Basic video inspection costs $200-$300. Inspections with detailed reports, photos, and recommendations cost $300-$400. Rush reports needed within 24 hours add $50-$75.</p>
+
+<p><strong>Emergency service:</strong> Same-day or after-hours camera inspections add $75-$150 to base prices. Emergency inspections for urgent problems cost more due to immediate scheduling needs.</p>
+
+<strong>What's typically included:</strong>
+<ul>
+<li>Camera inspection of sewer lines and tank access points</li>
+<li>Real-time video footage of interior conditions</li>
+<li>Identification of problems like cracks, roots, or blockages</li>
+<li>Basic report with findings and recommendations</li>
+<li>Video recording for documentation (if requested)</li>
+</ul>
+
+<p>Camera inspections often save money by identifying exact problems before expensive excavation or repair work. The cost of inspection is usually much less than unnecessary digging or repairs based on guesswork.</p>
+
+
+<section class="my-10 rounded-xl border bg-white p-5 shadow-sm">
+  <h3 class="text-xl font-bold">Need help today?</h3>
+  <p class="mt-2 text-gray-700">Same-day service across Miami-Dade. Licensed &amp; insured.</p>
+  <a class="mt-4 inline-block rounded-lg bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700" href="tel:+15615562659">
+    Call Miami Septic Pros
+  </a>
+</section>
+<h2 id="what-cameras-show">What camera inspections reveal</h2>
+
+<p>Camera inspections provide visual evidence of interior conditions that surface inspections cannot reveal:</p>
+
+<strong>Structural problems:</strong>
+<ul>
+<li>Cracks or breaks in pipes that aren't visible from outside</li>
+<li>Collapsed pipe sections causing blockages</li>
+<li>Pipe deterioration and corrosion</li>
+<li>Loose or disconnected pipe joints</li>
+<li>Structural damage from settling or root pressure</li>
+</ul>
+
+<strong>Blockages and obstructions:</strong>
+<ul>
+<li>Root intrusion into pipes from nearby trees</li>
+<li>Solid waste buildup causing restrictions</li>
+<li>Foreign objects accidentally flushed into system</li>
+<li>Grease or sludge accumulation blocking flow</li>
+<li>Bellies or low spots in pipes trapping waste</li>
+</ul>
+
+<strong>System condition assessment:</strong>
+<ul>
+<li>Pipe age and remaining useful life</li>
+<li>Overall system condition and maintenance needs</li>
+<li>Areas of concern requiring attention</li>
+<li>System components needing replacement</li>
+</ul>
+
+<strong>Drain field evaluation:</strong>
+<ul>
+<li>Condition of distribution pipes in drain field</li>
+<li>Blockages preventing proper effluent distribution</li>
+<li>Root intrusion affecting drain field function</li>
+<li>Pipe deterioration in drain field area</li>
+</ul>
+
+<strong>Documentation value:</strong>
+<p>Camera footage provides visual proof of problems, making it easier to justify repairs and get accurate estimates. Video documentation is valuable for property transactions, insurance claims, or warranty work. Having visual evidence prevents disputes about whether problems exist or repairs are needed.</p>
+
+<p>Camera inspections eliminate guesswork by showing exact conditions inside pipes and tanks. This accuracy saves money by ensuring repairs address actual problems, not assumed issues.</p>
+
+<h2 id="when-needed">When camera inspections are needed</h2>
+
+<p>Camera inspections are recommended in several situations:</p>
+
+<strong>Persistent problems:</strong>
+<ul>
+<li>Recurring clogs or backups that visual inspection doesn't explain</li>
+<li>Slow drains that persist after pumping or cleaning</li>
+<li>Unexplained system problems needing diagnosis</li>
+<li>Problems that come and go, suggesting intermittent blockages</li>
+</ul>
+
+<strong>Before major repairs:</strong>
+<ul>
+<li>Planning drain field repairs or replacement</li>
+<li>Evaluating whether repairs are needed or replacement is necessary</li>
+<li>Determining exact repair scope and costs</li>
+<li>Identifying all problems that need addressing</li>
+</ul>
+
+<strong>Property transactions:</strong>
+<ul>
+<li>Real estate inspections requiring detailed condition assessment</li>
+<li>Documenting system condition for buyers or sellers</li>
+<li>Identifying problems affecting property value</li>
+<li>Providing visual proof for transaction negotiations</li>
+</ul>
+
+<strong>Preventive maintenance:</strong>
+<ul>
+<li>Routine inspections every 5-10 years to catch problems early</li>
+<li>Before landscaping or construction that could affect system</li>
+<li>After storms or flooding that might cause damage</li>
+<li>Evaluating system condition for maintenance planning</li>
+</ul>
+
+<strong>Drain field problems:</strong>
+<ul>
+<li>Diagnosing drain field failures when cause isn't obvious</li>
+<li>Checking distribution pipes for blockages or damage</li>
+<li>Evaluating whether drain field can be repaired or needs replacement</li>
+<li>Planning drain field restoration or repair work</li>
+</ul>
+
+<p>If visual inspection doesn't reveal causes of problems, camera inspection provides essential diagnostic information needed for proper repairs.</p>
+
+<h2 id="tank-vs-drain-field">Tank vs drain field camera inspections</h2>
+
+<p>Camera inspections serve different purposes depending on what part of the system is examined:</p>
+
+<strong>Tank camera inspections:</strong>
+<p>Cameras inspect interior of septic tanks through access points or by insertion through inlet/outlet pipes. Tank inspections reveal sludge levels, scum thickness, baffle condition, and structural problems inside tanks. They help assess tank condition and determine if pumping or cleaning is sufficient, or if tank replacement is needed.</p>
+
+<strong>Drain line camera inspections:</strong>
+<p>Cameras travel through sewer lines from house to tank, and from tank to drain field. These inspections identify blockages, root intrusion, cracks, or damage in pipes. They reveal problems causing backups or flow restrictions that affect system function.</p>
+
+<strong>Drain field camera inspections:</strong>
+<p>Cameras inspect distribution pipes in drain fields to identify blockages, root intrusion, or structural problems causing drain field failure. Drain field inspections are especially valuable when drain fields show signs of problems but visual inspection doesn't reveal causes. These inspections help determine if drain fields can be repaired or need complete replacement.</p>
+
+<strong>Combined inspections:</strong>
+<p>Comprehensive camera inspections examine multiple system components to provide complete condition assessment. Combined inspections cost more but provide comprehensive information needed for major repairs or replacement decisions.</p>
+
+<p>Your contractor will recommend appropriate inspection scope based on problems you're experiencing. Basic inspections start with problem areas, while comprehensive inspections evaluate entire systems.</p>
+
+<h2 id="benefits">Benefits of camera inspections</h2>
+
+<p>Camera inspections provide multiple advantages over traditional inspection methods:</p>
+
+<strong>Non-invasive diagnosis:</strong>
+<p>Camera inspections don't require excavation or digging, protecting landscaping and avoiding property damage. Technicians insert cameras through existing access points, examining interior conditions without disturbing property. This non-invasive approach makes inspections less disruptive and more affordable.</p>
+
+<strong>Accurate problem identification:</strong>
+<p>Camera footage shows exact problems, eliminating guesswork about what repairs are needed. Visual evidence ensures repairs address actual issues, not assumed problems. This accuracy prevents unnecessary work and ensures repairs solve problems effectively.</p>
+
+<strong>Cost savings:</strong>
+<p>By identifying exact problems, camera inspections prevent unnecessary excavation or repairs based on guesswork. Knowing problem locations and causes allows targeted repairs that cost less than exploratory work. Camera inspections typically cost $200-$500, much less than unnecessary digging or trial-and-error repairs.</p>
+
+<strong>Time efficiency:</strong>
+<p>Camera inspections take 45-90 minutes, providing immediate diagnostic information. Traditional diagnostic methods requiring excavation take much longer and are more disruptive. Quick diagnosis allows faster problem resolution and repair scheduling.</p>
+
+<strong>Visual documentation:</strong>
+<p>Camera footage provides visual proof of conditions, valuable for property transactions, insurance claims, warranty work, or repair planning. Documentation helps justify repairs, negotiate transactions, or plan maintenance schedules. Having visual evidence prevents disputes about system conditions.</p>
+
+<strong>Preventive value:</strong>
+<p>Camera inspections identify developing problems before they cause system failure. Early detection allows preventive repairs that extend system life and prevent expensive emergency situations. Regular camera inspections help maintain systems properly and avoid costly failures.</p>
+
+<p>The combination of accuracy, efficiency, and documentation makes camera inspections valuable for diagnosing problems and planning repairs effectively.</p>
+
+<h2 id="miami-environment">How camera inspections work in Miami's unique environment</h2>
+
+<p>Miami's climate and soil conditions affect how camera inspections work:</p>
+
+<strong>High water table considerations:</strong>
+<p>Miami's high water table can make some problems harder to detect from surface inspections, making cameras more valuable, as documented in <a href="https://floridadep.gov/water/domestic-wastewater/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Florida DEP environmental data</a>. Saturated soils can hide drain field problems that cameras reveal inside pipes. Camera inspections provide essential information about conditions that surface inspections miss in Miami's wet environment.</p>
+
+<strong>Sandy soils and clarity:</strong>
+<p>Miami's sandy soils generally allow good camera visibility, making inspections effective. However, very wet conditions during rainy season can affect camera clarity in some situations. Professional cameras are designed to work in various conditions, and Miami contractors use appropriate equipment for local soil types.</p>
+
+<strong>Root intrusion:</strong>
+<p>Miami's lush vegetation and tree growth increase root intrusion risks. Camera inspections excel at identifying root problems that cause blockages and damage. Regular camera inspections help catch root intrusion early before it causes expensive repairs.</p>
+
+<strong>Heavy vegetation:</strong>
+<p>Dense landscaping common in Miami can obscure visual inspection clues, making cameras more useful for interior diagnosis. When surface signs aren't clear, cameras reveal interior conditions that explain system problems. This is especially valuable in Miami's tropical landscaping environment.</p>
+
+<strong>Hurricane and storm damage:</strong>
+<p>After storms, cameras help assess whether systems suffered damage from flooding or debris. Camera inspections identify problems caused by storms that might not be visible from surface inspection. Post-storm camera work helps determine if repairs are needed or systems survived intact.</p>
+
+<strong>Older systems:</strong>
+<p>Many older Miami properties have systems with unknown history or condition. Camera inspections provide essential information about aging systems that helps with maintenance planning and replacement decisions. For older properties, cameras reveal actual conditions needed for proper system management.</p>
+
+<p>Miami contractors experienced with local conditions understand how to use cameras effectively despite environmental challenges. They ensure inspections provide reliable diagnostic information needed for proper system care in Miami's unique environment.</p>
+
+<h2 id="faqs">Frequently Asked Questions</h2>
+
+<h3>What is a septic tank camera inspection?</h3>
+
+<p>Camera inspections use specialized waterproof cameras inserted into septic tanks and drain lines to visually inspect interior conditions without excavation. Cameras travel through pipes transmitting real-time video footage to monitors, allowing technicians to see cracks, root intrusion, blockages, and structural damage. Camera inspections reveal problems not visible during surface inspections, providing accurate diagnosis without guesswork or unnecessary digging.</p>
+
+<h3>How much does a septic camera inspection cost?</h3>
+
+<p>Camera inspections typically cost $200-$500 in Miami-Dade County. Basic inspections of main sewer lines cost $200-$300. Comprehensive inspections including drain field pipes cost $400-$500. Tank-only inspections cost $150-$250. Costs vary based on system complexity, inspection scope, and documentation needed. Emergency or rush inspections add $50-$150 to base prices.</p>
+
+<h3>What can a camera inspection show about my septic tank?</h3>
+
+<p>Camera inspections reveal cracks or breaks in pipes, root intrusion causing blockages, pipe deterioration and corrosion, blockages from waste buildup or foreign objects, structural damage from settling, loose or disconnected joints, and overall system condition. Cameras show exact problem locations and causes, providing visual proof needed for accurate repairs. This eliminates guesswork and ensures repairs address actual problems.</p>
+
+<h3>When do you need a camera inspection vs regular inspection?</h3>
+
+<p>Camera inspections are needed when visual inspections don't reveal causes of problems, before major repairs to identify exact scope, when diagnosing persistent problems that haven't been solved, for property transactions requiring detailed documentation, or when planning drain field work. Regular visual inspections work for routine maintenance, but camera inspections provide essential diagnostic information when problems need detailed investigation.</p>
+
+<h3>How long does a camera inspection take?</h3>
+
+<p>Most camera inspections take 45-90 minutes from start to completion. Basic inspections of main sewer lines take 45-60 minutes. Comprehensive inspections including drain field take 60-90 minutes. Report preparation adds 24-48 hours typically, though rush reports may be available sooner. Camera inspections are efficient compared to traditional diagnostic methods requiring excavation.</p>
+
+<h3>Can camera inspections find drain field problems?</h3>
+
+<p>Yes, camera inspections can identify drain field problems including pipe blockages preventing proper distribution, root intrusion affecting drain field function, pipe deterioration or structural damage, collapsed or broken distribution pipes, and problems causing drain field failure. Drain field camera inspections help determine whether fields can be repaired or need complete replacement, providing essential information for repair planning.</p>
+
+<h3>How often should I get a camera inspection?</h3>
+
+<p>Camera inspections are recommended every 5-10 years as part of routine maintenance, or whenever persistent problems occur that visual inspection doesn't explain. Before major repairs or property transactions, camera inspections provide detailed condition assessment. If you experience recurring problems, camera inspection helps diagnose causes and plan appropriate solutions. Regular camera inspections catch problems early and prevent expensive failures.</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a septic tank camera inspection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Camera inspections use specialized waterproof cameras inserted into septic tanks and drain lines to visually inspect interior conditions without excavation. Cameras travel through pipes transmitting real-time video footage, allowing technicians to see cracks, root intrusion, blockages, and structural damage not visible during surface inspections."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a septic camera inspection cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Camera inspections typically cost $200-$500 in Miami-Dade County. Basic inspections cost $200-$300. Comprehensive inspections including drain field cost $400-$500. Costs vary based on system complexity, inspection scope, and documentation needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can a camera inspection show about my septic tank?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Camera inspections reveal cracks or breaks in pipes, root intrusion, pipe deterioration, blockages, structural damage, loose joints, and overall system condition. Cameras show exact problem locations and causes, providing visual proof needed for accurate repairs and eliminating guesswork."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When do you need a camera inspection vs regular inspection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Camera inspections are needed when visual inspections don't reveal causes of problems, before major repairs, when diagnosing persistent issues, for property transactions, or when planning drain field work. Regular visual inspections work for routine maintenance, but cameras provide essential diagnostic information when problems need detailed investigation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a camera inspection take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most camera inspections take 45-90 minutes. Basic inspections take 45-60 minutes. Comprehensive inspections including drain field take 60-90 minutes. Report preparation adds 24-48 hours typically. Camera inspections are efficient compared to traditional diagnostic methods requiring excavation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can camera inspections find drain field problems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, camera inspections identify drain field problems including pipe blockages, root intrusion, pipe deterioration, collapsed pipes, and problems causing drain field failure. Drain field camera inspections help determine whether fields can be repaired or need complete replacement, providing essential information for repair planning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should I get a camera inspection?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Camera inspections are recommended every 5-10 years as part of routine maintenance, or whenever persistent problems occur that visual inspection doesn't explain. Before major repairs or property transactions, camera inspections provide detailed condition assessment. Regular camera inspections catch problems early and prevent expensive failures."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Septic Tank Camera Inspections",
+  "name": "Septic Tank Camera Inspections",
+  "description": "Professional septic tank camera inspections in Miami-Dade County. Licensed technicians use advanced camera equipment to diagnose problems without excavation, identifying cracks, root intrusion, and blockages.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "@id": "https://miamisepticpros.com/#organization",
+    "name": "Miami Septic Pros",
+    "telephone": "+1-561-556-2659",
+    "email": "support@firstclasscontractors.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "55 SW 9th ST APT 3806",
+      "addressLocality": "Miami",
+      "addressRegion": "FL",
+      "postalCode": "33130",
+      "addressCountry": "US"
+    }
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Miami",
+    "containedIn": {
+      "@type": "AdministrativeArea",
+      "name": "Miami-Dade County",
+      "containedIn": {
+        "@type": "State",
+        "name": "Florida"
+      }
+    }
+  },
+  "url": "https://miamisepticpros.com/miami/services/septic-tank-camera-inspections/",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "availableAtOrFrom": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Miami",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      }
+    }
+  },
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://miamisepticpros.com/quote/",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    }
+  },
+  "hoursAvailable": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00",
+      "closes": "15:00"
+    }
+  ],
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Service Area",
+      "value": "Miami-Dade County"
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://miamisepticpros.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://miamisepticpros.com/miami/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Septic Tank Camera Inspections",
+      "item": "https://miamisepticpros.com/miami/services/septic-tank-camera-inspections/"
+    }
+  ]
+}
+</script>
+<section class="my-10 rounded-xl border bg-white p-5 shadow-sm">
+  <h3 class="text-xl font-bold">Get a clear, no-pressure quote</h3>
+  <p class="mt-2 text-gray-700">Describe your job. We&apos;ll confirm price and schedule.</p>
+  <a class="mt-4 inline-block rounded-lg bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700" href="/book">
+    Get My Free Quote
+  </a>
+</section>
+2:[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Service\",\"name\":\"Septic Tank Camera Inspections\",\"serviceType\":\"Septic Tank Camera Inspections\",\"provider\":{\"@type\":\"Organization\",\"name\":\"Miami Septic Pros\",\"url\":\"https://miamisepticpros.com\"},\"areaServed\":[{\"@type\":\"City\",\"name\":\"Miami\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Florida\"}},{\"@type\":\"City\",\"name\":\"Miami Beach\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Florida\"}},{\"@type\":\"City\",\"name\":\"Coral Gables\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Florida\"}},{\"@type\":\"City\",\"name\":\"Hialeah\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Florida\"}},{\"@type\":\"City\",\"name\":\"Homestead\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Florida\"}},{\"@type\":\"County\",\"name\":\"Miami-Dade County\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Florida\"}}],\"description\":\"Septic Tank Camera Inspections in Miami: video diagnostics to identify cracks, root intrusion, blockages, and drain field problems without excavation.\",\"url\":\"https://miamisepticpros.com/services/septic-tank-camera-inspections\"}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"Miami Septic Pros\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"55 SW 9th ST APT 3806\",\"addressLocality\":\"Miami\",\"addressRegion\":\"FL\",\"postalCode\":\"33130\",\"addressCountry\":\"US\"},\"areaServed\":{\"@type\":\"County\",\"name\":\"Miami-Dade County\",\"containedIn\":{\"@type\":\"State\",\"name\":\"Florida\"}}}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://miamisepticpros.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Services\",\"item\":\"https://miamisepticpros.com/services\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Septic Tank Camera Inspections\",\"item\":\"https://miamisepticpros.com/services/septic-tank-camera-inspections\"}]}"}}],["$","div",null,{"children":[["$","header",null,{"className":"bg-[#ff4d4f] text-white","children":["$","div",null,{"className":"mx-auto max-w-6xl px-5 py-10 grid gap-6 md:grid-cols-[1.25fr,1fr] items-center","children":[["$","div",null,{"children":[["$","p",null,{"className":"text-xs uppercase tracking-wide opacity-90","children":"Service Guides"}],["$","h1",null,{"className":"mt-2 text-4xl md:text-5xl font-extrabold leading-tight","children":"Septic Tank Camera Inspections in Miami — Video Diagnostics & Problem Detection"}],["$","p",null,{"className":"mt-4 text-lg md:text-xl opacity-95","children":"Septic Tank Camera Inspections in Miami: video diagnostics to identify cracks, root intrusion, blockages, and drain field problems without excavation."}],["$","p",null,{"className":"mt-3 text-sm opacity-90","children":["Updated ","October 30, 2025"]}]]}],["$","img",null,{"src":"/images/og/septic-tank-camera-inspections.png","alt":"","className":"hidden md:block rounded-xl w-full h-auto object-cover"}]]}]}],["$","main",null,{"className":"mx-auto max-w-6xl px-5 py-10 grid gap-10 md:grid-cols-[1fr,320px]","children":[["$","article",null,{"className":"prose prose-lg max-w-none","children":[["$","div",null,{"className":"bg-surface-light border border-border-light rounded-lg p-6 mb-8","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4","children":[["$","div",null,{"children":[["$","p",null,{"className":"text-sm text-muted-text mb-1","children":"Email Us"}],["$","a",null,{"href":"mailto:support@firstclasscontractors.com","className":"text-lg font-semibold text-accent-green hover:text-accent-green-hover focus:outline-none focus:ring-2 focus:ring-accent-green focus:ring-offset-2 rounded-sm transition-colors","aria-label":"Email Miami Septic Pros at support@firstclasscontractors.com","children":"support@firstclasscontractors.com"}]]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm text-muted-text mb-1","children":"Get Quote"}],["$","$Lc",null,{"href":"/book","className":"inline-block bg-accent-green text-white px-4 py-2 rounded-sm hover:bg-accent-green-hover font-semibold focus:outline-none focus:ring-2 focus:ring-accent-green focus:ring-offset-2 min-h-[44px] flex items-center justify-center transition-colors","aria-label":"Get a free quote from Miami Septic Pros","children":"Get Quick Quote"}]]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm text-muted-text mb-1","children":"Service Areas"}],["$","p",null,{"className":"text-sm text-body-text","children":"Miami, Coral Gables, Kendall, Doral, Hialeah, Aventura, Homestead"}]]}],["$","div",null,{"children":[["$","p",null,{"className":"text-sm text-muted-text mb-1","children":"Availability"}],["$","p",null,{"className":"text-sm text-body-text","children":["Mon-Sat: 8am-6pm",["$","br",null,{}],"Sun: 9am-3pm"]}]]}]]}]}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$d"}}]]}],["$","$Le",null,{"items":[{"id":"cost","text":"How much does Septic Tank Camera Inspection cost in Miami?"},{"id":"what-cameras-show","text":"What camera inspections reveal"},{"id":"when-needed","text":"When camera inspections are needed"},{"id":"tank-vs-drain-field","text":"Tank vs drain field camera inspections"},{"id":"benefits","text":"Benefits of camera inspections"},{"id":"miami-environment","text":"How camera inspections work in Miami's unique environment"},{"id":"faqs","text":"Frequently Asked Questions"}]}]]}]]}]]
+b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Septic Tank Camera Inspections in Miami — Video Diagnosti..."}],["$","meta","3",{"name":"description","content":"Septic Tank Camera Inspections in Miami: video diagnostics to identify cracks, root intrusion, blockages, and drain field problems without excavation. Get in..."}],["$","link","4",{"rel":"manifest","href":"/site.webmanifest","crossOrigin":"use-credentials"}],["$","meta","5",{"name":"robots","content":"index, follow"}],["$","link","6",{"rel":"canonical","href":"https://miamisepticpros.com/services/septic-tank-camera-inspections/"}],["$","meta","7",{"property":"og:title","content":"Septic Tank Camera Inspections in Miami — Video Diagnostics & Problem Detection | 24/7 Service & Instant Quote | Miami Septic Pros"}],["$","meta","8",{"property":"og:description","content":"Septic Tank Camera Inspections in Miami: video diagnostics to identify cracks, root intrusion, blockages, and drain field problems without excavation. Get in..."}],["$","meta","9",{"property":"og:url","content":"https://miamisepticpros.com/services/septic-tank-camera-inspections/"}],["$","meta","10",{"property":"og:site_name","content":"SepticTankQuoteHub"}],["$","meta","11",{"property":"og:locale","content":"en_US"}],["$","meta","12",{"property":"og:image","content":"https://miamisepticpros.com/images/og/septic-tank-camera-inspections.png"}],["$","meta","13",{"property":"og:image:width","content":"1200"}],["$","meta","14",{"property":"og:image:height","content":"630"}],["$","meta","15",{"property":"og:image:alt","content":"Septic Tank Camera Inspections in Miami — Video Diagnostics & Problem Detection | 24/7 Service & Instant Quote | Miami Septic Pros"}],["$","meta","16",{"property":"og:type","content":"article"}],["$","meta","17",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","18",{"name":"twitter:title","content":"Septic Tank Camera Inspections in Miami — Video Diagnostics & Problem Detection | 24/7 Service & Instant Quote | Miami Septic Pros"}],["$","meta","19",{"name":"twitter:description","content":"Septic Tank Camera Inspections in Miami: video diagnostics to identify cracks, root intrusion, blockages, and drain field problems without excavation. Get in..."}],["$","meta","20",{"name":"twitter:image","content":"https://miamisepticpros.com/images/og/septic-tank-camera-inspections.png"}],["$","link","21",{"rel":"shortcut icon","href":"/favicon.ico"}],["$","link","22",{"rel":"icon","href":"/favicon.ico","sizes":"any"}],["$","link","23",{"rel":"icon","href":"/favicon-16x16.png","sizes":"16x16","type":"image/png"}],["$","link","24",{"rel":"icon","href":"/favicon-32x32.png","sizes":"32x32","type":"image/png"}],["$","link","25",{"rel":"apple-touch-icon","href":"/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]]
+1:null
